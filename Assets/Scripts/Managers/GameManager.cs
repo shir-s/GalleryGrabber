@@ -1,0 +1,37 @@
+using Dirt;
+using Utils;
+using UnityEngine;
+namespace Managers
+{
+    public class GameManager : MonoSingleton<GameManager>
+    {
+        [SerializeField] internal Collider2D roomCollider;
+        [SerializeField] private DirtSpawner dirtSpawner;
+        [SerializeField] private DirtPool dirtPool;
+        public DirtPool DirtPool => dirtPool;
+        
+        private void Start()
+        {
+            if (dirtSpawner == null)
+            {
+                Debug.LogError("DirtSpawner is not assigned in GameManager.");
+                return;
+            }
+            
+            if (roomCollider == null)
+            {
+                Debug.LogError("RoomCollider is not assigned in GameManager.");
+                return;
+            }
+
+            SetUpGame();
+            GameEvents.StartLevel?.Invoke();
+        }
+
+        private void SetUpGame()
+        {
+            //dirtSpawner.SetUp(dirtPool, roomCollider);
+            dirtSpawner.InitialSpawn();
+        }
+    }
+}
