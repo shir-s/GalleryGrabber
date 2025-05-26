@@ -88,6 +88,7 @@ namespace Dirt
             {
                 Debug.LogWarning("No valid position found for dirt.");
             }
+            GameEvents.OnDirtSpawned?.Invoke();
         }
 
         private Vector2 FindValidPositionInRoom(Collider2D roomCollider)

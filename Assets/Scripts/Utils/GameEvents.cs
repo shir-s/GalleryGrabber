@@ -11,5 +11,7 @@ namespace Utils
         public static Action GameOver;
         public static Action<int,int> PlayerHealthChanged;
         public static Action OnDirtCollected;
+        public static Action OnDirtSpawned;
+        public static Action<float> OnCleanlinessChanged;
     }
 }
