@@ -1,40 +1,95 @@
 using UnityEngine;
 using UnityEngine.AI;
+using System.Collections;
 
 public class SmartGuard : MonoBehaviour
 {
     public Transform player;
-    public float detectionRadius = 5f;
-    public float minDistance = 2f;
-    public float updateInterval = 0.5f;
-    private float timer = 0f;
-    private NavMeshAgent agent;
+    public float checkInterval = 0.5f;
+    public float pointReachedThreshold = 0.2f;
 
+    private NavMeshAgent agent;
+    private RoomTracker guardTracker;
+    private Room currentTargetRoom;
+    private int patrolIndex = 0;
+    private enum State { Idle, Traveling, Patrolling }
+    private State state = State.Idle;
+
+    
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        guardTracker = GetComponent<RoomTracker>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
+
+        StartCoroutine(StateLoop());
     }
 
-
-    void Update()
+    IEnumerator StateLoop()
     {
-        timer += Time.deltaTime;
-        if (timer > updateInterval)
+        while (true)
         {
-            timer = 0f;
-            float distance = Vector3.Distance(transform.position, player.position);
+            switch (state)
+            {
+                case State.Idle:
+                    yield return new WaitForSeconds(checkInterval);
+                    ChooseTargetRoom();
+                    break;
 
-            if (distance < detectionRadius && distance > minDistance)
-            {
-                agent.SetDestination(player.position);
-                agent.speed = 1.0f;
+                case State.Traveling:
+                    if (ReachedDestination())
+                    {
+                        state = State.Patrolling;
+                        patrolIndex = 0;
+                        SetNextPatrolPoint();
+                    }
+                    break;
+
+                case State.Patrolling:
+                    if (ReachedDestination())
+                    {
+                        patrolIndex++;
+                        Room room = guardTracker.currentRoom;
+
+                        if (room != null && room.patrolPoints != null && patrolIndex < room.patrolPoints.Length)
+                        {
+                            SetNextPatrolPoint();
+                        }
+                        else
+                        {
+                            state = State.Idle;
+                        }
+                    }
+                    break;
             }
-            else
-            {
-                agent.SetDestination(transform.position);
-            }
+
+            yield return null;
         }
+    }
+
+    void ChooseTargetRoom()
+    {
+        RoomTracker playerTracker = player.GetComponent<RoomTracker>();
+        if (playerTracker != null && playerTracker.currentRoom != null)
+        {
+            currentTargetRoom = playerTracker.currentRoom;
+            agent.SetDestination(currentTargetRoom.transform.position);
+            state = State.Traveling;
+        }
+    }
+
+    void SetNextPatrolPoint()
+    {
+        Room room = guardTracker.currentRoom;
+        if (room != null && room.patrolPoints != null && patrolIndex < room.patrolPoints.Length)
+        {
+            agent.SetDestination(room.patrolPoints[patrolIndex].position);
+        }
+    }
+
+    bool ReachedDestination()
+    {
+        return !agent.pathPending && agent.remainingDistance <= pointReachedThreshold;
     }
 }
