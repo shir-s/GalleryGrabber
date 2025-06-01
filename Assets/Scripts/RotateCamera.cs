@@ -3,7 +3,7 @@
 public class RotateCamera : MonoBehaviour
 {
     [SerializeField] private float[] zAngles;         // List of Z angles to rotate to (e.g., [0, 45, 90])
-    [SerializeField] private float rotationSpeed = 10עןאf;
+    [SerializeField] private float rotationSpeed = 10f;
     private int currentIndex = 0;
     private Quaternion targetRotation;
 
