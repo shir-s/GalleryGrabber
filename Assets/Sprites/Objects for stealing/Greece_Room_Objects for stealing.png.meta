@@ -1,25 +1,28 @@
 fileFormatVersion: 2
-guid: 842273b1db2c242ecb0aa061ae6947c8
+guid: e1f62f475aa74447d927761bbf497e32
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7547257827625966127
-    second: Greece_room walls_0
+      213: -7322338296087230934
+    second: Greece_Room_Objects for stealing_0
   - first:
-      213: -6420075471327513387
-    second: Greece_room walls_1
+      213: -8042177327742264449
+    second: Greece_Room_Objects for stealing_1
   - first:
-      213: -5173264195447365273
-    second: Greece_room walls_2
+      213: 3401154199485592213
+    second: Greece_Room_Objects for stealing_2
   - first:
-      213: 2137466888411757900
-    second: Greece_room walls_3
+      213: 6045868271031897310
+    second: Greece_Room_Objects for stealing_3
   - first:
-      213: -3610716630940624027
-    second: Greece_room walls_4
+      213: -5677926318234011519
+    second: Greece_Room_Objects for stealing_4
   - first:
-      213: -6376631932667675457
-    second: Greece_room walls_5
+      213: 4801929643237583895
+    second: Greece_Room_Objects for stealing_5
+  - first:
+      213: -6105744744838926901
+    second: Greece_Room_Objects for stealing_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +64,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Greece_room walls_0
+      name: Greece_Room_Objects for stealing_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 588
-        width: 2511
-        height: 1485
+        x: 1742
+        y: 2278
+        width: 53
+        height: 53
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1d5611c2ef0c24790800000000000000
-      internalID: -7547257827625966127
+      spriteID: a264b787d14d16a90800000000000000
+      internalID: -7322338296087230934
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Greece_room walls_1
+      name: Greece_Room_Objects for stealing_1
       rect:
         serializedVersion: 2
-        x: 2544
-        y: 1121
-        width: 6
-        height: 6
+        x: 708
+        y: 1957
+        width: 172
+        height: 213
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d43354bf5f47e6a0800000000000000
-      internalID: -6420075471327513387
+      spriteID: f7bd8376452746090800000000000000
+      internalID: -8042177327742264449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Greece_room walls_2
+      name: Greece_Room_Objects for stealing_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 526
-        width: 8
-        height: 7
+        x: 1151
+        y: 1623
+        width: 154
+        height: 431
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 761ec159f9fd438b0800000000000000
-      internalID: -5173264195447365273
+      spriteID: 592baae69b3533f20800000000000000
+      internalID: 3401154199485592213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Greece_room walls_3
+      name: Greece_Room_Objects for stealing_3
       rect:
         serializedVersion: 2
-        x: 108
-        y: 512
-        width: 63
-        height: 33
+        x: 2393
+        y: 1900
+        width: 79
+        height: 104
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c4d31fa6fcec9ad10800000000000000
-      internalID: 2137466888411757900
+      spriteID: edc49adf82d37e350800000000000000
+      internalID: 6045868271031897310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Greece_room walls_4
+      name: Greece_Room_Objects for stealing_4
       rect:
         serializedVersion: 2
-        x: 2431
-        y: 0
-        width: 85
-        height: 891
+        x: 226
+        y: 1619
+        width: 7
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 56b5034ca5824edc0800000000000000
-      internalID: -3610716630940624027
+      spriteID: 188f1d4b814f331b0800000000000000
+      internalID: -5677926318234011519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Greece_room walls_5
+      name: Greece_Room_Objects for stealing_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 486
-        width: 26
-        height: 9
+        x: 220
+        y: 1324
+        width: 92
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +243,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fbc3ee5ca07a187a0800000000000000
-      internalID: -6376631932667675457
+      spriteID: 71c289d9191e3a240800000000000000
+      internalID: 4801929643237583895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greece_Room_Objects for stealing_6
+      rect:
+        serializedVersion: 2
+        x: 2441
+        y: 994
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcdeaa21189044ba0800000000000000
+      internalID: -6105744744838926901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greece_Room_Objects for stealing_7
+      rect:
+        serializedVersion: 2
+        x: 2443
+        y: 981
+        width: 95
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea228330042584913bcc06a838e8e43b
+      internalID: -1133184950
       vertices: []
       indices: 
       edges: []
@@ -250,7 +297,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 5aea6e68e648c4810adced56f20773f0
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +307,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Greece_room walls_0: -7547257827625966127
-      Greece_room walls_1: -6420075471327513387
-      Greece_room walls_2: -5173264195447365273
-      Greece_room walls_3: 2137466888411757900
-      Greece_room walls_4: -3610716630940624027
-      Greece_room walls_5: -6376631932667675457
+      Greece_Room_Objects for stealing_0: -7322338296087230934
+      Greece_Room_Objects for stealing_1: -8042177327742264449
+      Greece_Room_Objects for stealing_2: 3401154199485592213
+      Greece_Room_Objects for stealing_3: 6045868271031897310
+      Greece_Room_Objects for stealing_4: -5677926318234011519
+      Greece_Room_Objects for stealing_5: 4801929643237583895
+      Greece_Room_Objects for stealing_6: -6105744744838926901
+      Greece_Room_Objects for stealing_7: -1133184950
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

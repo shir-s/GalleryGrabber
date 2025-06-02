@@ -41,6 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Backgound
+    uniqueID: 2888525419
+    locked: 0
+  - name: Objects for stealing
+    uniqueID: 3993251527
+    locked: 0
+  - name: Player
+    uniqueID: 796724921
+    locked: 0
   - name: UI
     uniqueID: 1214694507
     locked: 0
