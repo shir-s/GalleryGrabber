@@ -11,13 +11,13 @@ namespace Dirt
     public class DirtSpawner : MonoBehaviour
     {
         [SerializeField] private LayerMask forbiddenLayer; 
-        [SerializeField] private int totalDirtToSpawn = 10;
         [SerializeField] private float spawnRadius = 0.3f;
         [SerializeField] private float dirtSpawnInterval = 1.5f;
         
         private DirtPool _dirtPool;
         private Collider2D _roomCollider;
         private Coroutine _spawnRoutine;
+        private int _initiallDirtToSpawn;
 
         /*public void SetUp(DirtPool dirtPool, Collider2D roomCollider)
         {
@@ -40,6 +40,7 @@ namespace Dirt
 
         private void Start()
         {
+            _initiallDirtToSpawn = GameManager.Instance.maxDirt /2;
             _roomCollider = GameManager.Instance.roomCollider;
             _dirtPool = GameManager.Instance.DirtPool;
         }
@@ -65,7 +66,7 @@ namespace Dirt
         {
             //this._roomCollider = GameManager.Instance.roomCollider;
 
-            for (int i = 0; i < totalDirtToSpawn; i++)
+            for (int i = 0; i < _initiallDirtToSpawn; i++)
             {
                 SpawnSingleDirt();
             }

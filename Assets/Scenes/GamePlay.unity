@@ -152,7 +152,6 @@ MonoBehaviour:
   forbiddenLayer:
     serializedVersion: 2
     m_Bits: 64
-  totalDirtToSpawn: 10
   spawnRadius: 0.3
   dirtSpawnInterval: 1.5
 --- !u!114 &12856759
@@ -3980,6 +3979,7 @@ GameObject:
   - component: {fileID: 1607619675}
   - component: {fileID: 1607619674}
   - component: {fileID: 1607619676}
+  - component: {fileID: 1607619677}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4002,8 +4002,7 @@ MonoBehaviour:
   roomCollider: {fileID: 544978702}
   dirtSpawner: {fileID: 12856758}
   dirtPool: {fileID: 12856759}
-  currentCleanliness: 0
-  dirtPercent: 0.05
+  maxDirt: 20
 --- !u!4 &1607619675
 Transform:
   m_ObjectHideFlags: 0
@@ -4036,6 +4035,19 @@ MonoBehaviour:
   - {fileID: 1973058370}
   - {fileID: 301884843}
   - {fileID: 2072772813}
+--- !u!114 &1607619677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607619673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c559fd92b89d48fba18a93df01160d95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentCleanliness: 0
 --- !u!1 &1624273209
 GameObject:
   m_ObjectHideFlags: 0
@@ -5617,11 +5629,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4013545933573265543, guid: 1ac092741de771e42ac89db9f17c3a96, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.052
+      value: 2.7
       objectReference: {fileID: 0}
     - target: {fileID: 4013545933573265543, guid: 1ac092741de771e42ac89db9f17c3a96, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.4358
+      value: -5.12
       objectReference: {fileID: 0}
     - target: {fileID: 4013545933573265543, guid: 1ac092741de771e42ac89db9f17c3a96, type: 3}
       propertyPath: m_LocalPosition.z

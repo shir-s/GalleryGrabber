@@ -9,17 +9,19 @@ namespace Managers
         [SerializeField] internal Collider2D roomCollider;
         [SerializeField] private DirtSpawner dirtSpawner;
         [SerializeField] private DirtPool dirtPool;
-        [SerializeField] private float currentCleanliness = 0f;
-        [SerializeField] private float dirtPercent = 0.05f;
-
-        private void Awake()
-        {
-            GameEvents.OnDirtCollected += HandleDirtCollected;
-            GameEvents.OnDirtSpawned += HandleDirtSpawned;
-        }
+        [SerializeField] internal int maxDirt = 20;
         
         public DirtPool DirtPool => dirtPool;
         
+        private void OnEnable()
+        {
+            GameEvents.GameOver += HandleGameOver;
+        }
+        private void OnDisable()
+        {
+            GameEvents.GameOver -= HandleGameOver;
+        }
+
         private void Start()
         {
             if (dirtSpawner == null)
@@ -44,16 +46,10 @@ namespace Managers
             dirtSpawner.InitialSpawn();
         }
         
-        public void HandleDirtCollected()
+        private void HandleGameOver()
         {
-            currentCleanliness = Mathf.Max(0f, currentCleanliness - dirtPercent);
-            GameEvents.OnCleanlinessChanged?.Invoke(currentCleanliness);
-        }
-
-        public void HandleDirtSpawned()
-        {
-            currentCleanliness = Mathf.Min(1f, currentCleanliness + dirtPercent);
-            GameEvents.OnCleanlinessChanged?.Invoke(currentCleanliness);
+            //TODO: change this to a proper game over screen
+            Debug.Log("Game Over!");
         }
     }
 }
