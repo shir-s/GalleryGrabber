@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using Utils;
 
 namespace Stealable
 {
@@ -10,7 +11,7 @@ namespace Stealable
 
         private bool isPlayerNearby = false;
         private bool isBeingStolen = false;
-        
+        [SerializeField] private int itemValue = 10;
         public Canvas progressCanvas;
         public Image progressCircle; 
         
@@ -57,6 +58,7 @@ namespace Stealable
         private void StealSuccess()
         {
             //TODO: CHANGE THIS BEHAVIOR
+            GameEvents.StoleItem?.Invoke(itemValue);
             Destroy(gameObject); 
         }
 
