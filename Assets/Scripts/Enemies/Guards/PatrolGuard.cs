@@ -19,12 +19,11 @@ public class PatrolGuard : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
-
-        LoadWaypointsFromRooms();
     }
 
     void Start()
     {
+        LoadWaypointsFromRooms();
         if (waypoints.Count > 0)
             agent.SetDestination(waypoints[0].position);
     }

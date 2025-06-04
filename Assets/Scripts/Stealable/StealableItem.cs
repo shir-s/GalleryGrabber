@@ -1,12 +1,18 @@
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using Utils;
 
 namespace Stealable
 {
     public class StealableItem : MonoBehaviour
     {
         [SerializeField] private float stealDuration = 2f; 
+        private float stealProgress = 0f;
+
+        private bool isPlayerNearby = false;
+        private bool isBeingStolen = false;
+        [SerializeField] private int itemValue = 10;
         private float _stealProgress = 0f;
         private Collider2D[] _allColliders; 
         private bool _isPlayerNearby = false;
