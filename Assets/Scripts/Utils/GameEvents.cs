@@ -14,5 +14,6 @@ namespace Utils
         public static Action OnDirtSpawned;
         public static Action<float> OnCleanlinessChanged;
         public static Action<int> StoleItem;
+        public static Action PlayerLostLife;
     }
 }

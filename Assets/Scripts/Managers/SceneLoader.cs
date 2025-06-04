@@ -2,6 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Utils;
 
 namespace Managers
 {
@@ -26,6 +27,16 @@ namespace Managers
             {
                 EndGame();
             }
+        }
+
+        private void OnEnable()
+        {
+            GameEvents.GameOver += EndGame;
+        }
+        
+        private void OnDisable()
+        {
+            GameEvents.GameOver -= EndGame;
         }
 
         public void LoadGamePlay()
