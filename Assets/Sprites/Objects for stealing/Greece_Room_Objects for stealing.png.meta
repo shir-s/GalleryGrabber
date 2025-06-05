@@ -125,8 +125,8 @@ TextureImporter:
         y: 2278
         width: 53
         height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -147,8 +147,8 @@ TextureImporter:
         y: 1957
         width: 172
         height: 213
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -169,8 +169,8 @@ TextureImporter:
         y: 1623
         width: 154
         height: 431
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -191,8 +191,8 @@ TextureImporter:
         y: 1900
         width: 79
         height: 104
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -206,28 +206,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Greece_Room_Objects for stealing_4
-      rect:
-        serializedVersion: 2
-        x: 226
-        y: 1619
-        width: 7
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 188f1d4b814f331b0800000000000000
-      internalID: -5677926318234011519
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Greece_Room_Objects for stealing_5
       rect:
         serializedVersion: 2
@@ -235,8 +213,8 @@ TextureImporter:
         y: 1324
         width: 92
         height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -258,7 +236,7 @@ TextureImporter:
         width: 4
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -279,8 +257,8 @@ TextureImporter:
         y: 981
         width: 95
         height: 110
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
