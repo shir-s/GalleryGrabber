@@ -1,55 +1,37 @@
 fileFormatVersion: 2
-guid: 65764e4675ec84824a01dddc34f2e1c2
+guid: 33257c85fad4540848541fe679d627bc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7545511385465987525
-    second: Greece_Room_Objects_0
+      213: -4697993634688281997
+    second: Greece_Room_Middle_Objets_0
   - first:
-      213: 5048458157003747237
-    second: Greece_Room_Objects_1
+      213: 6951167448637984827
+    second: Greece_Room_Middle_Objets_1
   - first:
-      213: 177074993776878272
-    second: Greece_Room_Objects_2
+      213: -5746421032376645174
+    second: Greece_Room_Middle_Objets_2
   - first:
-      213: -1345047426702998424
-    second: Greece_Room_Objects_3
+      213: -6905025082893489646
+    second: Greece_Room_Middle_Objets_3
   - first:
-      213: 3116575348338275600
-    second: Greece_Room_Objects_4
+      213: -6384954885593553866
+    second: Greece_Room_Middle_Objets_4
   - first:
-      213: -3364457653201401458
-    second: Greece_Room_Objects_5
+      213: 5408572895703511494
+    second: Greece_Room_Middle_Objets_5
   - first:
-      213: 6443168321658692442
-    second: Greece_Room_Objects_6
+      213: 1625523411883227497
+    second: Greece_Room_Middle_Objets_6
   - first:
-      213: 8443987194694632494
-    second: Greece_Room_Objects_7
+      213: 7037905346508132206
+    second: Greece_Room_Middle_Objets_7
   - first:
-      213: -8211912656326950918
-    second: Greece_Room_Objects_8
+      213: -6294608200305663791
+    second: Greece_Room_Middle_Objets_8
   - first:
-      213: 5843540971741306509
-    second: Greece_Room_Objects_9
-  - first:
-      213: 2339200898728511950
-    second: Greece_Room_Objects_10
-  - first:
-      213: 2416760877747165104
-    second: Greece_Room_Objects_11
-  - first:
-      213: 4496533598016749562
-    second: Greece_Room_Objects_12
-  - first:
-      213: 6983929196291273968
-    second: Greece_Room_Objects_13
-  - first:
-      213: 874454462293210229
-    second: Greece_Room_Objects_14
-  - first:
-      213: 7639198698067914293
-    second: Greece_Room_Objects_15
+      213: -6077386784478567259
+    second: Greece_Room_Middle_Objets_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -145,13 +127,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Greece_Room_Objects_0
+      name: Greece_Room_Middle_Objets_0
       rect:
         serializedVersion: 2
-        x: 166
-        y: 898
-        width: 181
-        height: 1436
+        x: 26
+        y: 387
+        width: 159
+        height: 226
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c1ad5390aa07b860800000000000000
-      internalID: 7545511385465987525
+      spriteID: 372db572eaf5dceb0800000000000000
+      internalID: -4697993634688281997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Greece_Room_Objects_1
+      name: Greece_Room_Middle_Objets_1
       rect:
         serializedVersion: 2
-        x: 480
-        y: 2158
-        width: 211
-        height: 247
+        x: 245
+        y: 385
+        width: 146
+        height: 232
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5afa1a722f9bf0640800000000000000
-      internalID: 5048458157003747237
+      spriteID: b30535637f1877060800000000000000
+      internalID: 6951167448637984827
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Greece_Room_Objects_2
+      name: Greece_Room_Middle_Objets_2
       rect:
         serializedVersion: 2
-        x: 789
-        y: 2159
-        width: 212
-        height: 247
+        x: 56
+        y: 63
+        width: 154
+        height: 224
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0c2eca6c4c8157200800000000000000
-      internalID: 177074993776878272
+      spriteID: ac94b53548c9040b0800000000000000
+      internalID: -5746421032376645174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Greece_Room_Objects_3
+      name: Greece_Room_Middle_Objets_3
       rect:
         serializedVersion: 2
-        x: 1073
-        y: 2159
-        width: 561
-        height: 197
+        x: 285
+        y: 17
+        width: 195
+        height: 316
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8648055ed7e655de0800000000000000
-      internalID: -1345047426702998424
+      spriteID: 21aa8f0854c6c20a0800000000000000
+      internalID: -6905025082893489646
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Greece_Room_Objects_4
+      name: Greece_Room_Middle_Objets_4
       rect:
         serializedVersion: 2
-        x: 1698
-        y: 2153
-        width: 212
-        height: 247
+        x: 580
+        y: 258
+        width: 64
+        height: 43
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,20 +230,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 015317954cc404b20800000000000000
-      internalID: 3116575348338275600
+      spriteID: 6342d494c551467a0800000000000000
+      internalID: -6384954885593553866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Greece_Room_Objects_5
+      name: Greece_Room_Middle_Objets_5
       rect:
         serializedVersion: 2
-        x: 2007
-        y: 2153
-        width: 212
-        height: 248
+        x: 661
+        y: 264
+        width: 43
+        height: 68
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,20 +252,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e89061f079b0f41d0800000000000000
-      internalID: -3364457653201401458
+      spriteID: 6c1b63e846c1f0b40800000000000000
+      internalID: 5408572895703511494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Greece_Room_Objects_6
+      name: Greece_Room_Middle_Objets_6
       rect:
         serializedVersion: 2
-        x: 2361
-        y: 1678
-        width: 183
-        height: 665
+        x: 552
+        y: 118
+        width: 180
+        height: 134
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,20 +274,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a532480837bba6950800000000000000
-      internalID: 6443168321658692442
+      spriteID: 96971634ee40f8610800000000000000
+      internalID: 1625523411883227497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Greece_Room_Objects_7
+      name: Greece_Room_Middle_Objets_7
       rect:
         serializedVersion: 2
-        x: 728
-        y: 1738
-        width: 138
-        height: 309
+        x: 577
+        y: 45
+        width: 34
+        height: 70
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -314,52 +296,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2488bb8d911f2570800000000000000
-      internalID: 8443987194694632494
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Greece_Room_Objects_13
-      rect:
-        serializedVersion: 2
-        x: 1145
-        y: 1438
-        width: 204
-        height: 288
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0f4bb610a96ebe060800000000000000
-      internalID: 6983929196291273968
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Greece_Room_Objects_15
-      rect:
-        serializedVersion: 2
-        x: 2352
-        y: 844
-        width: 186
-        height: 473
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 53ee6feddb2e30a60800000000000000
-      internalID: 7639198698067914293
+      spriteID: e6f807dcf99aba160800000000000000
+      internalID: 7037905346508132206
       vertices: []
       indices: 
       edges: []
@@ -368,7 +306,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 5c2467d7914aa42b29aaf3398b78af3d
     internalID: 0
     vertices: []
     indices: 
@@ -378,22 +316,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Greece_Room_Objects_0: 7545511385465987525
-      Greece_Room_Objects_1: 5048458157003747237
-      Greece_Room_Objects_10: 2339200898728511950
-      Greece_Room_Objects_11: 2416760877747165104
-      Greece_Room_Objects_12: 4496533598016749562
-      Greece_Room_Objects_13: 6983929196291273968
-      Greece_Room_Objects_14: 874454462293210229
-      Greece_Room_Objects_15: 7639198698067914293
-      Greece_Room_Objects_2: 177074993776878272
-      Greece_Room_Objects_3: -1345047426702998424
-      Greece_Room_Objects_4: 3116575348338275600
-      Greece_Room_Objects_5: -3364457653201401458
-      Greece_Room_Objects_6: 6443168321658692442
-      Greece_Room_Objects_7: 8443987194694632494
-      Greece_Room_Objects_8: -8211912656326950918
-      Greece_Room_Objects_9: 5843540971741306509
+      Greece_Room_Middle_Objets_0: -4697993634688281997
+      Greece_Room_Middle_Objets_1: 6951167448637984827
+      Greece_Room_Middle_Objets_2: -5746421032376645174
+      Greece_Room_Middle_Objets_3: -6905025082893489646
+      Greece_Room_Middle_Objets_4: -6384954885593553866
+      Greece_Room_Middle_Objets_5: 5408572895703511494
+      Greece_Room_Middle_Objets_6: 1625523411883227497
+      Greece_Room_Middle_Objets_7: 7037905346508132206
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
