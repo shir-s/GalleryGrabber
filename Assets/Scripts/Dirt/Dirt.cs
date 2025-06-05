@@ -1,18 +1,24 @@
 using Managers;
 using UnityEngine;
+using Utilities;
 using Utils;
 
 namespace Dirt
 {
-    public class Dirt : MonoBehaviour
+    public class Dirt : MonoBehaviour,IPoolable
     {
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.CompareTag("Player"))
             {
                 GameEvents.OnDirtCollected?.Invoke();
-                GameManager.Instance.DirtPool.ReturnDirt(gameObject);
+                GameManager.Instance.DirtPool.Return(this);
             }
+        }
+
+        public void Reset()
+        {
+            
         }
     }
 }

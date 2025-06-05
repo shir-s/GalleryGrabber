@@ -78,11 +78,10 @@ namespace Dirt
 
             if (spawnPosition != Vector2.zero)
             {
-                GameObject dirt = _dirtPool.GetDirt();
+                var dirt = _dirtPool.Get();
                 if (dirt != null)
                 {
                     dirt.transform.position = spawnPosition;
-                    dirt.SetActive(true);
                 }
             }
             else

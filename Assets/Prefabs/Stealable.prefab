@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8575395270640140131}
   m_Layer: 0
   m_Name: Stealable
-  m_TagString: Untagged
+  m_TagString: Stealable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,6 +104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stealDuration: 2
+  itemValue: 10
   progressCanvas: {fileID: 1431282727085528396}
   progressCircle: {fileID: 6902755332004265549}
 --- !u!61 &4365665191868118310

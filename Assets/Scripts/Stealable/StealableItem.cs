@@ -9,9 +9,7 @@ namespace Stealable
     {
         [SerializeField] private float stealDuration = 2f; 
         private float stealProgress = 0f;
-
         private bool isPlayerNearby = false;
-        private bool isBeingStolen = false;
         [SerializeField] private int itemValue = 10;
         private float _stealProgress = 0f;
         private Collider2D[] _allColliders; 
@@ -37,7 +35,6 @@ namespace Stealable
                 if (progressCanvas != null)
                     progressCanvas.gameObject.SetActive(true);
             }
-
             if (_stealProgress < stealDuration)
             {
                 _stealProgress += deltaTime;
@@ -75,6 +72,7 @@ namespace Stealable
             }
             
             transform.DOScale(transform.localScale * 0.7f, 0.15f).SetEase(Ease.OutBack);
+            GameEvents.StoleItem?.Invoke(itemValue);    
             if (_playerTransform != null)
             {
                 transform
@@ -108,6 +106,11 @@ namespace Stealable
                 _isPlayerNearby = false;
                 StopSteal();
             }
+        }
+        
+        public bool IsBeingStolen()
+        {
+            return _isBeingStolen;
         }
 
         public bool CanBeStolen()
