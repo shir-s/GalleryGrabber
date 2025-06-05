@@ -7,9 +7,13 @@ using System.Collections.Generic;
 
 public class PatrolGuard : MonoBehaviour
 {
-    public List<string> roomNames; // שמות החדרים לפי הסדר
+    public List<string> roomNames; 
     public float reachDistance = 0.2f;
 
+    public GameObject frontModel;
+    public GameObject backModel;
+    public GameObject sideModel;
+    
     private List<Transform> waypoints = new List<Transform>();
     private NavMeshAgent agent;
     private int index = 0;
@@ -30,14 +34,46 @@ public class PatrolGuard : MonoBehaviour
 
     void Update()
     {
-        if (waypoints.Count == 0) return;
-        if (agent.pathPending)    return;
+        if (waypoints.Count == 0 || agent.pathPending) return;
+
+        if (agent.velocity.sqrMagnitude > 0.01f)
+        {
+            UpdateModelDirection(agent.velocity);
+        }
 
         if (agent.remainingDistance <= reachDistance)
         {
             index = (index + 1) % waypoints.Count;
             agent.SetDestination(waypoints[index].position);
         }
+    }
+    
+    void UpdateModelDirection(Vector3 velocity)
+    {
+        if (Mathf.Abs(velocity.x) > Mathf.Abs(velocity.y))
+        {
+            ShowOnlyModel(sideModel);
+            // sideModel.transform.localScale = new Vector3(
+            //     velocity.x > 0 ? 1 : -1, 1, 1
+            // );
+            sideModel.transform.localScale = new Vector3(
+                velocity.x > 0 ? -1 : 1, 1, 1
+            );
+        }
+        else
+        {
+            if (velocity.y > 0)
+                ShowOnlyModel(backModel);
+            else
+                ShowOnlyModel(frontModel);
+        }
+    }
+    
+    void ShowOnlyModel(GameObject modelToShow)
+    {
+        if (frontModel != null) frontModel.SetActive(modelToShow == frontModel);
+        if (backModel != null) backModel.SetActive(modelToShow == backModel);
+        if (sideModel != null) sideModel.SetActive(modelToShow == sideModel);
     }
 
     private void LoadWaypointsFromRooms()
