@@ -7,21 +7,28 @@ namespace Enemies.Guards
 {
     public class DetectionObject : MonoBehaviour
     {
+        [SerializeField] private float detectionCooldown = 3f; // Cooldown in seconds
+        private float lastDetectionTime = -Mathf.Infinity;
+
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if ((other.CompareTag("Player") && PlayerSteal.isStealing))
+            if (other.CompareTag("Player") && PlayerSteal.isStealing)
             {
-                Debug.Log("Player or stealable object detected during theft!");
+                Debug.Log("Player or stealable object detected during theft (enter)!");
                 GameEvents.PlayerLostLife?.Invoke();
             }
         }
-        
+
         private void OnTriggerStay2D(Collider2D other)
         {
-            if ((other.CompareTag("Stealable") && other.GetComponent<StealableItem>().IsBeingStolen()))
+            if (other.CompareTag("Stealable") && other.GetComponent<StealableItem>().IsBeingStolen())
             {
-                Debug.Log("Player or stealable object detected during theft!");
-                GameEvents.PlayerLostLife?.Invoke();
+                if (Time.time >= lastDetectionTime + detectionCooldown)
+                {
+                    Debug.Log("Player or stealable object detected during theft (stay)!");
+                    GameEvents.PlayerLostLife?.Invoke();
+                    lastDetectionTime = Time.time;
+                }
             }
         }
     }
