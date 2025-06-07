@@ -10,7 +10,7 @@ namespace Utils
         public static Action StartLevel;
         public static Action GameOver;
         public static Action<int,int> PlayerHealthChanged;
-        public static Action OnDirtCollected;
+        public static Action <int> OnDirtCollected;
         public static Action OnDirtSpawned;
         public static Action<float> OnCleanlinessChanged;
         public static Action<int> StoleItem;

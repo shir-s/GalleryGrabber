@@ -16,6 +16,7 @@ namespace Managers
         private void OnEnable()
         {
             GameEvents.GameOver += HandleGameOver;
+            
         }
         private void OnDisable()
         {

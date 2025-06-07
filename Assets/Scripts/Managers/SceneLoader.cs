@@ -10,7 +10,9 @@ namespace Managers
     {
         private const string GamePlaySceneName = "GamePlay";
         private const string OpeningSceneName = "Opening Scene";
-        private const string EndingSceneName = "Ending Scene"; 
+        private const string LosingSceneName = "Losing Scene";
+        private const string WinningSceneName = "Winning Scene";
+
 
 
         private void Update()
@@ -32,11 +34,13 @@ namespace Managers
         private void OnEnable()
         {
             GameEvents.GameOver += EndGame;
+            GameEvents.PlayerWon += HandleWin;
         }
         
         private void OnDisable()
         {
             GameEvents.GameOver -= EndGame;
+            GameEvents.PlayerWon -= HandleWin;
         }
 
         public void LoadGamePlay()
@@ -53,7 +57,13 @@ namespace Managers
         private void EndGame()
         {
             //GameEvents.GameOver?.Invoke();
-            SceneManager.LoadScene(EndingSceneName);
+            SceneManager.LoadScene(LosingSceneName);
+        }
+        
+        private void HandleWin()
+        {
+            //GameEvents.PlayerWon?.Invoke();
+            SceneManager.LoadScene(WinningSceneName);
         }
         
         private void OnExit()

@@ -24,7 +24,7 @@ namespace Managers
             _dirtPercent = 1f / GameManager.Instance.maxDirt; // Assuming maxDirt is the total dirt that can be spawned
         }
 
-        private void HandleDirtCollected()
+        private void HandleDirtCollected(int dummy)
         {
             currentCleanliness = Mathf.Max(0f, currentCleanliness - _dirtPercent);
             GameEvents.OnCleanlinessChanged?.Invoke(currentCleanliness);

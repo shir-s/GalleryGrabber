@@ -14,6 +14,10 @@ namespace Enemies.Guards
         {
             if (other.CompareTag("Player") && PlayerSteal.isStealing)
             {
+                if (CompareTag("Guard"))
+                {
+                    GameEvents.GameOver?.Invoke();
+                }
                 Debug.Log("Player or stealable object detected during theft (enter)!");
                 GameEvents.PlayerLostLife?.Invoke();
             }
@@ -25,6 +29,10 @@ namespace Enemies.Guards
             {
                 if (Time.time >= lastDetectionTime + detectionCooldown)
                 {
+                    if (CompareTag("Guard"))
+                    {
+                        GameEvents.GameOver?.Invoke();
+                    }
                     Debug.Log("Player or stealable object detected during theft (stay)!");
                     GameEvents.PlayerLostLife?.Invoke();
                     lastDetectionTime = Time.time;
