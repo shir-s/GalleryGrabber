@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4000399910354972548}
   - component: {fileID: 5370085801201670387}
   - component: {fileID: 349957219705571692}
+  - component: {fileID: 4032031796444348758}
   m_Layer: 0
   m_Name: Light 2D (1)
   m_TagString: Untagged
@@ -102,7 +103,7 @@ MonoBehaviour:
   - 0
   - 90
   - -90
-  rotationSpeed: 10
+  rotationSpeed: 20
 --- !u!60 &349957219705571692
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -159,6 +160,19 @@ PolygonCollider2D:
       - {x: 0.18814695, y: 0.30920076}
       - {x: 0.40580797, y: 0.7084395}
   m_UseDelaunayMesh: 0
+--- !u!114 &4032031796444348758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2151107295479823048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0573215524c845f4cb9a5b7c6ed85c9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectionCooldown: 3
 --- !u!1 &4727402969187886422
 GameObject:
   m_ObjectHideFlags: 0
