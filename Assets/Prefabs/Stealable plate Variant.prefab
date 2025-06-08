@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4365665191868118310, guid: 10270af96c26f451680ee83c1ca316eb, type: 3}
       propertyPath: m_Size.y
-      value: 2.574421
+      value: 2.8203201
       objectReference: {fileID: 0}
     - target: {fileID: 4365665191868118310, guid: 10270af96c26f451680ee83c1ca316eb, type: 3}
       propertyPath: m_Offset.x
@@ -26,15 +26,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4365665191868118310, guid: 10270af96c26f451680ee83c1ca316eb, type: 3}
       propertyPath: m_Offset.y
-      value: -0.8923416
+      value: -0.769392
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365665191868118310, guid: 10270af96c26f451680ee83c1ca316eb, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4365665191868118310, guid: 10270af96c26f451680ee83c1ca316eb, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.55006754
+      value: 0.5300651
       objectReference: {fileID: 0}
     - target: {fileID: 4365665191868118310, guid: 10270af96c26f451680ee83c1ca316eb, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.56
+      value: 0.53000003
       objectReference: {fileID: 0}
     - target: {fileID: 7782289668993376598, guid: 10270af96c26f451680ee83c1ca316eb, type: 3}
       propertyPath: m_LocalScale.x
@@ -160,5 +164,5 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.28
+  m_Offset: {x: 0, y: 0.25659084}
+  m_Radius: 0.26930904
