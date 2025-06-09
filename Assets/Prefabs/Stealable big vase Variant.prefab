@@ -36,6 +36,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stealable big vase Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3650835228570429203, guid: 0a8192027650e4e95972022ec4393857, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3650835228570429203, guid: 0a8192027650e4e95972022ec4393857, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 3657072921158300956, guid: 0a8192027650e4e95972022ec4393857, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3738048037909429293, guid: 0a8192027650e4e95972022ec4393857, type: 3}
       propertyPath: m_Radius
       value: 0.27169895

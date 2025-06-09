@@ -12,6 +12,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stealable plate Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1517069657135816274, guid: 10270af96c26f451680ee83c1ca316eb, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1517069657135816274, guid: 10270af96c26f451680ee83c1ca316eb, type: 3}
+      propertyPath: m_LocalScale.y
+      value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1517069657135816274, guid: 10270af96c26f451680ee83c1ca316eb, type: 3}
+      propertyPath: m_LocalScale.z
+      value: -0.0019999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1517069657135816274, guid: 10270af96c26f451680ee83c1ca316eb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1517069657135816274, guid: 10270af96c26f451680ee83c1ca316eb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.223
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542309074478140509, guid: 10270af96c26f451680ee83c1ca316eb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4365665191868118310, guid: 10270af96c26f451680ee83c1ca316eb, type: 3}
       propertyPath: m_Size.x
       value: 0.76553917

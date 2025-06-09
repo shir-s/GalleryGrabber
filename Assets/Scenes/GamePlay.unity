@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialPoolSize: 25
-  prefab: {fileID: 4096480265306835641, guid: 76526f01380b44ea19e5ed5ac6a65d5b, type: 3}
+  prefab: {fileID: 3500181107333333716, guid: 53701bda740d845678cb269ec13596d3, type: 3}
 --- !u!4 &12856760
 Transform:
   m_ObjectHideFlags: 0
