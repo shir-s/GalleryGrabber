@@ -8,9 +8,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4000399910354972548, guid: 7b67328e003b64406a274cd77fb9cffb, type: 3}
+      propertyPath: m_Color.b
+      value: 0.31764707
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000399910354972548, guid: 7b67328e003b64406a274cd77fb9cffb, type: 3}
+      propertyPath: m_Color.g
+      value: 0.31764707
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000399910354972548, guid: 7b67328e003b64406a274cd77fb9cffb, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000399910354972548, guid: 7b67328e003b64406a274cd77fb9cffb, type: 3}
+      propertyPath: m_Intensity
+      value: 7.51
+      objectReference: {fileID: 0}
     - target: {fileID: 4727402969187886422, guid: 7b67328e003b64406a274cd77fb9cffb, type: 3}
       propertyPath: m_Name
       value: Camera new prefab (1) Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5370085801201670387, guid: 7b67328e003b64406a274cd77fb9cffb, type: 3}
+      propertyPath: 'zAngles.Array.data[0]'
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5370085801201670387, guid: 7b67328e003b64406a274cd77fb9cffb, type: 3}
+      propertyPath: 'zAngles.Array.data[1]'
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5370085801201670387, guid: 7b67328e003b64406a274cd77fb9cffb, type: 3}
+      propertyPath: 'zAngles.Array.data[2]'
+      value: -180
       objectReference: {fileID: 0}
     - target: {fileID: 6258922154586559986, guid: 7b67328e003b64406a274cd77fb9cffb, type: 3}
       propertyPath: m_Sprite

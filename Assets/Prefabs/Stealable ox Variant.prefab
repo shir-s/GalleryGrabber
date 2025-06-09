@@ -48,6 +48,22 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: -0.0067281723
       objectReference: {fileID: 0}
+    - target: {fileID: 4143866449681641861, guid: 0a8192027650e4e95972022ec4393857, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143866449681641861, guid: 0a8192027650e4e95972022ec4393857, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143866449681641861, guid: 0a8192027650e4e95972022ec4393857, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143866449681641861, guid: 0a8192027650e4e95972022ec4393857, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5435506329569483306, guid: 0a8192027650e4e95972022ec4393857, type: 3}
       propertyPath: m_Sprite
       value: 
