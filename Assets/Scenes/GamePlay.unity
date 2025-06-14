@@ -397,6 +397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionCooldown: 3
+  detectionLight: {fileID: 0}
 --- !u!1 &30280997
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,6 +996,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionCooldown: 3
+  detectionLight: {fileID: 0}
 --- !u!1 &112747292
 GameObject:
   m_ObjectHideFlags: 0
@@ -1966,6 +1968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionCooldown: 3
+  detectionLight: {fileID: 0}
 --- !u!1 &287818287 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6648303794198432982, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -1984,6 +1987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionCooldown: 3
+  detectionLight: {fileID: 0}
 --- !u!4 &291200126 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2179028867689184219, guid: c0934addc99963043971e5ac7a1de4a7, type: 3}
@@ -2353,6 +2357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionCooldown: 3
+  detectionLight: {fileID: 0}
 --- !u!1 &361064883
 GameObject:
   m_ObjectHideFlags: 0
@@ -2522,6 +2527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionCooldown: 3
+  detectionLight: {fileID: 0}
 --- !u!1 &379676889
 GameObject:
   m_ObjectHideFlags: 0
@@ -4280,6 +4286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionCooldown: 3
+  detectionLight: {fileID: 0}
 --- !u!4 &605988416 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4521995054892666953, guid: 4dc56781c87ec3642a41b12e32821abf, type: 3}
@@ -4314,6 +4321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionCooldown: 3
+  detectionLight: {fileID: 0}
 --- !u!1 &612976294
 GameObject:
   m_ObjectHideFlags: 0
@@ -4598,7 +4606,7 @@ Camera:
   far clip plane: 1000
   field of view: 69
   orthographic: 1
-  orthographic size: 20
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -5056,6 +5064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionCooldown: 3
+  detectionLight: {fileID: 0}
 --- !u!50 &701786556
 Rigidbody2D:
   serializedVersion: 5
@@ -5565,6 +5574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionCooldown: 3
+  detectionLight: {fileID: 0}
 --- !u!1 &756077086
 GameObject:
   m_ObjectHideFlags: 0
@@ -5994,6 +6004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionCooldown: 3
+  detectionLight: {fileID: 0}
 --- !u!1001 &877044351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8040,6 +8051,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4873870944452410524, guid: f21dfdb2b254a4c2791014fc21897824, type: 3}
+      propertyPath: 'zAngles.Array.data[0]'
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873870944452410524, guid: f21dfdb2b254a4c2791014fc21897824, type: 3}
+      propertyPath: 'zAngles.Array.data[1]'
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873870944452410524, guid: f21dfdb2b254a4c2791014fc21897824, type: 3}
+      propertyPath: 'zAngles.Array.data[2]'
+      value: -150
+      objectReference: {fileID: 0}
     - target: {fileID: 5241640951935549753, guid: f21dfdb2b254a4c2791014fc21897824, type: 3}
       propertyPath: m_Name
       value: Camera new prefab (1)
@@ -11304,6 +11327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionCooldown: 3
+  detectionLight: {fileID: 0}
 --- !u!1 &1694635257
 GameObject:
   m_ObjectHideFlags: 0
@@ -11402,6 +11426,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4873870944452410524, guid: f21dfdb2b254a4c2791014fc21897824, type: 3}
+      propertyPath: 'zAngles.Array.data[0]'
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873870944452410524, guid: f21dfdb2b254a4c2791014fc21897824, type: 3}
+      propertyPath: 'zAngles.Array.data[1]'
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873870944452410524, guid: f21dfdb2b254a4c2791014fc21897824, type: 3}
+      propertyPath: 'zAngles.Array.data[2]'
+      value: -150
+      objectReference: {fileID: 0}
     - target: {fileID: 5241640951935549753, guid: f21dfdb2b254a4c2791014fc21897824, type: 3}
       propertyPath: m_Name
       value: Camera new prefab (2)
@@ -12171,6 +12207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionCooldown: 3
+  detectionLight: {fileID: 0}
 --- !u!1 &1908022195
 GameObject:
   m_ObjectHideFlags: 0

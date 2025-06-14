@@ -174,6 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionCooldown: 3
+  detectionLight: {fileID: 4000399910354972548}
 --- !u!50 &6619363640666565814
 Rigidbody2D:
   serializedVersion: 5
@@ -200,7 +201,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
+  m_Constraints: 3
 --- !u!1 &4727402969187886422
 GameObject:
   m_ObjectHideFlags: 0
