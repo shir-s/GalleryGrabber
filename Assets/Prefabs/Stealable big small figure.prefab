@@ -38,15 +38,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3650835228570429203, guid: 0a8192027650e4e95972022ec4393857, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.228
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 3650835228570429203, guid: 0a8192027650e4e95972022ec4393857, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.503
+      value: 1.69
       objectReference: {fileID: 0}
     - target: {fileID: 3657072921158300956, guid: 0a8192027650e4e95972022ec4393857, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3738048037909429293, guid: 0a8192027650e4e95972022ec4393857, type: 3}
       propertyPath: m_Radius
@@ -80,17 +80,25 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5093953041444947263, guid: 0a8192027650e4e95972022ec4393857, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093953041444947263, guid: 0a8192027650e4e95972022ec4393857, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[5]'
+      value: -157357427
+      objectReference: {fileID: 0}
     - target: {fileID: 5435506329569483306, guid: 0a8192027650e4e95972022ec4393857, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6045868271031897310, guid: e1f62f475aa74447d927761bbf497e32, type: 3}
     - target: {fileID: 5451561874405218327, guid: 0a8192027650e4e95972022ec4393857, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.71
+      value: 2.368
       objectReference: {fileID: 0}
     - target: {fileID: 5451561874405218327, guid: 0a8192027650e4e95972022ec4393857, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.82
+      value: 13.473
       objectReference: {fileID: 0}
     - target: {fileID: 5451561874405218327, guid: 0a8192027650e4e95972022ec4393857, type: 3}
       propertyPath: m_LocalPosition.z

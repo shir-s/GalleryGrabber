@@ -16,8 +16,8 @@ TagManager:
   - Wall
   - Player
   - Room
-  - 
-  - 
+  - Guard
+  - combineLayer
   - 
   - 
   - 
@@ -51,6 +51,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 796724921
+    locked: 0
+  - name: combineLayer
+    uniqueID: 4137609869
     locked: 0
   - name: UI
     uniqueID: 1214694507

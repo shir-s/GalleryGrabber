@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5370085801201670387}
   - component: {fileID: 349957219705571692}
   - component: {fileID: 4032031796444348758}
+  - component: {fileID: 6619363640666565814}
   m_Layer: 0
   m_Name: Light 2D (1)
   m_TagString: Untagged
@@ -55,7 +56,7 @@ MonoBehaviour:
   m_Intensity: 10
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f6bc46648
+  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f6bc466488dea9ef6
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -173,6 +174,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionCooldown: 3
+--- !u!50 &6619363640666565814
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2151107295479823048}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &4727402969187886422
 GameObject:
   m_ObjectHideFlags: 0

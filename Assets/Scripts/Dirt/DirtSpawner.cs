@@ -12,7 +12,7 @@ namespace Dirt
     {
         [SerializeField] private LayerMask forbiddenLayer; 
         [SerializeField] private float spawnRadius = 0.3f;
-        [SerializeField] private float dirtSpawnInterval = 1.5f;
+        [SerializeField] private float dirtSpawnInterval = 5f;
         
         private DirtPool _dirtPool;
         private Collider2D _roomCollider;

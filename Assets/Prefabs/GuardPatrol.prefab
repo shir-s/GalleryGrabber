@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6189414857790928606}
   - component: {fileID: 9189416496298776430}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SideModel
-  m_TagString: Untagged
+  m_TagString: Guard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,9 +98,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5696709245831869354}
   - component: {fileID: 3872042370795653114}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BackModel
-  m_TagString: Untagged
+  m_TagString: Guard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -186,9 +186,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2515538834306188769}
   - component: {fileID: 1974294108384693538}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FrontModel
-  m_TagString: Untagged
+  m_TagString: Guard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -276,7 +276,7 @@ GameObject:
   - component: {fileID: 2855957710812261821}
   - component: {fileID: 3363549217536999357}
   - component: {fileID: 8318218921175344799}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FlashLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 4077502057516062468}
   - component: {fileID: 806844584105318277}
   - component: {fileID: 5836836651728663121}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FlashLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -469,7 +469,7 @@ MonoBehaviour:
   m_Intensity: 2.5
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f6bc46648
+  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f6bc466488dea9ef6
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -578,7 +578,7 @@ GameObject:
   - component: {fileID: 5258652988048975152}
   - component: {fileID: 893888901219028485}
   - component: {fileID: 2475394840227476003}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FlashLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -731,9 +731,9 @@ GameObject:
   - component: {fileID: 8664733892482728538}
   - component: {fileID: 1359594610113329784}
   - component: {fileID: 8963580806694287493}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GuardPatrol
-  m_TagString: Untagged
+  m_TagString: Guard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -797,9 +797,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 796724921
-  m_SortingLayer: 3
-  m_SortingOrder: 3
+  m_SortingLayerID: -157357427
+  m_SortingLayer: 4
+  m_SortingOrder: 20
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -908,7 +908,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7198775710397288031}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -916,7 +916,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 675dce08f69f24f48aeb764c3331b530, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
