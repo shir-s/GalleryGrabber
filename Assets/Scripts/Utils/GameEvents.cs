@@ -8,7 +8,7 @@ namespace Utils
         public static Action PlayerWon;
         public static Action RestartLevel;
         public static Action StartLevel;
-        public static Action GameOver;
+        public static Action<GameOverReason> GameOver;
         public static Action<int,int> PlayerHealthChanged;
         public static Action <int> OnDirtCollected;
         public static Action OnDirtSpawned;

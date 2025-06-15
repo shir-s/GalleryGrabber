@@ -25,7 +25,7 @@ namespace Enemies.Guards
             {
                 if (CompareTag("Guard"))
                 {
-                    GameEvents.GameOver?.Invoke();
+                    GameEvents.GameOver?.Invoke(GameOverReason.OutOfLives);
                 }
                 Debug.Log("Player or stealable object detected during theft (enter)!");
                 GameEvents.PlayerLostLife?.Invoke();

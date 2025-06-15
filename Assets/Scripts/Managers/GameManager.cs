@@ -12,6 +12,7 @@ namespace Managers
         [SerializeField] internal int maxDirt = 20;
         
         public DirtPool DirtPool => dirtPool;
+        public GameOverReason LastGameOverReason { get; private set; }
         
         private void OnEnable()
         {
@@ -47,9 +48,10 @@ namespace Managers
             dirtSpawner.InitialSpawn();
         }
         
-        private void HandleGameOver()
+        private void HandleGameOver(GameOverReason reason)
         {
             //TODO: change this to a proper game over screen
+            LastGameOverReason = reason;
             Debug.Log("Game Over!");
         }
     }

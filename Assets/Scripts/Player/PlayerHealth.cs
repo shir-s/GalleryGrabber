@@ -21,7 +21,7 @@ namespace Player
 
             if (currentHealth <= 0)
             {
-                GameEvents.GameOver?.Invoke();
+                GameEvents.GameOver?.Invoke(GameOverReason.OutOfLives);
             }
         }
     }

@@ -29,7 +29,7 @@ namespace Managers
             currentCleanliness = Mathf.Max(0f, currentCleanliness - _dirtPercent);
             GameEvents.OnCleanlinessChanged?.Invoke(currentCleanliness);
             if (currentCleanliness >= 1f)
-                GameEvents.GameOver?.Invoke();
+                GameEvents.GameOver?.Invoke(GameOverReason.TooMuchDirt);
         }
 
         private void HandleDirtSpawned()
@@ -37,7 +37,7 @@ namespace Managers
             currentCleanliness = Mathf.Min(1f, currentCleanliness + _dirtPercent);
             GameEvents.OnCleanlinessChanged?.Invoke(currentCleanliness);
             if (currentCleanliness >= 1f)
-                GameEvents.GameOver?.Invoke();
+                GameEvents.GameOver?.Invoke(GameOverReason.TooMuchDirt);
         }
     }
 }

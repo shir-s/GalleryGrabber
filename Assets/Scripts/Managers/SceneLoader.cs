@@ -27,7 +27,10 @@ namespace Managers
             }
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
-                EndGame();
+                LoadGamePlay();
+            }
+            {
+                EndGame(GameOverReason.OutOfLives);
             }
         }
 
@@ -54,7 +57,7 @@ namespace Managers
             SceneManager.LoadScene(OpeningSceneName);
         }
 
-        private void EndGame()
+        private void EndGame(GameOverReason reason)
         {
             //GameEvents.GameOver?.Invoke();
             SceneManager.LoadScene(LosingSceneName);
