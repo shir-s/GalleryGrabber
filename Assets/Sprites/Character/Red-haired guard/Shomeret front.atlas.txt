@@ -1,0 +1,52 @@
+Shomeret front.png
+size:396,523
+filter:Linear,Linear
+pma:true
+Alarmed eyes
+bounds:2,23,119,34
+offsets:175,294,502,502
+Bangs
+bounds:255,323,198,94
+offsets:133,303,502,502
+rotate:90
+Body
+bounds:2,344,251,177
+offsets:107,161,502,502
+Closed Eyes
+bounds:380,394,127,11
+offsets:173,310,502,502
+rotate:90
+Eyes
+bounds:351,394,127,27
+offsets:173,294,502,502
+rotate:90
+Face
+bounds:80,149,193,122
+offsets:138,237,502,502
+rotate:90
+Ipolets
+bounds:2,67,275,76
+offsets:97,252,502,502
+rotate:90
+Left Hand
+bounds:204,110,87,211
+offsets:332,109,502,502
+Left Leg
+bounds:293,87,75,96
+offsets:253,109,502,502
+rotate:90
+Ponytail
+bounds:80,59,88,101
+offsets:178,340,502,502
+rotate:90
+Right Hand
+bounds:293,164,101,157
+offsets:32,163,502,502
+Right Palm
+bounds:183,15,93,94
+offsets:47,136,502,502
+rotate:90
+Right leg
+bounds:279,2,83,90
+offsets:139,109,502,502
+rotate:90

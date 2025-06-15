@@ -30,7 +30,7 @@ namespace Managers
                 LoadGamePlay();
             }
             {
-                EndGame(GameOverReason.OutOfLives);
+                //EndGame(GameOverReason.OutOfLives);
             }
         }
 

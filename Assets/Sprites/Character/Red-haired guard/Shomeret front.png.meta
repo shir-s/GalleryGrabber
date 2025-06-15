@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: e739c73bcbc094ceeb2b802efadda59c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 844909072608588146
+    second: Shomeret front_0
+  - first:
+      213: -2494910224788091182
+    second: Shomeret front_1
+  - first:
+      213: -7877921296329350854
+    second: Shomeret front_2
+  - first:
+      213: -3566478585756592201
+    second: Shomeret front_3
+  - first:
+      213: -7794661149936272822
+    second: Shomeret front_4
+  - first:
+      213: -1867066321698964911
+    second: Shomeret front_5
+  - first:
+      213: 2288173665996595384
+    second: Shomeret front_6
+  - first:
+      213: -987662176553326279
+    second: Shomeret front_7
+  - first:
+      213: 3255473985136477125
+    second: Shomeret front_8
+  - first:
+      213: -1678445052681728499
+    second: Shomeret front_9
+  - first:
+      213: -4776495326158217820
+    second: Shomeret front_10
+  - first:
+      213: -5103544306604837064
+    second: Shomeret front_11
+  - first:
+      213: 7843609253297863192
+    second: Shomeret front_12
+  - first:
+      213: -2576002765774622489
+    second: Shomeret front_13
+  - first:
+      213: 2466956648038453746
+    second: Shomeret front_14
+  - first:
+      213: 4482770968736345823
+    second: Shomeret front_15
+  - first:
+      213: 2561698423417172018
+    second: Shomeret front_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 0
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Shomeret front_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 465
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 271f6543358b9bb00800000000000000
+      internalID: 844909072608588146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shomeret front_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 466
+        width: 40
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de04018e5c406dd0800000000000000
+      internalID: -2494910224788091182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shomeret front_2
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 414
+        width: 96
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a31edcbe1500ca290800000000000000
+      internalID: -7877921296329350854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shomeret front_3
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 439
+        width: 88
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b7d0fc4f92518ec0800000000000000
+      internalID: -3566478585756592201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shomeret front_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 420
+        width: 77
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ab2856bfcc3d390800000000000000
+      internalID: -7794661149936272822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shomeret front_5
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 375
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15ab9039219d616e0800000000000000
+      internalID: -1867066321698964911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shomeret front_6
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 361
+        width: 93
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b0612273d931cf10800000000000000
+      internalID: 2288173665996595384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shomeret front_7
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 180
+        width: 78
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9392378bb7e1b42f0800000000000000
+      internalID: -987662176553326279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shomeret front_8
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 180
+        width: 119
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c3c59b5754cd2d20800000000000000
+      internalID: 3255473985136477125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shomeret front_9
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 202
+        width: 86
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0ec4eb0e17f4b8e0800000000000000
+      internalID: -1678445052681728499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shomeret front_10
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 203
+        width: 96
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ad960dceca76bdb0800000000000000
+      internalID: -4776495326158217820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shomeret front_11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 253
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837f95d2e719c29b0800000000000000
+      internalID: -5103544306604837064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shomeret front_12
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1
+        width: 96
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81a39c30f091adc60800000000000000
+      internalID: 7843609253297863192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shomeret front_13
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 81
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e0749df123304cd0800000000000000
+      internalID: -2576002765774622489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shomeret front_14
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 81
+        width: 13
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f1de9a30046c3220800000000000000
+      internalID: 2466956648038453746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shomeret front_15
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1
+        width: 29
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdea6f00270063e30800000000000000
+      internalID: 4482770968736345823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shomeret front_16
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1
+        width: 13
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2307575c42bfc8320800000000000000
+      internalID: 2561698423417172018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Shomeret front_0: 844909072608588146
+      Shomeret front_1: -2494910224788091182
+      Shomeret front_10: -4776495326158217820
+      Shomeret front_11: -5103544306604837064
+      Shomeret front_12: 7843609253297863192
+      Shomeret front_13: -2576002765774622489
+      Shomeret front_14: 2466956648038453746
+      Shomeret front_15: 4482770968736345823
+      Shomeret front_16: 2561698423417172018
+      Shomeret front_2: -7877921296329350854
+      Shomeret front_3: -3566478585756592201
+      Shomeret front_4: -7794661149936272822
+      Shomeret front_5: -1867066321698964911
+      Shomeret front_6: 2288173665996595384
+      Shomeret front_7: -987662176553326279
+      Shomeret front_8: 3255473985136477125
+      Shomeret front_9: -1678445052681728499
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

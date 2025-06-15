@@ -1,0 +1,43 @@
+Shomeret.png
+size:455,520
+filter:Linear,Linear
+pma:true
+Body
+bounds:2,348,251,170
+offsets:93,158,502,502
+Eyes
+bounds:202,70,122,31
+offsets:221,292,502,502
+rotate:90
+Face
+bounds:2,13,198,179
+offsets:162,235,502,502
+Left Hand
+bounds:2,194,249,152
+offsets:207,148,502,502
+Left Leg
+bounds:344,85,86,79
+offsets:215,109,502,502
+Ponytail
+bounds:235,74,90,107
+offsets:133,344,502,502
+rotate:90
+Right Hand
+bounds:255,283,105,198
+offsets:51,111,502,502
+rotate:90
+Right Leg
+bounds:350,2,82,81
+offsets:141,110,502,502
+alarmed eyes
+bounds:235,33,113,39
+offsets:228,294,502,502
+bangs
+bounds:253,166,198,115
+offsets:161,298,500,500
+closed eyes
+bounds:202,15,122,16
+offsets:221,307,502,502
+face no bangs
+bounds:255,390,191,128
+offsets:168,234,500,500

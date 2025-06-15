@@ -1,0 +1,37 @@
+Shomeret back.png
+size:671,270
+filter:Linear,Linear
+pma:true
+Bangs
+bounds:255,110,198,158
+offsets:171,239,502,502
+Body
+bounds:2,91,251,177
+offsets:144,161,502,502
+Ipolets
+bounds:2,13,275,76
+offsets:130,252,502,502
+Left Hand
+bounds:455,181,87,214
+offsets:83,108,502,502
+rotate:90
+Left Leg
+bounds:452,14,75,95
+offsets:175,110,502,502
+rotate:90
+Ponytail
+bounds:455,91,88,101
+offsets:236,340,502,502
+rotate:90
+Right Hand
+bounds:279,10,98,171
+offsets:371,149,502,502
+rotate:90
+Right Leg
+bounds:549,2,82,90
+offsets:281,109,502,502
+rotate:90
+Right Palm
+bounds:558,86,93,94
+offsets:362,136,502,502
+rotate:90
