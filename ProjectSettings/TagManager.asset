@@ -19,8 +19,8 @@ TagManager:
   - Room
   - Guard
   - combineLayer
-  - 
-  - 
+  - Dirt
+  - MiniMapOnly
   - 
   - 
   - 
@@ -58,6 +58,9 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 1214694507
+    locked: 0
+  - name: MiniMapOnly
+    uniqueID: 456447183
     locked: 0
   m_RenderingLayers:
   - Default
