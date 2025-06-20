@@ -9,7 +9,7 @@ namespace Managers
         [SerializeField] internal Collider2D roomCollider;
         [SerializeField] private DirtSpawner dirtSpawner;
         [SerializeField] private DirtPool dirtPool;
-        [SerializeField] internal int maxDirt = 20;
+        [SerializeField] internal int maxDirt = 50;
         
         public DirtPool DirtPool => dirtPool;
         public GameOverReason LastGameOverReason { get; private set; }
