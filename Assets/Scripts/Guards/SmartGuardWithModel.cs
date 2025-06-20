@@ -29,6 +29,9 @@ public class SmartGuardWithModel : MonoBehaviour
     private float pauseTimer = 0f;
     public float pauseDuration = 2f;
 
+    private bool isInAlert = false;
+    private Coroutine alertRoutine = null;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -45,10 +48,10 @@ public class SmartGuardWithModel : MonoBehaviour
 
     void Update()
     {
-        if (isPaused)
+        if (isPaused || isInAlert)
         {
             pauseTimer -= Time.deltaTime;
-            if (pauseTimer <= 0f)
+            if (pauseTimer <= 0f && isPaused)
             {
                 isPaused = false;
                 agent.isStopped = false;
@@ -58,8 +61,6 @@ public class SmartGuardWithModel : MonoBehaviour
                 else if (state == State.Traveling)
                     agent.SetDestination(currentTargetRoom.transform.position);
             }
-
-            SetIdleAnimation(); // maintain idle during pause
             return;
         }
 
@@ -84,15 +85,11 @@ public class SmartGuardWithModel : MonoBehaviour
         if (Mathf.Abs(velocity.x) > Mathf.Abs(velocity.y))
         {
             ShowOnlyModel(sideModel);
-            sideModel.transform.localScale = velocity.x > 0 ?
-                new Vector3(1, 1, 1) : new Vector3(-1, 1, 1);
+            sideModel.transform.localScale = velocity.x > 0 ? Vector3.one : new Vector3(-1, 1, 1);
         }
         else
         {
-            if (velocity.y > 0)
-                ShowOnlyModel(backModel);
-            else
-                ShowOnlyModel(frontModel);
+            ShowOnlyModel(velocity.y > 0 ? backModel : frontModel);
         }
     }
 
@@ -106,26 +103,14 @@ public class SmartGuardWithModel : MonoBehaviour
     void SetAnimation(SkeletonAnimation anim, string animationName)
     {
         if (anim != null && anim.AnimationName != animationName)
-        {
             anim.AnimationName = animationName;
-        }
-    }
-
-    void SetIdleAnimation()
-    {
-        if (sideModel.activeSelf)
-            SetAnimation(sideAnim, "idle side");
-        else if (backModel.activeSelf)
-            SetAnimation(backAnim, "idle back");
-        else if (frontModel.activeSelf)
-            SetAnimation(frontAnim, "idle front");
     }
 
     IEnumerator StateLoop()
     {
         while (true)
         {
-            if (!isPaused)
+            if (!isPaused && !isInAlert)
             {
                 switch (state)
                 {
@@ -148,7 +133,6 @@ public class SmartGuardWithModel : MonoBehaviour
                         {
                             patrolIndex++;
                             Room room = guardTracker.currentRoom;
-
                             if (room != null && room.patrolPoints != null &&
                                 patrolIndex < room.patrolPoints.Length)
                             {
@@ -162,7 +146,6 @@ public class SmartGuardWithModel : MonoBehaviour
                         break;
                 }
             }
-
             yield return null;
         }
     }
@@ -195,11 +178,61 @@ public class SmartGuardWithModel : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && !isPaused)
+        if (other.CompareTag("Player") && !isPaused && !isInAlert)
         {
             isPaused = true;
             pauseTimer = pauseDuration;
             agent.isStopped = true;
         }
+    }
+
+    public void ReactToStolenItem()
+    {
+        if (!isInAlert && alertRoutine == null)
+        {
+            alertRoutine = StartCoroutine(AlarmThenRunRoutine());
+        }
+    }
+
+    private IEnumerator AlarmThenRunRoutine()
+    {
+        isInAlert = true;
+        agent.isStopped = true;
+
+        string direction = GetCurrentDirectionName();
+
+        SetAnimationForDirection("alarmed", direction);
+        yield return new WaitForSeconds(2f);
+
+        float originalSpeed = agent.speed;
+        agent.speed *= 1.5f;
+        agent.isStopped = false;
+        SetAnimationForDirection("run", direction);
+        yield return new WaitForSeconds(5f);
+
+        agent.speed = originalSpeed;
+        isInAlert = false;
+        alertRoutine = null;
+    }
+
+    private void SetAnimationForDirection(string action, string direction)
+    {
+        string animName = $"{action} {direction}";
+
+        if (direction == "front")
+            SetAnimation(frontAnim, animName);
+        else if (direction == "back")
+            SetAnimation(backAnim, animName);
+        else
+            SetAnimation(sideAnim, animName);
+    }
+
+    private string GetCurrentDirectionName()
+    {
+        if (frontModel.activeSelf)
+            return "front";
+        if (backModel.activeSelf)
+            return "back";
+        return "side";
     }
 }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Stealable
   - Guard
+  - StolenGhost
   layers:
   - Default
   - TransparentFX

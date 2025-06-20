@@ -7,23 +7,22 @@ namespace Stealable
 {
     public class StealableItem : MonoBehaviour
     {
-        [SerializeField] private float stealDuration = 2f; 
-        private float stealProgress = 0f;
-        private bool isPlayerNearby = false;
+        [SerializeField] private float stealDuration = 2f;
         [SerializeField] private int itemValue = 10;
+        [SerializeField] private Canvas progressCanvas;
+        [SerializeField] private Image progressCircle;
+
         private float _stealProgress = 0f;
-        private Collider2D[] _allColliders; 
         private bool _isPlayerNearby = false;
         private bool _isBeingStolen = false;
         private Transform _playerTransform;
-        
-        public Canvas progressCanvas;
-        public Image progressCircle; 
-        
+        private Collider2D[] _allColliders;
+
         private void Start()
         {
             if (progressCanvas != null)
                 progressCanvas.gameObject.SetActive(false);
+
             _allColliders = GetComponentsInChildren<Collider2D>();
         }
 
@@ -32,13 +31,14 @@ namespace Stealable
             if (!_isBeingStolen)
             {
                 _isBeingStolen = true;
-                if (progressCanvas != null)
-                    progressCanvas.gameObject.SetActive(true);
+                progressCanvas?.gameObject.SetActive(true);
             }
+
             if (_stealProgress < stealDuration)
             {
                 _stealProgress += deltaTime;
                 UpdateProgressUI();
+
                 if (_stealProgress >= stealDuration)
                 {
                     StealSuccess();
@@ -49,8 +49,7 @@ namespace Stealable
         public void StopSteal()
         {
             _isBeingStolen = false;
-            if (progressCanvas != null)
-                progressCanvas.gameObject.SetActive(false);
+            progressCanvas?.gameObject.SetActive(false);
             UpdateProgressUI();
         }
 
@@ -63,16 +62,14 @@ namespace Stealable
         private void StealSuccess()
         {
             _isBeingStolen = false;
-            if (progressCanvas != null)
-                progressCanvas.gameObject.SetActive(false);
-            
+            progressCanvas?.gameObject.SetActive(false);
+
             foreach (var col in _allColliders)
-            {
                 col.enabled = false;
-            }
-            
+
             transform.DOScale(transform.localScale * 0.7f, 0.15f).SetEase(Ease.OutBack);
-            GameEvents.StoleItem?.Invoke(itemValue);    
+            GameEvents.StoleItem?.Invoke(itemValue);
+
             if (_playerTransform != null)
             {
                 transform
@@ -80,12 +77,13 @@ namespace Stealable
                     .SetEase(Ease.InQuad)
                     .OnComplete(() =>
                     {
+                        SpawnGhostCollider();
                         Destroy(gameObject);
                     });
             }
             else
             {
-                // fallback
+                SpawnGhostCollider();
                 Destroy(gameObject);
             }
         }
@@ -107,15 +105,40 @@ namespace Stealable
                 StopSteal();
             }
         }
-        
-        public bool IsBeingStolen()
+
+        public bool IsBeingStolen() => _isBeingStolen;
+
+        public bool CanBeStolen() => _isPlayerNearby;
+
+        private void SpawnGhostCollider()
         {
-            return _isBeingStolen;
+            GameObject ghost = new GameObject("StolenGhost");
+            ghost.transform.position = transform.position;
+            ghost.transform.localScale = transform.localScale;
+
+            // Add Rigidbody2D to enable trigger-trigger interaction
+            Rigidbody2D rb = ghost.AddComponent<Rigidbody2D>();
+            rb.bodyType = RigidbodyType2D.Kinematic;
+            rb.simulated = true;
+            rb.useFullKinematicContacts = true; 
+
+            BoxCollider2D original = GetComponent<Collider2D>() as BoxCollider2D;
+            BoxCollider2D box = ghost.AddComponent<BoxCollider2D>();
+            box.isTrigger = true;
+
+            if (original != null)
+                box.size = original.size;
+            else
+                box.size = Vector2.one; // fallback
+
+            ghost.tag = "StolenGhost";
+
+            SpriteRenderer renderer = ghost.AddComponent<SpriteRenderer>();
+            renderer.color = new Color(1f, 1f, 1f, 0f);
+
+            // Destroy after some time (optional)
+            // Destroy(ghost, 30f);
         }
 
-        public bool CanBeStolen()
-        {
-            return _isPlayerNearby;
-        }
     }
 }
