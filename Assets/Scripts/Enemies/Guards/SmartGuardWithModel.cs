@@ -21,8 +21,13 @@ public class SmartGuardWithModel : MonoBehaviour
     private RoomTracker guardTracker;
     private Room currentTargetRoom;
     private int patrolIndex = 0;
+
     private enum State { Idle, Traveling, Patrolling }
     private State state = State.Idle;
+
+    private bool isPaused = false;
+    private float pauseTimer = 0f;
+    public float pauseDuration = 2f;
 
     void Start()
     {
@@ -40,6 +45,24 @@ public class SmartGuardWithModel : MonoBehaviour
 
     void Update()
     {
+        if (isPaused)
+        {
+            pauseTimer -= Time.deltaTime;
+            if (pauseTimer <= 0f)
+            {
+                isPaused = false;
+                agent.isStopped = false;
+
+                if (state == State.Patrolling)
+                    SetNextPatrolPoint();
+                else if (state == State.Traveling)
+                    agent.SetDestination(currentTargetRoom.transform.position);
+            }
+
+            SetIdleAnimation(); // maintain idle during pause
+            return;
+        }
+
         Vector3 velocity = agent.velocity;
         bool isMoving = velocity.sqrMagnitude > 0.01f;
 
@@ -49,17 +72,11 @@ public class SmartGuardWithModel : MonoBehaviour
         }
 
         if (sideModel.activeSelf)
-        {
             SetAnimation(sideAnim, isMoving ? "walking side" : "idle side");
-        }
         else if (backModel.activeSelf)
-        {
             SetAnimation(backAnim, isMoving ? "walking back" : "idle back");
-        }
         else if (frontModel.activeSelf)
-        {
             SetAnimation(frontAnim, isMoving ? "walking front" : "idle front");
-        }
     }
 
     void UpdateModelDirection(Vector3 velocity)
@@ -67,11 +84,8 @@ public class SmartGuardWithModel : MonoBehaviour
         if (Mathf.Abs(velocity.x) > Mathf.Abs(velocity.y))
         {
             ShowOnlyModel(sideModel);
-
-            if (velocity.x > 0)
-                sideModel.transform.localScale = new Vector3(1, 1, 1); // right
-            else
-                sideModel.transform.localScale = new Vector3(-1, 1, 1); // left
+            sideModel.transform.localScale = velocity.x > 0 ?
+                new Vector3(1, 1, 1) : new Vector3(-1, 1, 1);
         }
         else
         {
@@ -97,42 +111,56 @@ public class SmartGuardWithModel : MonoBehaviour
         }
     }
 
+    void SetIdleAnimation()
+    {
+        if (sideModel.activeSelf)
+            SetAnimation(sideAnim, "idle side");
+        else if (backModel.activeSelf)
+            SetAnimation(backAnim, "idle back");
+        else if (frontModel.activeSelf)
+            SetAnimation(frontAnim, "idle front");
+    }
+
     IEnumerator StateLoop()
     {
         while (true)
         {
-            switch (state)
+            if (!isPaused)
             {
-                case State.Idle:
-                    yield return new WaitForSeconds(checkInterval);
-                    ChooseTargetRoom();
-                    break;
+                switch (state)
+                {
+                    case State.Idle:
+                        yield return new WaitForSeconds(checkInterval);
+                        ChooseTargetRoom();
+                        break;
 
-                case State.Traveling:
-                    if (ReachedDestination())
-                    {
-                        state = State.Patrolling;
-                        patrolIndex = 0;
-                        SetNextPatrolPoint();
-                    }
-                    break;
-
-                case State.Patrolling:
-                    if (ReachedDestination())
-                    {
-                        patrolIndex++;
-                        Room room = guardTracker.currentRoom;
-
-                        if (room != null && room.patrolPoints != null && patrolIndex < room.patrolPoints.Length)
+                    case State.Traveling:
+                        if (ReachedDestination())
                         {
+                            state = State.Patrolling;
+                            patrolIndex = 0;
                             SetNextPatrolPoint();
                         }
-                        else
+                        break;
+
+                    case State.Patrolling:
+                        if (ReachedDestination())
                         {
-                            state = State.Idle;
+                            patrolIndex++;
+                            Room room = guardTracker.currentRoom;
+
+                            if (room != null && room.patrolPoints != null &&
+                                patrolIndex < room.patrolPoints.Length)
+                            {
+                                SetNextPatrolPoint();
+                            }
+                            else
+                            {
+                                state = State.Idle;
+                            }
                         }
-                    }
-                    break;
+                        break;
+                }
             }
 
             yield return null;
@@ -153,7 +181,8 @@ public class SmartGuardWithModel : MonoBehaviour
     void SetNextPatrolPoint()
     {
         Room room = guardTracker.currentRoom;
-        if (room != null && room.patrolPoints != null && patrolIndex < room.patrolPoints.Length)
+        if (room != null && room.patrolPoints != null &&
+            patrolIndex < room.patrolPoints.Length)
         {
             agent.SetDestination(room.patrolPoints[patrolIndex].position);
         }
@@ -162,5 +191,15 @@ public class SmartGuardWithModel : MonoBehaviour
     bool ReachedDestination()
     {
         return !agent.pathPending && agent.remainingDistance <= pointReachedThreshold;
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player") && !isPaused)
+        {
+            isPaused = true;
+            pauseTimer = pauseDuration;
+            agent.isStopped = true;
+        }
     }
 }

@@ -20,6 +20,10 @@ public class PatrolGuard : MonoBehaviour
     private NavMeshAgent agent;
     private int index = 0;
 
+    private bool isPaused = false;
+    private float pauseTimer = 0f;
+    public float pauseDuration = 2f;
+
     void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -40,6 +44,20 @@ public class PatrolGuard : MonoBehaviour
 
     void Update()
     {
+        if (isPaused)
+        {
+            pauseTimer -= Time.deltaTime;
+            if (pauseTimer <= 0f)
+            {
+                isPaused = false;
+                agent.isStopped = false;
+                agent.SetDestination(waypoints[index].position);
+            }
+
+            SetIdleAnimation(); // keep idle animation while paused
+            return;
+        }
+
         if (waypoints.Count == 0 || agent.pathPending) return;
 
         Vector3 velocity = agent.velocity;
@@ -70,12 +88,31 @@ public class PatrolGuard : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player") && !isPaused)
+        {
+            isPaused = true;
+            pauseTimer = pauseDuration;
+            agent.isStopped = true;
+        }
+    }
+
+    void SetIdleAnimation()
+    {
+        if (sideModel.activeSelf)
+            SetAnimation(sideAnim, "idle side");
+        else if (backModel.activeSelf)
+            SetAnimation(backAnim, "idle back");
+        else if (frontModel.activeSelf)
+            SetAnimation(frontAnim, "idle front");
+    }
+
     void UpdateModelDirection(Vector3 velocity)
     {
         if (Mathf.Abs(velocity.x) > Mathf.Abs(velocity.y))
         {
             ShowOnlyModel(sideModel);
-
             if (velocity.x > 0)
                 sideModel.transform.localScale = new Vector3(1, 1, 1); // right
             else
