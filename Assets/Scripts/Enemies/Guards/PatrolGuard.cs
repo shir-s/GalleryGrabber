@@ -1,19 +1,21 @@
 using UnityEngine;
 using UnityEngine.AI;
-
-using UnityEngine;
-using UnityEngine.AI;
 using System.Collections.Generic;
+using Spine.Unity;
 
 public class PatrolGuard : MonoBehaviour
 {
-    public List<string> roomNames; 
+    public List<string> roomNames;
     public float reachDistance = 0.2f;
 
     public GameObject frontModel;
     public GameObject backModel;
     public GameObject sideModel;
-    
+
+    private SkeletonAnimation frontAnim;
+    private SkeletonAnimation backAnim;
+    private SkeletonAnimation sideAnim;
+
     private List<Transform> waypoints = new List<Transform>();
     private NavMeshAgent agent;
     private int index = 0;
@@ -23,6 +25,10 @@ public class PatrolGuard : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
+
+        if (frontModel != null) frontAnim = frontModel.GetComponent<SkeletonAnimation>();
+        if (backModel != null) backAnim = backModel.GetComponent<SkeletonAnimation>();
+        if (sideModel != null) sideAnim = sideModel.GetComponent<SkeletonAnimation>();
     }
 
     void Start()
@@ -36,9 +42,25 @@ public class PatrolGuard : MonoBehaviour
     {
         if (waypoints.Count == 0 || agent.pathPending) return;
 
-        if (agent.velocity.sqrMagnitude > 0.01f)
+        Vector3 velocity = agent.velocity;
+        bool isMoving = velocity.sqrMagnitude > 0.01f;
+
+        if (isMoving)
         {
-            UpdateModelDirection(agent.velocity);
+            UpdateModelDirection(velocity);
+        }
+
+        if (sideModel.activeSelf)
+        {
+            SetAnimation(sideAnim, isMoving ? "walking side" : "idle side");
+        }
+        else if (backModel.activeSelf)
+        {
+            SetAnimation(backAnim, isMoving ? "walking back" : "idle back");
+        }
+        else if (frontModel.activeSelf)
+        {
+            SetAnimation(frontAnim, isMoving ? "walking front" : "idle front");
         }
 
         if (agent.remainingDistance <= reachDistance)
@@ -47,18 +69,17 @@ public class PatrolGuard : MonoBehaviour
             agent.SetDestination(waypoints[index].position);
         }
     }
-    
+
     void UpdateModelDirection(Vector3 velocity)
     {
         if (Mathf.Abs(velocity.x) > Mathf.Abs(velocity.y))
         {
             ShowOnlyModel(sideModel);
-            // sideModel.transform.localScale = new Vector3(
-            //     velocity.x > 0 ? 1 : -1, 1, 1
-            // );
-            sideModel.transform.localScale = new Vector3(
-                velocity.x > 0 ? -1 : 1, 1, 1
-            );
+
+            if (velocity.x > 0)
+                sideModel.transform.localScale = new Vector3(1, 1, 1); // right
+            else
+                sideModel.transform.localScale = new Vector3(-1, 1, 1); // left
         }
         else
         {
@@ -68,7 +89,15 @@ public class PatrolGuard : MonoBehaviour
                 ShowOnlyModel(frontModel);
         }
     }
-    
+
+    void SetAnimation(SkeletonAnimation anim, string animationName)
+    {
+        if (anim != null && anim.AnimationName != animationName)
+        {
+            anim.AnimationName = animationName;
+        }
+    }
+
     void ShowOnlyModel(GameObject modelToShow)
     {
         if (frontModel != null) frontModel.SetActive(modelToShow == frontModel);
