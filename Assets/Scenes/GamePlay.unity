@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c3a3b51b284de89ee29f2391cc4c99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialPoolSize: 25
+  initialPoolSize: 60
   prefab: {fileID: 3500181107333333716, guid: 53701bda740d845678cb269ec13596d3, type: 3}
 --- !u!4 &12856760
 Transform:
@@ -10888,7 +10888,7 @@ MonoBehaviour:
   roomCollider: {fileID: 467008819}
   dirtSpawner: {fileID: 12856758}
   dirtPool: {fileID: 12856759}
-  maxDirt: 20
+  maxDirt: 50
 --- !u!4 &1607619675
 Transform:
   m_ObjectHideFlags: 0
