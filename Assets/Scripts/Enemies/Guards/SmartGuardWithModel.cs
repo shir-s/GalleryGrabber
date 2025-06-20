@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 using System.Collections;
+using Spine.Unity;
 
 public class SmartGuardWithModel : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class SmartGuardWithModel : MonoBehaviour
     public GameObject frontModel;
     public GameObject backModel;
     public GameObject sideModel;
+
+    private SkeletonAnimation frontAnim;
+    private SkeletonAnimation backAnim;
+    private SkeletonAnimation sideAnim;
 
     private NavMeshAgent agent;
     private RoomTracker guardTracker;
@@ -26,15 +31,34 @@ public class SmartGuardWithModel : MonoBehaviour
         agent.updateRotation = false;
         agent.updateUpAxis = false;
 
+        frontAnim = frontModel.GetComponent<SkeletonAnimation>();
+        backAnim = backModel.GetComponent<SkeletonAnimation>();
+        sideAnim = sideModel.GetComponent<SkeletonAnimation>();
+
         StartCoroutine(StateLoop());
     }
 
     void Update()
     {
         Vector3 velocity = agent.velocity;
-        if (velocity.sqrMagnitude > 0.01f)
+        bool isMoving = velocity.sqrMagnitude > 0.01f;
+
+        if (isMoving)
         {
             UpdateModelDirection(velocity);
+        }
+
+        if (sideModel.activeSelf)
+        {
+            SetAnimation(sideAnim, isMoving ? "walking side" : "idle side");
+        }
+        else if (backModel.activeSelf)
+        {
+            SetAnimation(backAnim, isMoving ? "walking back" : "idle back");
+        }
+        else if (frontModel.activeSelf)
+        {
+            SetAnimation(frontAnim, isMoving ? "walking front" : "idle front");
         }
     }
 
@@ -45,10 +69,9 @@ public class SmartGuardWithModel : MonoBehaviour
             ShowOnlyModel(sideModel);
 
             if (velocity.x > 0)
-                sideModel.transform.localScale = new Vector3(-1, 1, 1); // שמאלה
+                sideModel.transform.localScale = new Vector3(1, 1, 1); // right
             else
-                sideModel.transform.localScale = new Vector3(1, 1, 1); // ימינה
-
+                sideModel.transform.localScale = new Vector3(-1, 1, 1); // left
         }
         else
         {
@@ -64,6 +87,14 @@ public class SmartGuardWithModel : MonoBehaviour
         frontModel.SetActive(modelToShow == frontModel);
         backModel.SetActive(modelToShow == backModel);
         sideModel.SetActive(modelToShow == sideModel);
+    }
+
+    void SetAnimation(SkeletonAnimation anim, string animationName)
+    {
+        if (anim != null && anim.AnimationName != animationName)
+        {
+            anim.AnimationName = animationName;
+        }
     }
 
     IEnumerator StateLoop()

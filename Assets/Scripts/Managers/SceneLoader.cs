@@ -29,6 +29,7 @@ namespace Managers
             {
                 LoadGamePlay();
             }
+            if (Input.GetKeyDown(KeyCode.Alpha3))
             {
                 //EndGame(GameOverReason.OutOfLives);
             }
