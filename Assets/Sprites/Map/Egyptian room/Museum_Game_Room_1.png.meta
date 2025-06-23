@@ -1,0 +1,617 @@
+fileFormatVersion: 2
+guid: 905214ec8ccb641b9b0d82db7e9e552e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5053870727810096102
+    second: Museum_Game_Room_1_0
+  - first:
+      213: 3959422667781083756
+    second: Museum_Game_Room_1_1
+  - first:
+      213: -7014085035834049260
+    second: Museum_Game_Room_1_2
+  - first:
+      213: 8208204966303045361
+    second: Museum_Game_Room_1_3
+  - first:
+      213: -7003701180186649847
+    second: Museum_Game_Room_1_4
+  - first:
+      213: -6282815024884981067
+    second: Museum_Game_Room_1_5
+  - first:
+      213: -4721045869620342605
+    second: Museum_Game_Room_1_6
+  - first:
+      213: -6550134609326697135
+    second: Museum_Game_Room_1_7
+  - first:
+      213: -5885185272319432174
+    second: Museum_Game_Room_1_8
+  - first:
+      213: -3067292924382042905
+    second: Museum_Game_Room_1_9
+  - first:
+      213: -2064480335805273452
+    second: Museum_Game_Room_1_10
+  - first:
+      213: -6212464300556532300
+    second: Museum_Game_Room_1_11
+  - first:
+      213: 5962352592289559511
+    second: Museum_Game_Room_1_12
+  - first:
+      213: 4303090887525295679
+    second: Museum_Game_Room_1_13
+  - first:
+      213: 4317931619443404485
+    second: Museum_Game_Room_1_14
+  - first:
+      213: 8288468437283301175
+    second: Museum_Game_Room_1_15
+  - first:
+      213: -7722175692712775178
+    second: Museum_Game_Room_1_16
+  - first:
+      213: -6812040245643804918
+    second: Museum_Game_Room_1_17
+  - first:
+      213: 7981481731294968205
+    second: Museum_Game_Room_1_18
+  - first:
+      213: 8955913495789654678
+    second: Museum_Game_Room_1_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Museum_Game_Room_1_0
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 2147
+        width: 98
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb9ddf76a4f22640800000000000000
+      internalID: 5053870727810096102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Museum_Game_Room_1_1
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 2023
+        width: 122
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6298bc30f1b2f630800000000000000
+      internalID: 3959422667781083756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Museum_Game_Room_1_2
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 2136
+        width: 98
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41d7ab672d6f8ae90800000000000000
+      internalID: -7014085035834049260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Museum_Game_Room_1_3
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 2096
+        width: 98
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f6171c8de669e170800000000000000
+      internalID: 8208204966303045361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Museum_Game_Room_1_4
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 2090
+        width: 98
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90b9df142eaddce90800000000000000
+      internalID: -7003701180186649847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Museum_Game_Room_1_5
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1891
+        width: 64
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b26e3cc505fec8a0800000000000000
+      internalID: -6282815024884981067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Museum_Game_Room_1_6
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1642
+        width: 134
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b054f47bc97b7eb0800000000000000
+      internalID: -4721045869620342605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Museum_Game_Room_1_7
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 1671
+        width: 15
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1551714e64f3915a0800000000000000
+      internalID: -6550134609326697135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Museum_Game_Room_1_8
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1187
+        width: 290
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21a2a060d2f935ea0800000000000000
+      internalID: -5885185272319432174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Museum_Game_Room_1_9
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 1374
+        width: 82
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e4a3242659ce65d0800000000000000
+      internalID: -3067292924382042905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Museum_Game_Room_1_10
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 817
+        width: 106
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a2c8a921e7953e0800000000000000
+      internalID: -2064480335805273452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Museum_Game_Room_1_11
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 933
+        width: 68
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b5488932a4e8c9a0800000000000000
+      internalID: -6212464300556532300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Museum_Game_Room_1_12
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 901
+        width: 74
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d37c01c7188eb250800000000000000
+      internalID: 5962352592289559511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Museum_Game_Room_1_13
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 710
+        width: 89
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f366a2b0d56a7bb30800000000000000
+      internalID: 4303090887525295679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Museum_Game_Room_1_14
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 714
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cee9553eef5ceb30800000000000000
+      internalID: 4317931619443404485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Museum_Game_Room_1_15
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 703
+        width: 89
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 737ee48212e860370800000000000000
+      internalID: 8288468437283301175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Museum_Game_Room_1_16
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 685
+        width: 33
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f1f2be0f1255d490800000000000000
+      internalID: -7722175692712775178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Museum_Game_Room_1_17
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 529
+        width: 84
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0f7cb20d75c671a0800000000000000
+      internalID: -6812040245643804918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Museum_Game_Room_1_18
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 650
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d893b1fc85be3ce60800000000000000
+      internalID: 7981481731294968205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Museum_Game_Room_1_19
+      rect:
+        serializedVersion: 2
+        x: 2084
+        y: 21
+        width: 151
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6925babbfdbc94c70800000000000000
+      internalID: 8955913495789654678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
