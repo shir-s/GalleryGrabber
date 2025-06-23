@@ -467,7 +467,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 786255625}
   m_CullTransparentMesh: 1
---- !u!1 &832770288
+--- !u!1 &820565333
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -475,22 +475,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 832770290}
-  - component: {fileID: 832770289}
+  - component: {fileID: 820565335}
+  - component: {fileID: 820565334}
   m_Layer: 0
-  m_Name: you got fired
+  m_Name: Prison ending
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!212 &832770289
+--- !u!212 &820565334
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 832770288}
+  m_GameObject: {fileID: 820565333}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -528,7 +528,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f59ebc388ee774440b964780b972af75, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 74a9b463268504b66836a17a442b00bf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -539,17 +539,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &832770290
+--- !u!4 &820565335
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 832770288}
+  m_GameObject: {fileID: 820565333}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3212, y: 0, z: 0}
-  m_LocalScale: {x: 0.9665, y: 0.9665, z: 0.9665}
+  m_LocalPosition: {x: -0.361, y: 0, z: 0}
+  m_LocalScale: {x: 0.9624, y: 0.9624, z: 0.9624}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1479,4 +1479,4 @@ SceneRoots:
   - {fileID: 1256313802}
   - {fileID: 1383950778}
   - {fileID: 1914065765}
-  - {fileID: 832770290}
+  - {fileID: 820565335}
