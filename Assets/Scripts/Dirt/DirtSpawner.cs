@@ -13,7 +13,7 @@ namespace Dirt
         [SerializeField] private LayerMask forbiddenLayer; 
         [SerializeField] private float spawnRadius = 0.3f;
         [SerializeField] private float dirtSpawnInterval = 10f;
-        
+        [SerializeField] private Sprite [] dirtSprites;
         private DirtPool _dirtPool;
         private Collider2D _roomCollider;
         private Coroutine _spawnRoutine;
@@ -79,6 +79,9 @@ namespace Dirt
             if (spawnPosition != Vector2.zero)
             {
                 var dirt = _dirtPool.Get();
+                //change dirt sprite
+                int randomIndex = Random.Range(0, dirtSprites.Length);
+                dirt.GetComponent<SpriteRenderer>().sprite = dirtSprites[randomIndex];
                 if (dirt != null)
                 {
                     dirt.transform.position = spawnPosition;
