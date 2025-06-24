@@ -241,6 +241,7 @@ MonoBehaviour:
     m_Bits: 64
   spawnRadius: 0.3
   dirtSpawnInterval: 1.5
+  dirtSprites: []
 --- !u!114 &12856759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9400,6 +9401,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 291200126}
+    - target: {fileID: 4865164080426815987, guid: 8c20740a126b89647a922f24e8adaab2, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5166969283902836464, guid: 8c20740a126b89647a922f24e8adaab2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.49

@@ -609,7 +609,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Museum_Game_Room_1_0: 5053870727810096102
+      Museum_Game_Room_1_1: 3959422667781083756
+      Museum_Game_Room_1_10: -2064480335805273452
+      Museum_Game_Room_1_11: -6212464300556532300
+      Museum_Game_Room_1_12: 5962352592289559511
+      Museum_Game_Room_1_13: 4303090887525295679
+      Museum_Game_Room_1_14: 4317931619443404485
+      Museum_Game_Room_1_15: 8288468437283301175
+      Museum_Game_Room_1_16: -7722175692712775178
+      Museum_Game_Room_1_17: -6812040245643804918
+      Museum_Game_Room_1_18: 7981481731294968205
+      Museum_Game_Room_1_19: 8955913495789654678
+      Museum_Game_Room_1_2: -7014085035834049260
+      Museum_Game_Room_1_3: 8208204966303045361
+      Museum_Game_Room_1_4: -7003701180186649847
+      Museum_Game_Room_1_5: -6282815024884981067
+      Museum_Game_Room_1_6: -4721045869620342605
+      Museum_Game_Room_1_7: -6550134609326697135
+      Museum_Game_Room_1_8: -5885185272319432174
+      Museum_Game_Room_1_9: -3067292924382042905
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

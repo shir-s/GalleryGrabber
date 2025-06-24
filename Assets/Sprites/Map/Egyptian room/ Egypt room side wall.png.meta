@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "\_Egypt room side wall_0": -8641909733774423639
+      "\_Egypt room side wall_1": 2666684686612111838
+      "\_Egypt room side wall_2": 6791102632285077936
+      "\_Egypt room side wall_3": -7046856228558793842
+      "\_Egypt room side wall_4": 6860043031031298486
+      "\_Egypt room side wall_5": -4159828362020720418
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
