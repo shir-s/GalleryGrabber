@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Egypt Romm floor_0: -3224135725393648609
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

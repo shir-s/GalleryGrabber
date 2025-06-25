@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Egypt room top wall_0: -6379648902960430886
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

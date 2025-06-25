@@ -1,13 +1,61 @@
 fileFormatVersion: 2
-guid: 6e0938bf9942440bd890ac0dc88c185a
+guid: 87ec17f14a722437191df45ac8f6d2f5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7827841629290908656
-    second: Egypt flooor_0
+      213: 844909072608588146
+    second: Shomeret front_0
   - first:
-      213: 37815578530266328
-    second: Egypt flooor_1
+      213: -2494910224788091182
+    second: Shomeret front_1
+  - first:
+      213: -7877921296329350854
+    second: Shomeret front_2
+  - first:
+      213: -3566478585756592201
+    second: Shomeret front_3
+  - first:
+      213: -7794661149936272822
+    second: Shomeret front_4
+  - first:
+      213: -1867066321698964911
+    second: Shomeret front_5
+  - first:
+      213: 2288173665996595384
+    second: Shomeret front_6
+  - first:
+      213: -987662176553326279
+    second: Shomeret front_7
+  - first:
+      213: 3255473985136477125
+    second: Shomeret front_8
+  - first:
+      213: -1678445052681728499
+    second: Shomeret front_9
+  - first:
+      213: -4776495326158217820
+    second: Shomeret front_10
+  - first:
+      213: -5103544306604837064
+    second: Shomeret front_11
+  - first:
+      213: 7843609253297863192
+    second: Shomeret front_12
+  - first:
+      213: -2576002765774622489
+    second: Shomeret front_13
+  - first:
+      213: 2466956648038453746
+    second: Shomeret front_14
+  - first:
+      213: 4482770968736345823
+    second: Shomeret front_15
+  - first:
+      213: 2561698423417172018
+    second: Shomeret front_16
+  - first:
+      213: -3237013849001056332
+    second: Shomeret front_17
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -78,7 +126,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -91,7 +139,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -101,51 +149,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Egypt flooor_0
-      rect:
-        serializedVersion: 2
-        x: 1700
-        y: 2363
-        width: 8
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 014b918038bed5390800000000000000
-      internalID: -7827841629290908656
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Egypt flooor_1
-      rect:
-        serializedVersion: 2
-        x: 243
-        y: 105
-        width: 1904
-        height: 2080
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8dcb54d7119568000800000000000000
-      internalID: 37815578530266328
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
@@ -159,9 +163,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Egypt flooor_0: -7827841629290908656
-      Egypt flooor_1: 37815578530266328
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
