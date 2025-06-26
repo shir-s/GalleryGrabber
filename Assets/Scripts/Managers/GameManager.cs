@@ -54,5 +54,14 @@ namespace Managers
             LastGameOverReason = reason;
             Debug.Log("Game Over!");
         }
+        public void SetDirtSpawner(DirtSpawner dirtSpawner)
+        {
+            if (dirtSpawner == null)
+            {
+                Debug.LogError("DirtSpawner is null.");
+                return;
+            }
+            this.dirtSpawner = dirtSpawner;
+        }
     }
 }

@@ -43,6 +43,7 @@ namespace Dirt
             _initiallDirtToSpawn = GameManager.Instance.maxDirt /2;
             _roomCollider = GameManager.Instance.roomCollider;
             _dirtPool = GameManager.Instance.DirtPool;
+            GameManager.Instance.SetDirtSpawner(this);
         }
         
         private void StartSpawning()

@@ -44,10 +44,11 @@ namespace Managers
                     life1.enabled = false;
                     break;
             }
-            /*if (currentPlayerLives <= 0)
+            
+            if (currentPlayerLives <= 0)
             {
                 GameEvents.GameOver?.Invoke(GameOverReason.OutOfLives);
-            }*/
+            }
         }
         
     }

@@ -25,5 +25,12 @@ namespace Managers
                 
             }
         }
+        public void Update()
+        {
+            if( Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
+            {
+                GameEvents.RestartLevel?.Invoke();
+            }
+        }
     }
 }

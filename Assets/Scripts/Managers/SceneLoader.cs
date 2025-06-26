@@ -39,12 +39,14 @@ namespace Managers
         {
             GameEvents.GameOver += EndGame;
             GameEvents.PlayerWon += HandleWin;
+            GameEvents.RestartLevel += LoadGamePlay;
         }
         
         private void OnDisable()
         {
             GameEvents.GameOver -= EndGame;
             GameEvents.PlayerWon -= HandleWin;
+            GameEvents.RestartLevel -= LoadGamePlay;
         }
 
         public void LoadGamePlay()
