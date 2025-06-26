@@ -183,6 +183,9 @@ public class SmartGuardWithModel : MonoBehaviour
             isPaused = true;
             pauseTimer = pauseDuration;
             agent.isStopped = true;
+            
+            string direction = GetCurrentDirectionName();
+            SetAnimationForDirection("idle", direction);
         }
     }
 
