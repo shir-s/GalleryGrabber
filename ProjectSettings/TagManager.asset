@@ -21,9 +21,9 @@ TagManager:
   - combineLayer
   - Dirt
   - MiniMapOnly
-  - 
-  - 
-  - 
+  - Stealable
+  - Obstacle
+  - MuseumObjects
   - 
   - 
   - 

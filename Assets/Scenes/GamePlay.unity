@@ -235,14 +235,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forbiddenLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 33472
   spawnRadius: 0.3
-  dirtSpawnInterval: 8
+  dirtSpawnInterval: 1
   dirtSprites:
   - {fileID: -3290852245922610851, guid: ae85be37c6ae7496f9eee250741b59a5, type: 3}
   - {fileID: 3012676040849792702, guid: ae85be37c6ae7496f9eee250741b59a5, type: 3}
   - {fileID: 6449917628173441362, guid: ae85be37c6ae7496f9eee250741b59a5, type: 3}
   - {fileID: -6796708382725235392, guid: ae85be37c6ae7496f9eee250741b59a5, type: 3}
+  roomCollider: {fileID: 467008819}
 --- !u!114 &12856759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -794,6 +795,22 @@ PrefabInstance:
     - target: {fileID: 6832401317043310744, guid: 1f4842a3f26744e4caff56929935acb9, type: 3}
       propertyPath: m_Name
       value: Stealable ox
+      objectReference: {fileID: 0}
+    - target: {fileID: 7326910575090874440, guid: 1f4842a3f26744e4caff56929935acb9, type: 3}
+      propertyPath: m_Size.x
+      value: 3.4820108
+      objectReference: {fileID: 0}
+    - target: {fileID: 7326910575090874440, guid: 1f4842a3f26744e4caff56929935acb9, type: 3}
+      propertyPath: m_Size.y
+      value: 2.2993035
+      objectReference: {fileID: 0}
+    - target: {fileID: 7326910575090874440, guid: 1f4842a3f26744e4caff56929935acb9, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.27069426
+      objectReference: {fileID: 0}
+    - target: {fileID: 7326910575090874440, guid: 1f4842a3f26744e4caff56929935acb9, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.23118377
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1618,7 +1635,7 @@ GameObject:
   - component: {fileID: 139735198}
   - component: {fileID: 139735199}
   - component: {fileID: 139735200}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Greece_Room_Middle_Objets_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2001,7 +2018,7 @@ GameObject:
   - component: {fileID: 284284342}
   - component: {fileID: 284284341}
   - component: {fileID: 284284343}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Greece_Room_Objects_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4416,7 +4433,7 @@ GameObject:
   - component: {fileID: 537318819}
   - component: {fileID: 537318820}
   - component: {fileID: 537318821}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Greece_Room_Middle_Objets_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4940,7 +4957,7 @@ GameObject:
   - component: {fileID: 583544047}
   - component: {fileID: 583544048}
   - component: {fileID: 583544049}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Greece_Room_Middle_Objets_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5568,7 +5585,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4087
+    m_Bits: 61431
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -5826,7 +5843,7 @@ GameObject:
   - component: {fileID: 693488557}
   - component: {fileID: 693488556}
   - component: {fileID: 693488558}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Greece_Room_Middle tables_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6293,7 +6310,7 @@ GameObject:
   - component: {fileID: 728561775}
   - component: {fileID: 728561776}
   - component: {fileID: 728561777}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Greece_Room_Objects_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6922,7 +6939,7 @@ GameObject:
   - component: {fileID: 830996537}
   - component: {fileID: 830996538}
   - component: {fileID: 830996539}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Greece_Room_Objects_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7512,7 +7529,7 @@ GameObject:
   - component: {fileID: 892265717}
   - component: {fileID: 892265718}
   - component: {fileID: 892265719}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Greece_Room_Objects_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7984,7 +8001,7 @@ GameObject:
   - component: {fileID: 965267435}
   - component: {fileID: 965267437}
   - component: {fileID: 965267436}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Greece_Room_Objects_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8281,7 +8298,7 @@ GameObject:
   - component: {fileID: 996070036}
   - component: {fileID: 996070037}
   - component: {fileID: 996070038}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Greece_Room_Objects_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9091,7 +9108,7 @@ GameObject:
   - component: {fileID: 1052937861}
   - component: {fileID: 1052937862}
   - component: {fileID: 1052937863}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Greece_Room_Middle_Objets_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9420,7 +9437,7 @@ GameObject:
   - component: {fileID: 1072210484}
   - component: {fileID: 1072210485}
   - component: {fileID: 1072210486}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Greece_Room_Middle_Objets_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10026,7 +10043,7 @@ GameObject:
   - component: {fileID: 1137625595}
   - component: {fileID: 1137625594}
   - component: {fileID: 1137625596}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Greece_Room_Middle tables_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10192,7 +10209,7 @@ GameObject:
   - component: {fileID: 1145129561}
   - component: {fileID: 1145129560}
   - component: {fileID: 1145129562}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Greece_Room_Middle tables_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10357,7 +10374,7 @@ GameObject:
   - component: {fileID: 1175044132}
   - component: {fileID: 1175044131}
   - component: {fileID: 1175044133}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Greece_Room_Middle tables_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10520,7 +10537,7 @@ GameObject:
   - component: {fileID: 1203030651}
   - component: {fileID: 1203030652}
   - component: {fileID: 1203030653}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Greece_Room_Middle_Objets_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10753,7 +10770,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 8151
+    m_Bits: 65495
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: b06454444265b4f39938d2edb0de4674, type: 2}
   m_TargetDisplay: 0
@@ -10791,6 +10808,26 @@ PrefabInstance:
     - target: {fileID: 667086433868496368, guid: b844ff868df4046ae8c80d7e57495496, type: 3}
       propertyPath: m_Name
       value: Stealable big vase
+      objectReference: {fileID: 0}
+    - target: {fileID: 667086433868496368, guid: b844ff868df4046ae8c80d7e57495496, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622854679572273997, guid: b844ff868df4046ae8c80d7e57495496, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003144935642901595, guid: b844ff868df4046ae8c80d7e57495496, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2757061861848654139, guid: b844ff868df4046ae8c80d7e57495496, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409179102950412056, guid: b844ff868df4046ae8c80d7e57495496, type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7109995662857814352, guid: b844ff868df4046ae8c80d7e57495496, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11016,7 +11053,7 @@ GameObject:
   - component: {fileID: 1252430400}
   - component: {fileID: 1252430401}
   - component: {fileID: 1252430402}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Greece_Room_Objects_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11320,7 +11357,7 @@ GameObject:
   - component: {fileID: 1314134899}
   - component: {fileID: 1314134900}
   - component: {fileID: 1314134901}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Greece_Room_Middle_Objets_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11818,7 +11855,7 @@ GameObject:
   - component: {fileID: 1372920652}
   - component: {fileID: 1372920653}
   - component: {fileID: 1372920654}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Greece_Room_Middle_Objets_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13185,9 +13222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50896ea24e27450ca1bd65e95310a993, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomCollider: {fileID: 467008819}
-  dirtSpawner: {fileID: 12856758}
-  dirtPool: {fileID: 12856759}
   maxDirt: 50
 --- !u!4 &1607619675
 Transform:
@@ -15243,7 +15277,7 @@ GameObject:
   - component: {fileID: 1933391979}
   - component: {fileID: 1933391978}
   - component: {fileID: 1933391980}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Greece_Room_Objects_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16049,7 +16083,7 @@ GameObject:
   - component: {fileID: 2008936992}
   - component: {fileID: 2008936994}
   - component: {fileID: 2008936993}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Greece_Room_Objects_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16196,9 +16230,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1933391976}
     m_Modifications:
+    - target: {fileID: 1805043737562956176, guid: 8af24ff561344405881aa87b3f2d3b91, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631044620290739440, guid: 8af24ff561344405881aa87b3f2d3b91, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3011299751087029222, guid: 8af24ff561344405881aa87b3f2d3b91, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 3895111214200085851, guid: 8af24ff561344405881aa87b3f2d3b91, type: 3}
       propertyPath: m_Name
       value: Stealable plate Venus
+      objectReference: {fileID: 0}
+    - target: {fileID: 3895111214200085851, guid: 8af24ff561344405881aa87b3f2d3b91, type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6765541277540459003, guid: 8af24ff561344405881aa87b3f2d3b91, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16239,6 +16289,10 @@ PrefabInstance:
     - target: {fileID: 6765541277540459003, guid: 8af24ff561344405881aa87b3f2d3b91, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475477298557792179, guid: 8af24ff561344405881aa87b3f2d3b91, type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

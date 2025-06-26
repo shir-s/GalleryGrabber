@@ -14,8 +14,8 @@ namespace Dirt
         [SerializeField] private float spawnRadius = 0.3f;
         [SerializeField] private float dirtSpawnInterval = 10f;
         [SerializeField] private Sprite [] dirtSprites;
-        private DirtPool _dirtPool;
-        private Collider2D _roomCollider;
+        //private DirtPool _dirtPool;
+        [SerializeField] internal Collider2D roomCollider;
         private Coroutine _spawnRoutine;
         private int _initiallDirtToSpawn;
 
@@ -41,19 +41,22 @@ namespace Dirt
         private void Start()
         {
             _initiallDirtToSpawn = GameManager.Instance.maxDirt /2;
-            _roomCollider = GameManager.Instance.roomCollider;
-            _dirtPool = GameManager.Instance.DirtPool;
-            GameManager.Instance.SetDirtSpawner(this);
+            //_dirtPool = GameManager.Instance.DirtPool;
+            //GameManager.Instance.SetDirtSpawner(this);
         }
         
         private void StartSpawning()
         {
+            if (_spawnRoutine != null)
+            {
+                StopCoroutine(_spawnRoutine);
+            }
+            InitialSpawn();
             _spawnRoutine = StartCoroutine(SpawnDirtOverTime());
         }
         
         private IEnumerator SpawnDirtOverTime()
         {
-            // מחכה לפני ספאון ראשון (אפשר לשים 0 אם לא צריך)
             yield return new WaitForSeconds(dirtSpawnInterval);
 
             while (true)
@@ -75,11 +78,12 @@ namespace Dirt
 
         private void SpawnSingleDirt()
         {
-            Vector2 spawnPosition = FindValidPositionInRoom(_roomCollider);
+            Vector2 spawnPosition = FindValidPositionInRoom(roomCollider);
 
             if (spawnPosition != Vector2.zero)
             {
-                var dirt = _dirtPool.Get();
+                //var dirt = _dirtPool.Get();
+                var dirt = DirtPool.Instance.Get();
                 //change dirt sprite
                 int randomIndex = Random.Range(0, dirtSprites.Length);
                 dirt.GetComponent<SpriteRenderer>().sprite = dirtSprites[randomIndex];

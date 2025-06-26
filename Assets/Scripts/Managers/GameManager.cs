@@ -6,12 +6,8 @@ namespace Managers
 {
     public class GameManager : MonoSingleton<GameManager>
     {
-        [SerializeField] internal Collider2D roomCollider;
-        [SerializeField] private DirtSpawner dirtSpawner;
-        [SerializeField] private DirtPool dirtPool;
-        [SerializeField] internal int maxDirt = 50;
         
-        public DirtPool DirtPool => dirtPool;
+        [SerializeField] internal int maxDirt = 50;
         public GameOverReason LastGameOverReason { get; private set; }
         
         private void OnEnable()
@@ -26,26 +22,7 @@ namespace Managers
 
         private void Start()
         {
-            if (dirtSpawner == null)
-            {
-                Debug.LogError("DirtSpawner is not assigned in GameManager.");
-                return;
-            }
-            
-            if (roomCollider == null)
-            {
-                Debug.LogError("RoomCollider is not assigned in GameManager.");
-                return;
-            }
-
-            SetUpGame();
             GameEvents.StartLevel?.Invoke();
-        }
-
-        private void SetUpGame()
-        {
-            //dirtSpawner.SetUp(dirtPool, roomCollider);
-            dirtSpawner.InitialSpawn();
         }
         
         private void HandleGameOver(GameOverReason reason)
@@ -54,14 +31,6 @@ namespace Managers
             LastGameOverReason = reason;
             Debug.Log("Game Over!");
         }
-        public void SetDirtSpawner(DirtSpawner dirtSpawner)
-        {
-            if (dirtSpawner == null)
-            {
-                Debug.LogError("DirtSpawner is null.");
-                return;
-            }
-            this.dirtSpawner = dirtSpawner;
-        }
+        
     }
 }

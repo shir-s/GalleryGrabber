@@ -12,7 +12,8 @@ namespace Dirt
             if (collision.CompareTag("Player"))
             {
                 GameEvents.OnDirtCollected?.Invoke(1);
-                GameManager.Instance.DirtPool.Return(this);
+               // GameManager.Instance.DirtPool.Return(this);
+                DirtPool.Instance.Return(this);
             }
         }
 
