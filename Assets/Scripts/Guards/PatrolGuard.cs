@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using System.Collections.Generic;
@@ -23,6 +24,9 @@ public class PatrolGuard : MonoBehaviour
     private bool isPaused = false;
     private float pauseTimer = 0f;
     public float pauseDuration = 2f;
+
+    private bool isInAlert = false;
+    private Coroutine alertRoutine = null;
 
     void Awake()
     {
@@ -160,4 +164,72 @@ public class PatrolGuard : MonoBehaviour
             }
         }
     }
+    
+    public void ReactToStolenItem()
+    {
+        if (!isInAlert && alertRoutine == null)
+        {
+            // alertRoutine = StartCoroutine(AlarmThenResumeRoutine());
+            alertRoutine = StartCoroutine(AlarmThenRunRoutine());
+
+        }
+    }
+
+    // private IEnumerator AlarmThenResumeRoutine()
+    // {
+    //     isInAlert = true;
+    //     agent.isStopped = true;
+    //
+    //     string direction = GetCurrentDirectionName();
+    //     SetAnimationForDirection("alarmed", direction);
+    //
+    //     yield return new WaitForSeconds(2f);
+    //
+    //     agent.isStopped = false;
+    //     isInAlert = false;
+    //     alertRoutine = null;
+    // }
+    
+    private IEnumerator AlarmThenRunRoutine()
+    {
+        isInAlert = true;
+        agent.isStopped = true;
+
+        string direction = GetCurrentDirectionName();
+
+        SetAnimationForDirection("alarmed", direction);
+        yield return new WaitForSeconds(2f);
+
+        float originalSpeed = agent.speed;
+        agent.speed *= 1.5f;
+        agent.isStopped = false;
+        SetAnimationForDirection("run", direction);
+        yield return new WaitForSeconds(5f);
+
+        agent.speed = originalSpeed;
+        isInAlert = false;
+        alertRoutine = null;
+    }
+
+    private void SetAnimationForDirection(string action, string direction)
+    {
+        string animName = $"{action} {direction}";
+
+        if (direction == "front")
+            SetAnimation(frontAnim, animName);
+        else if (direction == "back")
+            SetAnimation(backAnim, animName);
+        else
+            SetAnimation(sideAnim, animName);
+    }
+
+    private string GetCurrentDirectionName()
+    {
+        if (frontModel != null && frontModel.activeSelf)
+            return "front";
+        if (backModel != null && backModel.activeSelf)
+            return "back";
+        return "side";
+    }
+
 }
