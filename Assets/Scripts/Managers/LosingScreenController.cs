@@ -11,8 +11,7 @@ namespace Managers
 
         private void Start()
         {
-            GameOverReason reason = GameManager.Instance.LastGameOverReason;
-
+            GameOverReason reason = GameManager.Instance.lastGameOverReason;
             tooMuchDirtPanel.SetActive(false);
             outOfLivesPanel.SetActive(false);
 

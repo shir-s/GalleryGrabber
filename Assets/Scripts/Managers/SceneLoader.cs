@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using Sound;
 using UnityEditor;
 using UnityEngine;
@@ -11,7 +12,7 @@ namespace Managers
     {
         private const string GamePlaySceneName = "GamePlay";
         private const string OpeningSceneName = "Opening Scene";
-        private const string LosingSceneName = "Losing Scene (prison)";
+        private const string LosingSceneName = "Losing Scene";
         private const string WinningSceneName = "Winning Scene";
 
 
@@ -62,9 +63,16 @@ namespace Managers
 
         private void EndGame(GameOverReason reason)
         {
-            //GameEvents.GameOver?.Invoke();
+            StartCoroutine(DelayedGameOver(reason));
+        }
+
+        private IEnumerator DelayedGameOver(GameOverReason reason)
+        {
+            GameManager.Instance.lastGameOverReason = reason;
+            yield return new WaitForSeconds(0.1f); 
             SceneManager.LoadScene(LosingSceneName);
         }
+        
         
         private void HandleWin()
         {
