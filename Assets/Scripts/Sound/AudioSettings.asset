@@ -40,7 +40,7 @@ MonoBehaviour:
   - name: Guard
     clip: {fileID: 8300000, guid: ef6ce3f8180914dda888b75f88be4dd6, type: 3}
     volume: 0.02
-    loop: 1
+    loop: 0
   - name: Jail1
     clip: {fileID: 8300000, guid: 6742a046ffd8643b393cee6f227f797a, type: 3}
     volume: 0.2
