@@ -11,6 +11,7 @@ namespace Managers
         [SerializeField] private Image life1;
         [SerializeField] private Image life2;
         [SerializeField] private Image life3;
+        [SerializeField] private Sprite redEye;
         
         private int currentPlayerLives;
 
@@ -35,16 +36,16 @@ namespace Managers
             switch (currentPlayerLives)
             {
                 case 2:
-                    life3.enabled = false;
+                    life3.sprite = redEye;
                     break;
                 case 1:
-                    life2.enabled = false;
+                    life2.sprite = redEye;
                     break;
                 case 0:
-                    life1.enabled = false;
+                    life1.sprite = redEye;
                     break;
             }
-            
+
             if (currentPlayerLives <= 0)
             {
                 GameEvents.GameOver?.Invoke(GameOverReason.OutOfLives);

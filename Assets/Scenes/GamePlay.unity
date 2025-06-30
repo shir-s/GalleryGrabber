@@ -13927,9 +13927,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialPlayerlives: 3
-  life1: {fileID: 398839137}
-  life2: {fileID: 1913474799}
-  life3: {fileID: 982726436}
+  life1: {fileID: 1163906773}
+  life2: {fileID: 310698504}
+  life3: {fileID: 70774899}
+  redEye: {fileID: 21300000, guid: 2aa05431b3e9b499b908812b3f7fc419, type: 3}
 --- !u!114 &1607619679
 MonoBehaviour:
   m_ObjectHideFlags: 0
