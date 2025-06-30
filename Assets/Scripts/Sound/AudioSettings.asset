@@ -13,83 +13,55 @@ MonoBehaviour:
   m_Name: AudioSettings
   m_EditorClassIdentifier: 
   audioConfigs:
-  - name: BIg branch
-    clip: {fileID: 8300000, guid: 614bd57f6f203d94180f0274f025c7df, type: 3}
-    volume: 0.3
-    loop: 0
-  - name: Big branch 2
-    clip: {fileID: 8300000, guid: 52f6895604cdbfe4aa4aa76fef4875a1, type: 3}
-    volume: 0.3
-    loop: 0
-  - name: Drara
-    clip: {fileID: 8300000, guid: 1d7c46b1f89e6c9458fc29e779c79de0, type: 3}
-    volume: 0.4
-    loop: 0
-  - name: On a Quest
-    clip: {fileID: 8300000, guid: 866a016a5d313d84ebbdd885a741796f, type: 3}
+  - name: Background
+    clip: {fileID: 8300000, guid: 592cdcea4c99e43a6b2bcc782bf4fde6, type: 3}
+    volume: 0.1
+    loop: 1
+  - name: Losing
+    clip: {fileID: 8300000, guid: 60252e294f0b248eeb433666c41c2017, type: 3}
     volume: 0.2
     loop: 1
-  - name: Mayna Fight
-    clip: {fileID: 8300000, guid: 90bedd278efb3d14ca7a50e90d1e48c1, type: 3}
+  - name: Dirt
+    clip: {fileID: 8300000, guid: 299f0efd5020d434f89d32e8782a3c47, type: 3}
+    volume: 0.3
+    loop: 0
+  - name: Camera1
+    clip: {fileID: 8300000, guid: 22af02b5aee994acd98438782f1ab995, type: 3}
     volume: 0.2
     loop: 0
-  - name: Egg Break
-    clip: {fileID: 8300000, guid: 14df94f3ee8e9144fb44dc4cd401dcd6, type: 3}
-    volume: 0.3
-    loop: 0
-  - name: Drara Fight
-    clip: {fileID: 8300000, guid: 84e1ac6f5edfce146998cccc1fd8e8a6, type: 3}
+  - name: Camera2
+    clip: {fileID: 8300000, guid: a319ceb4db5d247858d8cca85708a87f, type: 3}
     volume: 0.2
     loop: 0
-  - name: Mayna
-    clip: {fileID: 8300000, guid: 98180cb9da4e01243a9ede8d721abafe, type: 3}
-    volume: 0.4
-    loop: 0
-  - name: Pigeon coo
-    clip: {fileID: 8300000, guid: e23c24eaba0f6f04f9225f6c98a1e5f7, type: 3}
-    volume: 0.3
-    loop: 0
-  - name: Pigeon Poop
-    clip: {fileID: 8300000, guid: 45c98155adfb91a4eb4789918fe6e760, type: 3}
-    volume: 0.42
-    loop: 0
-  - name: Pigeon Wing Flap
-    clip: {fileID: 8300000, guid: 0a7542f7e78b4144c89e4e48a46e5c6b, type: 3}
-    volume: 0.45
-    loop: 0
-  - name: Pigeon Wing flap
-    clip: {fileID: 8300000, guid: 7ad93a3e64f54654e8fe9640f9f50e2a, type: 3}
-    volume: 0.45
-    loop: 0
-  - name: Twig
-    clip: {fileID: 8300000, guid: f20345ac67877fc44bcb4254386ec513, type: 3}
-    volume: 0.3
-    loop: 0
-  - name: Twig 2
-    clip: {fileID: 8300000, guid: 0bf21ef556d5275499ec40700348d9a5, type: 3}
-    volume: 0.3
-    loop: 0
-  - name: Twig 4
-    clip: {fileID: 8300000, guid: 1b53380ac3d135b418d57b716d64faa5, type: 3}
-    volume: 0.3
-    loop: 0
-  - name: Twig 3
-    clip: {fileID: 8300000, guid: bf9274ba995965c4a8e6284b1b29d375, type: 3}
-    volume: 0.3
-    loop: 0
-  - name: rockPlaced
-    clip: {fileID: 8300000, guid: 5633995d0609a416cbd211f0a8c01704, type: 3}
-    volume: 0.3
-    loop: 0
-  - name: Best Jazz
-    clip: {fileID: 8300000, guid: 548b737eb86a740ba8212ebaf747ec5a, type: 3}
+  - name: Camera3
+    clip: {fileID: 8300000, guid: d260c762ee3be4b9c96f7c5d080e1271, type: 3}
     volume: 0.2
+    loop: 0
+  - name: Guard
+    clip: {fileID: 8300000, guid: ef6ce3f8180914dda888b75f88be4dd6, type: 3}
+    volume: 0.05
     loop: 1
-  - name: The Messenger
-    clip: {fileID: 8300000, guid: 6b0f020f919b34a8aa0350ed5c95ace3, type: 3}
+  - name: Jail1
+    clip: {fileID: 8300000, guid: 6742a046ffd8643b393cee6f227f797a, type: 3}
     volume: 0.2
-    loop: 1
-  - name: Victor Band
-    clip: {fileID: 8300000, guid: 1ffa09723b84e4a6eacd2a9e85a24c55, type: 3}
+    loop: 0
+  - name: Jail2
+    clip: {fileID: 8300000, guid: 9e6d6b950e9c04df68cfa084f7d36dd5, type: 3}
     volume: 0.2
-    loop: 1
+    loop: 0
+  - name: Money
+    clip: {fileID: 8300000, guid: 40a470eca060f47af944aa099778297c, type: 3}
+    volume: 0.2
+    loop: 0
+  - name: Steal
+    clip: {fileID: 8300000, guid: d6f81d7c9e8274744bff2c42b39a5e31, type: 3}
+    volume: 0.2
+    loop: 0
+  - name: Fired1
+    clip: {fileID: 8300000, guid: ae2c4924a8af04c80948b7fbbdd91344, type: 3}
+    volume: 0.2
+    loop: 0
+  - name: Fired2
+    clip: {fileID: 8300000, guid: 944021aa9e27e4871a345c0429dcf867, type: 3}
+    volume: 0.2
+    loop: 0

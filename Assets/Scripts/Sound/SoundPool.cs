@@ -1,5 +1,8 @@
 using Utilities;
 
-public class SoundPool : MonoPool<AudioSourceWrapper>
+namespace Sound
 {
+    public class SoundPool : MonoPool<AudioSourceWrapper>
+    {
+    }
 }

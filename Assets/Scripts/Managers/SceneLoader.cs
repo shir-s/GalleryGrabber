@@ -1,4 +1,5 @@
 ﻿using System;
+using Sound;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,7 +13,6 @@ namespace Managers
         private const string OpeningSceneName = "Opening Scene";
         private const string LosingSceneName = "Losing Scene";
         private const string WinningSceneName = "Winning Scene";
-
 
 
         private void Update()

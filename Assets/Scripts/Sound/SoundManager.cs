@@ -1,4 +1,4 @@
-/*using System;
+using System;
 using System.Linq;
 using UnityEngine;
 using Utilities;
@@ -20,20 +20,18 @@ namespace Sound
 
         private void OnEnable()
         {
-            GameEvents.StartGame += PlayBackgroundMusic;
-            GameEvents.StartGame += StopOpeningMusic;
-            GameEvents.RestartGame += StopEndingMusic;
-            GameEvents.RestartGame += StopBackgroundMusic;
+            GameEvents.StartLevel += PlayBackgroundMusic;
+            GameEvents.RestartLevel += StopOpeningMusic;
+            GameEvents.RestartLevel += StopEndingMusic;
             GameEvents.GameOver += StopBackgroundMusic;
             GameEvents.GameOver += PlayEndingMusic;
         }
     
         private void OnDisable()
         {   
-            GameEvents.StartGame -= PlayBackgroundMusic;
-            GameEvents.StartGame -= StopOpeningMusic;
-            GameEvents.RestartGame -= StopEndingMusic;
-            GameEvents.RestartGame -= StopBackgroundMusic;
+            GameEvents.StartLevel -= PlayBackgroundMusic;
+            GameEvents.RestartLevel -= StopOpeningMusic;
+            GameEvents.RestartLevel -= StopEndingMusic;
             GameEvents.GameOver -= StopBackgroundMusic;
             GameEvents.GameOver -= PlayEndingMusic;
         }
@@ -59,14 +57,14 @@ namespace Sound
         
         private void PlayOpeningMusic()
         {
-            var config = FindAudioConfig("Best Jazz");
+            var config = FindAudioConfig("Background");
             if (config == null)
                 return;
             openingMusic = SoundPool.Instance.Get();
             openingMusic.Play(config.clip, config.volume,config.loop);
         }
         
-        private void PlayEndingMusic()
+        private void PlayEndingMusic(GameOverReason dummy)
         {
             var config = FindAudioConfig("Victor Band");
             if (config == null)
@@ -75,7 +73,7 @@ namespace Sound
             endingMusic.Play(config.clip, config.volume,config.loop);
         }
     
-        private void StopBackgroundMusic()
+        private void StopBackgroundMusic(GameOverReason dummy)
         {
             if (_backgroundMusic == null)
                 return;
@@ -110,4 +108,4 @@ namespace Sound
             }
         }
     }
-}*/
+}
