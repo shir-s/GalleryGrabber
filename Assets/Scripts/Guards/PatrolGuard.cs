@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using System.Collections.Generic;
+using Sound;
 using Spine.Unity;
 
 public class PatrolGuard : MonoBehaviour
@@ -13,6 +14,7 @@ public class PatrolGuard : MonoBehaviour
     public GameObject backModel;
     public GameObject sideModel;
 
+    [SerializeField] private GameObject alarmDialog;
     private SkeletonAnimation frontAnim;
     private SkeletonAnimation backAnim;
     private SkeletonAnimation sideAnim;
@@ -28,7 +30,7 @@ public class PatrolGuard : MonoBehaviour
     private bool isInAlert = false;
     private Coroutine alertRoutine = null;
 
-    void Awake()
+    private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
@@ -39,14 +41,15 @@ public class PatrolGuard : MonoBehaviour
         if (sideModel != null) sideAnim = sideModel.GetComponent<SkeletonAnimation>();
     }
 
-    void Start()
+    private void Start()
     {
         LoadWaypointsFromRooms();
+        SoundManager.Instance.PlaySound("Guard", transform);
         if (waypoints.Count > 0)
             agent.SetDestination(waypoints[0].position);
     }
 
-    void Update()
+    private void Update()
     {
         if (isPaused)
         {
@@ -92,7 +95,7 @@ public class PatrolGuard : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && !isPaused)
         {
@@ -102,7 +105,7 @@ public class PatrolGuard : MonoBehaviour
         }
     }
 
-    void SetIdleAnimation()
+    private void SetIdleAnimation()
     {
         if (sideModel.activeSelf)
             SetAnimation(sideAnim, "idle side");
@@ -112,7 +115,7 @@ public class PatrolGuard : MonoBehaviour
             SetAnimation(frontAnim, "idle front");
     }
 
-    void UpdateModelDirection(Vector3 velocity)
+    private void UpdateModelDirection(Vector3 velocity)
     {
         if (Mathf.Abs(velocity.x) > Mathf.Abs(velocity.y))
         {
@@ -131,7 +134,7 @@ public class PatrolGuard : MonoBehaviour
         }
     }
 
-    void SetAnimation(SkeletonAnimation anim, string animationName)
+    private void SetAnimation(SkeletonAnimation anim, string animationName)
     {
         if (anim != null && anim.AnimationName != animationName)
         {
@@ -139,7 +142,7 @@ public class PatrolGuard : MonoBehaviour
         }
     }
 
-    void ShowOnlyModel(GameObject modelToShow)
+    private void ShowOnlyModel(GameObject modelToShow)
     {
         if (frontModel != null) frontModel.SetActive(modelToShow == frontModel);
         if (backModel != null) backModel.SetActive(modelToShow == backModel);
@@ -171,9 +174,11 @@ public class PatrolGuard : MonoBehaviour
         {
             // alertRoutine = StartCoroutine(AlarmThenResumeRoutine());
             alertRoutine = StartCoroutine(AlarmThenRunRoutine());
-
         }
+        var dialog = Instantiate(alarmDialog, transform.position + Vector3.up *2.3f, Quaternion.identity);
+        Destroy(dialog, 1.7f); // Destroy after 1 second
     }
+
 
     // private IEnumerator AlarmThenResumeRoutine()
     // {
@@ -214,7 +219,6 @@ public class PatrolGuard : MonoBehaviour
     private void SetAnimationForDirection(string action, string direction)
     {
         string animName = $"{action} {direction}";
-
         if (direction == "front")
             SetAnimation(frontAnim, animName);
         else if (direction == "back")

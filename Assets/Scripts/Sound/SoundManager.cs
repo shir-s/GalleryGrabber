@@ -24,7 +24,7 @@ namespace Sound
             GameEvents.RestartLevel += StopOpeningMusic;
             GameEvents.RestartLevel += StopEndingMusic;
             GameEvents.GameOver += StopBackgroundMusic;
-            GameEvents.GameOver += PlayEndingMusic;
+            //GameEvents.GameOver += PlayEndingMusic;
         }
     
         private void OnDisable()
@@ -33,7 +33,7 @@ namespace Sound
             GameEvents.RestartLevel -= StopOpeningMusic;
             GameEvents.RestartLevel -= StopEndingMusic;
             GameEvents.GameOver -= StopBackgroundMusic;
-            GameEvents.GameOver -= PlayEndingMusic;
+            //GameEvents.GameOver -= PlayEndingMusic;
         }
 
         public void PlaySound(string audioName, Transform spawnTransform)
@@ -48,7 +48,7 @@ namespace Sound
     
         private void PlayBackgroundMusic()
         {
-            var config = FindAudioConfig("The Messenger");
+            var config = FindAudioConfig("Background");
             if (config == null)
                 return;
             _backgroundMusic = SoundPool.Instance.Get();
@@ -64,14 +64,22 @@ namespace Sound
             openingMusic.Play(config.clip, config.volume,config.loop);
         }
         
-        private void PlayEndingMusic(GameOverReason dummy)
+        /*private void PlayEndingMusic(GameOverReason reason)
         {
-            var config = FindAudioConfig("Victor Band");
+            AudioConfig config = null;
+            if (reason == GameOverReason.OutOfLives)
+            {
+                config = FindAudioConfig("Victor Band");
+            }
+            else if(reason == GameOverReason.TooMuchDirt)
+            {
+                config = FindAudioConfig("Game Over");
+            }
             if (config == null)
                 return;
             endingMusic = SoundPool.Instance.Get();
             endingMusic.Play(config.clip, config.volume,config.loop);
-        }
+        }*/
     
         private void StopBackgroundMusic(GameOverReason dummy)
         {

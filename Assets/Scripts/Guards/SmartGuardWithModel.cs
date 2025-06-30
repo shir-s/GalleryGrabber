@@ -13,6 +13,7 @@ public class SmartGuardWithModel : MonoBehaviour
     public GameObject backModel;
     public GameObject sideModel;
 
+    [SerializeField] private GameObject alarmDialog;
     private SkeletonAnimation frontAnim;
     private SkeletonAnimation backAnim;
     private SkeletonAnimation sideAnim;
@@ -195,6 +196,9 @@ public class SmartGuardWithModel : MonoBehaviour
         {
             alertRoutine = StartCoroutine(AlarmThenRunRoutine());
         }
+        var dialog = Instantiate(alarmDialog, transform.position + Vector3.up*2.3f, Quaternion.identity);
+        Destroy(dialog, 1.7f); // Destroy after 1 second
+
     }
 
     private IEnumerator AlarmThenRunRoutine()

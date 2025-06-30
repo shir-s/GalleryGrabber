@@ -1,4 +1,5 @@
 using Managers;
+using Sound;
 using UnityEngine;
 using Utilities;
 using Utils;
@@ -13,6 +14,7 @@ namespace Dirt
             {
                 GameEvents.OnDirtCollected?.Invoke(1);
                // GameManager.Instance.DirtPool.Return(this);
+               SoundManager.Instance.PlaySound("Dirt", transform);
                 DirtPool.Instance.Return(this);
             }
         }

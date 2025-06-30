@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Winning Scene.unity
     guid: 88ddf1a581b056c49b002f0e4fad99ff
+  - enabled: 1
+    path: Assets/Scenes/Losing Scene (prison).unity
+    guid: e7bab9bf47ee64cb1a77f222cac17a78
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

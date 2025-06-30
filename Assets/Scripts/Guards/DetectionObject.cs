@@ -1,4 +1,5 @@
 using Player;
+using Sound;
 using Stealable;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
@@ -29,6 +30,7 @@ namespace Enemies.Guards
                 }
                 Debug.Log("Player or stealable object detected during theft (enter)!");
                 GameEvents.PlayerLostLife?.Invoke();
+                SoundManager.Instance.PlaySound("Camera3", transform);
                 TriggerFlashEffect();
             }
         }
@@ -40,6 +42,7 @@ namespace Enemies.Guards
                 if (Time.time >= lastDetectionTime + detectionCooldown)
                 {
                     GameEvents.PlayerLostLife?.Invoke();
+                    SoundManager.Instance.PlaySound("Camera3", transform);
                     TriggerFlashEffect();
                     lastDetectionTime = Time.time;
                 }

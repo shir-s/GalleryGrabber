@@ -11,7 +11,7 @@ namespace Managers
     {
         private const string GamePlaySceneName = "GamePlay";
         private const string OpeningSceneName = "Opening Scene";
-        private const string LosingSceneName = "Losing Scene";
+        private const string LosingSceneName = "Losing Scene (prison)";
         private const string WinningSceneName = "Winning Scene";
 
 

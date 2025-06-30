@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using Sound;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using Utils;
@@ -31,6 +32,8 @@ namespace Managers
         
         private void UpdatePoints(int pointsToAdd)
         {
+            if(pointsToAdd > 1) 
+                SoundManager.Instance.PlaySound("Money", transform);
             _points += pointsToAdd;
             if (_points >= pointsToWin)
             {

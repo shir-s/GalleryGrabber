@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using Sound;
 using Utils;
 
 namespace Stealable
@@ -79,6 +80,7 @@ namespace Stealable
                     {
                         SpawnGhostCollider();
                         Destroy(gameObject);
+                        SoundManager.Instance.PlaySound("Steal", transform);
                     });
             }
             else

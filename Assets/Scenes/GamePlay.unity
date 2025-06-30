@@ -1632,6 +1632,7 @@ MonoBehaviour:
   frontModel: {fileID: 1996473636}
   backModel: {fileID: 1011102037}
   sideModel: {fileID: 892916659}
+  alarmDialog: {fileID: 5100035082645587371, guid: 06b5eb612468e4229a599c83e538ef2a, type: 3}
   pauseDuration: 2
 --- !u!1001 &135134970
 PrefabInstance:
@@ -17816,6 +17817,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 291200126}
+    - target: {fileID: 4047102689214646889, guid: 37826c5fbac515246b8e1d0a7d7b039c, type: 3}
+      propertyPath: alarmDialog
+      value: 
+      objectReference: {fileID: 5100035082645587371, guid: 06b5eb612468e4229a599c83e538ef2a, type: 3}
     - target: {fileID: 4070238917215950191, guid: 37826c5fbac515246b8e1d0a7d7b039c, type: 3}
       propertyPath: m_Intensity
       value: 7
@@ -18200,6 +18205,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8803772360016469371, guid: 161cf8582627942cfbeed04040af910a, type: 3}
+      propertyPath: alarmDialog
+      value: 
+      objectReference: {fileID: 5100035082645587371, guid: 06b5eb612468e4229a599c83e538ef2a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -1,3 +1,5 @@
+using Sound;
+
 namespace Managers
 {
     using UnityEngine;
@@ -18,9 +20,11 @@ namespace Managers
             {
                 case GameOverReason.TooMuchDirt:
                     tooMuchDirtPanel.SetActive(true);
+                    SoundManager.Instance.PlaySound("Fired1", transform);
                     break;
                 case GameOverReason.OutOfLives:
                     outOfLivesPanel.SetActive(true);
+                    SoundManager.Instance.PlaySound("Jail1", transform);
                     break;
                 
             }

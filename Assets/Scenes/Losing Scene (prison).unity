@@ -566,6 +566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scene Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 4338660859900555926, guid: 0ebae71afdc26444bb25a0027c083f28, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8106654869351848557, guid: 0ebae71afdc26444bb25a0027c083f28, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.9904385
@@ -913,7 +917,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1256313799
 MonoBehaviour:
   m_ObjectHideFlags: 0
