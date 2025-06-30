@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 using System.Collections;
+using Sound;
 using Spine.Unity;
 
 public class SmartGuardWithModel : MonoBehaviour
@@ -29,7 +30,12 @@ public class SmartGuardWithModel : MonoBehaviour
     private bool isPaused = false;
     private float pauseTimer = 0f;
     public float pauseDuration = 2f;
-
+    
+    private float stepTimer = 0f;
+    private float stepInterval = 0.7f;
+    private float maxStepVolumeDistance = 20;
+    private float maxStepVolume = 0.3f;
+    
     private bool isInAlert = false;
     private Coroutine alertRoutine = null;
 
@@ -71,6 +77,18 @@ public class SmartGuardWithModel : MonoBehaviour
         if (isMoving)
         {
             UpdateModelDirection(velocity);
+            stepTimer -= Time.deltaTime;
+            if (stepTimer <= 0f && player != null)
+            {
+                float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+                float volume = Mathf.Clamp01(1f - (distanceToPlayer / maxStepVolumeDistance))*maxStepVolume;
+                SoundManager.Instance.PlaySound("Guard", transform, volume);
+                stepTimer = stepInterval / agent.speed;
+            }
+        }
+        else
+        {
+            stepTimer = 0f;
         }
 
         if (sideModel.activeSelf)

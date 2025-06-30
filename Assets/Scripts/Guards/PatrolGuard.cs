@@ -26,9 +26,16 @@ public class PatrolGuard : MonoBehaviour
     private bool isPaused = false;
     private float pauseTimer = 0f;
     public float pauseDuration = 2f;
-
+    
+    private float stepTimer = 0f;
+    private float stepInterval = 0.7f;
+    private Transform playerTransform;
+    private float maxStepVolumeDistance = 20f;
+    private float maxStepVolume = 0.3f;
+    
     private bool isInAlert = false;
     private Coroutine alertRoutine = null;
+    
 
     private void Awake()
     {
@@ -44,7 +51,9 @@ public class PatrolGuard : MonoBehaviour
     private void Start()
     {
         LoadWaypointsFromRooms();
-        SoundManager.Instance.PlaySound("Guard", transform);
+        playerTransform = GameObject.FindWithTag("Player")?.transform;
+
+        //SoundManager.Instance.PlaySound("Guard", transform);
         if (waypoints.Count > 0)
             agent.SetDestination(waypoints[0].position);
     }
@@ -73,6 +82,18 @@ public class PatrolGuard : MonoBehaviour
         if (isMoving)
         {
             UpdateModelDirection(velocity);
+            stepTimer -= Time.deltaTime;
+            if (stepTimer <= 0f && playerTransform != null)
+            {
+                float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
+                float volume = Mathf.Clamp01(1f - (distanceToPlayer / maxStepVolumeDistance))* maxStepVolume;
+                SoundManager.Instance.PlaySound("Guard", transform, volume);
+                stepTimer = stepInterval / agent.speed;
+            }
+        }
+        else
+        {
+            stepTimer = 0f;
         }
 
         if (sideModel.activeSelf)

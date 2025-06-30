@@ -36,14 +36,15 @@ namespace Sound
             //GameEvents.GameOver -= PlayEndingMusic;
         }
 
-        public void PlaySound(string audioName, Transform spawnTransform)
+        public void PlaySound(string audioName, Transform spawnTransform, float customVolume = -1f)
         {
             var config = FindAudioConfig(audioName);
             if (config == null)
                 return;
             var soundObject = SoundPool.Instance.Get();
             soundObject.transform.position = spawnTransform.position;
-            soundObject.Play(config.clip, config.volume,config.loop);
+            float finalVolume = (customVolume >= 0f) ? customVolume : config.volume;
+            soundObject.Play(config.clip, finalVolume, config.loop);
         }
     
         private void PlayBackgroundMusic()
