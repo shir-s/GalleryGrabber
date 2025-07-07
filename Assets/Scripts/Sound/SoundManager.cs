@@ -24,6 +24,8 @@ namespace Sound
             GameEvents.RestartLevel += StopOpeningMusic;
             GameEvents.RestartLevel += StopEndingMusic;
             GameEvents.GameOver += StopBackgroundMusic;
+            GameEvents.PlayerWon += PlayWinningMusic;
+
             //GameEvents.GameOver += PlayEndingMusic;
         }
     
@@ -33,6 +35,7 @@ namespace Sound
             GameEvents.RestartLevel -= StopOpeningMusic;
             GameEvents.RestartLevel -= StopEndingMusic;
             GameEvents.GameOver -= StopBackgroundMusic;
+            GameEvents.PlayerWon -= PlayWinningMusic;
             //GameEvents.GameOver -= PlayEndingMusic;
         }
 
@@ -64,6 +67,16 @@ namespace Sound
             openingMusic = SoundPool.Instance.Get();
             openingMusic.Play(config.clip, config.volume,config.loop);
         }
+        
+        private void PlayWinningMusic()
+        {
+            var config = FindAudioConfig("WinningScreen");
+            if (config == null)
+                return;
+            endingMusic = SoundPool.Instance.Get();
+            endingMusic.Play(config.clip, config.volume,config.loop);
+        }
+        
         
         /*private void PlayEndingMusic(GameOverReason reason)
         {
