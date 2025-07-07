@@ -844,7 +844,7 @@ GameObject:
   - component: {fileID: 64595615}
   - component: {fileID: 64595616}
   - component: {fileID: 64595617}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Image_06-07-2025_at_1.00_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2590,7 +2590,7 @@ GameObject:
   m_Component:
   - component: {fileID: 167423117}
   - component: {fileID: 167423116}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Image_06-07-2025_at_1.00_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4023,7 +4023,7 @@ GameObject:
   - component: {fileID: 402622105}
   - component: {fileID: 402622104}
   - component: {fileID: 402622106}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Image_06-07-2025_at_1.00_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4579,7 +4579,7 @@ GameObject:
   - component: {fileID: 476112850}
   - component: {fileID: 476112852}
   - component: {fileID: 476112853}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Image_06-07-2025_at_1.00_22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5981,7 +5981,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 583544046}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -7509,7 +7509,7 @@ GameObject:
   - component: {fileID: 737777861}
   - component: {fileID: 737777860}
   - component: {fileID: 737777862}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Image_06-07-2025_at_1.00 6_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7785,7 +7785,7 @@ GameObject:
   - component: {fileID: 763156604}
   - component: {fileID: 763156603}
   - component: {fileID: 763156605}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Image_06-07-2025_at_1.00 5_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8191,7 +8191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 838816595}
   - component: {fileID: 838816594}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Image_06-07-2025_at_1.00_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8939,7 +8939,7 @@ GameObject:
   - component: {fileID: 904916994}
   - component: {fileID: 904916996}
   - component: {fileID: 904916997}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Image_06-07-2025_at_1.00_20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10852,7 +10852,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1052937860}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -12258,7 +12258,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.006475687, y: 0.7914996}
+  m_Offset: {x: -0.006475687, y: 0.714643}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -12268,7 +12268,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.9516377, y: 1.5829992}
+  m_Size: {x: 3.9516377, y: 1.429286}
   m_EdgeRadius: 0
 --- !u!210 &1137625596
 SortingGroup:
@@ -12939,7 +12939,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203030650}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -13404,7 +13404,7 @@ GameObject:
   - component: {fileID: 1243905649}
   - component: {fileID: 1243905648}
   - component: {fileID: 1243905650}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Image_06-07-2025_at_1.00 2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14505,7 +14505,7 @@ GameObject:
   - component: {fileID: 1342040687}
   - component: {fileID: 1342040686}
   - component: {fileID: 1342040688}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Image_06-07-2025_at_1.00_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15143,7 +15143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1388533315}
   - component: {fileID: 1388533314}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Image_06-07-2025_at_1.00 3_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15315,7 +15315,7 @@ GameObject:
   - component: {fileID: 1398880489}
   - component: {fileID: 1398880490}
   - component: {fileID: 1398880491}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Image_06-07-2025_at_1.00_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16046,7 +16046,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1496856180}
   - component: {fileID: 1496856179}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Image_06-07-2025_at_1.00_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16183,7 +16183,7 @@ GameObject:
   - component: {fileID: 1552622363}
   - component: {fileID: 1552622365}
   - component: {fileID: 1552622366}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Image_06-07-2025_at_1.00_16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16332,7 +16332,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1563955391}
   - component: {fileID: 1563955390}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Image_06-07-2025_at_1.00 4_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17254,7 +17254,7 @@ GameObject:
   - component: {fileID: 1650083178}
   - component: {fileID: 1650083180}
   - component: {fileID: 1650083181}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Image_06-07-2025_at_1.00_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18691,7 +18691,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1773471118}
   - component: {fileID: 1773471119}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Image_06-07-2025_at_1.00_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20958,6 +20958,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 2712266164630259137, guid: 8af24ff561344405881aa87b3f2d3b91, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3011299751087029222, guid: 8af24ff561344405881aa87b3f2d3b91, type: 3}
       propertyPath: m_Layer
       value: 15
@@ -21691,7 +21695,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2118207544}
   - component: {fileID: 2118207543}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Image_06-07-2025_at_1.00_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22086,6 +22090,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3268739372898543043, guid: 4233f857da93849bc870f158aa32d862, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917347229704682486, guid: 4233f857da93849bc870f158aa32d862, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5095495141015198051, guid: 4233f857da93849bc870f158aa32d862, type: 3}
@@ -23262,6 +23270,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6165334948718373468, guid: 29c0b3e89bd0e4a8dbbd9baf204c3f2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23423,6 +23435,22 @@ PrefabInstance:
     - target: {fileID: 3578206202184573479, guid: c0934addc99963043971e5ac7a1de4a7, type: 3}
       propertyPath: m_SpriteSortPoint
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5989477794740749360, guid: c0934addc99963043971e5ac7a1de4a7, type: 3}
+      propertyPath: m_Size.x
+      value: 4.3316364
+      objectReference: {fileID: 0}
+    - target: {fileID: 5989477794740749360, guid: c0934addc99963043971e5ac7a1de4a7, type: 3}
+      propertyPath: m_Size.y
+      value: 0.83201194
+      objectReference: {fileID: 0}
+    - target: {fileID: 5989477794740749360, guid: c0934addc99963043971e5ac7a1de4a7, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.34761417
+      objectReference: {fileID: 0}
+    - target: {fileID: 5989477794740749360, guid: c0934addc99963043971e5ac7a1de4a7, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.53774214
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
