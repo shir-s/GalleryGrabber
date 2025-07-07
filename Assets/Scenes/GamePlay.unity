@@ -7267,7 +7267,7 @@ Transform:
   m_GameObject: {fileID: 672105919}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.7288685, y: 11.62224, z: -10}
+  m_LocalPosition: {x: -11.39, y: 11.62, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19611,7 +19611,7 @@ GameObject:
   - component: {fileID: 1835235070}
   - component: {fileID: 1835235069}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: ColliderForCinemachine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19663,12 +19663,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -18.283154, y: 13.421392}
-      - {x: -17.953531, y: -4.3758974}
-      - {x: -3.1453238, y: -4.3966103}
-      - {x: -3.1204262, y: -24.894081}
-      - {x: 25.72026, y: -24.95737}
-      - {x: 25.45255, y: 13.446562}
+    - - {x: -18.01308, y: 13.117561}
+      - {x: -18.310223, y: -4.0192075}
+      - {x: -2.4828968, y: -3.988963}
+      - {x: -2.2666159, y: -24.704342}
+      - {x: 24.486975, y: -24.672768}
+      - {x: 24.624207, y: 13.156641}
   m_UseDelaunayMesh: 0
 --- !u!4 &1835235070
 Transform:
