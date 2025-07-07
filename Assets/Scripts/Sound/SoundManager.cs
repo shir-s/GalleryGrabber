@@ -58,7 +58,7 @@ namespace Sound
         
         private void PlayOpeningMusic()
         {
-            var config = FindAudioConfig("Background");
+            var config = FindAudioConfig("Opening");
             if (config == null)
                 return;
             openingMusic = SoundPool.Instance.Get();
