@@ -1,3 +1,4 @@
+using System.Collections;
 using SceneControllers;
 using Sound;
 using UnityEngine;
@@ -25,22 +26,30 @@ namespace Guards
             {
                 if (CompareTag("Guard"))
                 {
-                    GameEvents.GameOver?.Invoke(GameOverReason.OutOfLives);
+                    StartCoroutine(HandleCaughtWithPause());
                 }
-                Debug.Log("Player or stealable object detected during theft (enter)!");
-                GameEvents.PlayerLostLife?.Invoke();
-                switch (tag)
+                else
                 {
-                    case "Guard":
-                        SoundManager.Instance.PlaySound("GuardCatches", transform);
-                        break;
-                    case "Camera":
-                        SoundManager.Instance.PlaySound("Camera3", transform);
-                        break;
+                    HandleCaughtImmediate();
                 }
-                TriggerFlashEffect();
             }
         }
+
+        private IEnumerator HandleCaughtWithPause()
+        {
+            SoundManager.Instance.PlaySound("GuardCatches", transform);
+            TriggerFlashEffect();
+            yield return new WaitForSeconds(1.5f);
+            GameEvents.GameOver?.Invoke(GameOverReason.OutOfLives);
+        }
+
+        private void HandleCaughtImmediate()
+        {
+            GameEvents.PlayerLostLife?.Invoke();
+            SoundManager.Instance.PlaySound("Camera3", transform);
+            TriggerFlashEffect();
+        }
+
         
         private void OnTriggerStay2D(Collider2D other)
         {
