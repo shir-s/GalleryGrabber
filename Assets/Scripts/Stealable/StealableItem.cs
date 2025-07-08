@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using DG.Tweening;
 using Sound;
 using TMPro;
+using UnityEngine.Rendering.Universal;
 using Utils;
 
 namespace Stealable
@@ -21,6 +22,7 @@ namespace Stealable
         private bool _isBeingStolen = false;
         private Transform _playerTransform;
         private Collider2D[] _allColliders;
+        private Light2D _light;
 
         private void Start()
         {
@@ -34,8 +36,7 @@ namespace Stealable
                     priceText.text = itemValue.ToString("N0");
                 }
             }
-               
-
+            _light = GetComponentInChildren<Light2D>();
             _allColliders = GetComponentsInChildren<Collider2D>();
         }
 
@@ -76,6 +77,7 @@ namespace Stealable
         {
             _isBeingStolen = false;
             progressCanvas?.gameObject.SetActive(false);
+            _light?.gameObject.SetActive(false);
 
             foreach (var col in _allColliders)
                 col.enabled = false;
