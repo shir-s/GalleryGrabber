@@ -13,29 +13,6 @@ namespace Sound
         private AudioSourceWrapper openingMusic;
         private AudioSourceWrapper endingMusic;
 
-        private void Start()
-        {
-            PlayOpeningMusic();
-        }
-
-        private void OnEnable()
-        {
-            GameEvents.StartLevel += PlayBackgroundMusic;
-            GameEvents.RestartLevel += StopOpeningMusic;
-            GameEvents.RestartLevel += StopEndingMusic;
-            GameEvents.GameOver += StopBackgroundMusic;
-            //GameEvents.GameOver += PlayEndingMusic;
-        }
-    
-        private void OnDisable()
-        {   
-            GameEvents.StartLevel -= PlayBackgroundMusic;
-            GameEvents.RestartLevel -= StopOpeningMusic;
-            GameEvents.RestartLevel -= StopEndingMusic;
-            GameEvents.GameOver -= StopBackgroundMusic;
-            //GameEvents.GameOver -= PlayEndingMusic;
-        }
-
         public void PlaySound(string audioName, Transform spawnTransform, float customVolume = -1f)
         {
             var config = FindAudioConfig(audioName);
@@ -45,62 +22,6 @@ namespace Sound
             soundObject.transform.position = spawnTransform.position;
             float finalVolume = (customVolume >= 0f) ? customVolume : config.volume;
             soundObject.Play(config.clip, finalVolume, config.loop);
-        }
-    
-        private void PlayBackgroundMusic()
-        {
-            var config = FindAudioConfig("Background");
-            if (config == null)
-                return;
-            _backgroundMusic = SoundPool.Instance.Get();
-            _backgroundMusic.Play(config.clip, config.volume,config.loop);
-        }
-        
-        private void PlayOpeningMusic()
-        {
-            var config = FindAudioConfig("Background");
-            if (config == null)
-                return;
-            openingMusic = SoundPool.Instance.Get();
-            openingMusic.Play(config.clip, config.volume,config.loop);
-        }
-        
-        /*private void PlayEndingMusic(GameOverReason reason)
-        {
-            AudioConfig config = null;
-            if (reason == GameOverReason.OutOfLives)
-            {
-                config = FindAudioConfig("Victor Band");
-            }
-            else if(reason == GameOverReason.TooMuchDirt)
-            {
-                config = FindAudioConfig("Game Over");
-            }
-            if (config == null)
-                return;
-            endingMusic = SoundPool.Instance.Get();
-            endingMusic.Play(config.clip, config.volume,config.loop);
-        }*/
-    
-        private void StopBackgroundMusic(GameOverReason dummy)
-        {
-            if (_backgroundMusic == null)
-                return;
-            _backgroundMusic.Reset();
-        }
-        
-        private void StopOpeningMusic()
-        {
-            if (openingMusic == null)
-                return;
-            openingMusic.Reset();
-        }
-        
-        private void StopEndingMusic()
-        {
-            if (endingMusic == null)
-                return;
-            endingMusic.Reset();
         }
 
         private AudioConfig FindAudioConfig(string audioName)

@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         HandleInput();
-        RotateToDirection();
+        //RotateToDirection();
     }
 
     void FixedUpdate()

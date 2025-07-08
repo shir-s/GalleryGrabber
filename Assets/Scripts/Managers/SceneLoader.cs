@@ -12,9 +12,7 @@ namespace Managers
     {
         private const string GamePlaySceneName = "GamePlay";
         private const string OpeningSceneName = "Opening Scene";
-        private const string LosingSceneName = "Losing Scene";
-        private const string WinningSceneName = "Winning Scene";
-
+        private const string LosingSceneName = "Ending Scene";
 
         private void Update()
         {
@@ -39,14 +37,12 @@ namespace Managers
         private void OnEnable()
         {
             GameEvents.GameOver += EndGame;
-            GameEvents.PlayerWon += HandleWin;
             GameEvents.RestartLevel += LoadGamePlay;
         }
         
         private void OnDisable()
         {
             GameEvents.GameOver -= EndGame;
-            GameEvents.PlayerWon -= HandleWin;
             GameEvents.RestartLevel -= LoadGamePlay;
         }
 
@@ -68,16 +64,9 @@ namespace Managers
 
         private IEnumerator DelayedGameOver(GameOverReason reason)
         {
-            GameManager.Instance.lastGameOverReason = reason;
+            GameManager.LastGameOverReason = reason;
             yield return new WaitForSeconds(0.1f); 
             SceneManager.LoadScene(LosingSceneName);
-        }
-        
-        
-        private void HandleWin()
-        {
-            //GameEvents.PlayerWon?.Invoke();
-            SceneManager.LoadScene(WinningSceneName);
         }
         
         private void OnExit()

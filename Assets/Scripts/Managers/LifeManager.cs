@@ -1,4 +1,5 @@
 ﻿using System;
+using Sound;
 using UnityEngine;
 using UnityEngine.UI;
 using Utils;
@@ -18,6 +19,9 @@ namespace Managers
         private void Start()
         {
             currentPlayerLives = initialPlayerlives;
+            GameEvents.StartLevel?.Invoke();
+            SoundManager.Instance.PlaySound("Background", transform);
+
         }
 
         private void OnEnable()

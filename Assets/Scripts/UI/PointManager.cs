@@ -37,7 +37,8 @@ namespace Managers
             _points += pointsToAdd;
             if (_points >= pointsToWin)
             {
-                GameEvents.PlayerWon?.Invoke();
+                GameManager.LastGameOverReason = GameOverReason.PlayerWon;
+                GameEvents.GameOver?.Invoke(GameOverReason.PlayerWon);
             }
             if (pointsText != null)
             {
