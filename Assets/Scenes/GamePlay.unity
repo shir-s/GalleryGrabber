@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Intensity: 10
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b
+  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b638e6f75
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -374,15 +374,15 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[0]'
+      propertyPath: zAngles.Array.data[0]
       value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[1]'
+      propertyPath: zAngles.Array.data[1]
       value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[2]'
+      propertyPath: zAngles.Array.data[2]
       value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 6631156116620281124, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -525,7 +525,7 @@ MonoBehaviour:
   m_Intensity: 10
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b
+  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b638e6f75
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -628,7 +628,7 @@ MonoBehaviour:
   m_Intensity: 0.34
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f6bc466488dea9ef6
+  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f6bc466488dea9ef6638e6f75
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -712,7 +712,7 @@ MonoBehaviour:
   m_Intensity: 10
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b
+  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b638e6f75
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -1724,15 +1724,15 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[0]'
+      propertyPath: zAngles.Array.data[0]
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[1]'
+      propertyPath: zAngles.Array.data[1]
       value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[2]'
+      propertyPath: zAngles.Array.data[2]
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6631156116620281124, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -2750,7 +2750,7 @@ MonoBehaviour:
   m_Intensity: 10
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b
+  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b638e6f75
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -2790,6 +2790,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1507269082}
     m_Modifications:
+    - target: {fileID: 2735134415012336794, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 6570399153545102653, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.03
@@ -2830,9 +2834,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 7994815658538220448, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_SortingLayer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7994815658538220448, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1970245219
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536141154525629375, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 8769767442676239108, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
       propertyPath: m_Name
       value: Left Camera 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8769767442676239108, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3318,15 +3338,15 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[0]'
+      propertyPath: zAngles.Array.data[0]
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[1]'
+      propertyPath: zAngles.Array.data[1]
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[2]'
+      propertyPath: zAngles.Array.data[2]
       value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 6631156116620281124, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -4030,9 +4050,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1507269082}
     m_Modifications:
+    - target: {fileID: 411445229152350173, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_SortingLayer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 411445229152350173, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1970245219
+      objectReference: {fileID: 0}
     - target: {fileID: 1365307828457299833, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
       propertyPath: m_Name
       value: Top Camera 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1365307828457299833, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103324089058254786, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3488119334722883904, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4073,6 +4109,10 @@ PrefabInstance:
     - target: {fileID: 3488119334722883904, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 5671108870018203879, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4132,9 +4172,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 3145526589682475978, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3145526589682475978, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1970245219
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684536687400096725, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 4386528823839527790, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
       propertyPath: m_Name
       value: Right Camera 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386528823839527790, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6962930050932329712, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4159,9 +4219,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1507269082}
     m_Modifications:
+    - target: {fileID: 411445229152350173, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_SortingLayer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 411445229152350173, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1970245219
+      objectReference: {fileID: 0}
     - target: {fileID: 1365307828457299833, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
       propertyPath: m_Name
       value: Top Camera 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1365307828457299833, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103324089058254786, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3488119334722883904, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4202,6 +4278,10 @@ PrefabInstance:
     - target: {fileID: 3488119334722883904, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 5671108870018203879, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5316,7 +5396,7 @@ MonoBehaviour:
   m_Intensity: 10
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b
+  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b638e6f75
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -5755,7 +5835,7 @@ MonoBehaviour:
   m_Intensity: 10
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b
+  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b638e6f75
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -6505,7 +6585,7 @@ MonoBehaviour:
   m_Intensity: 10
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b
+  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b638e6f75
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -6545,6 +6625,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1507269082}
     m_Modifications:
+    - target: {fileID: 2735134415012336794, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 6570399153545102653, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.102338
@@ -6585,9 +6669,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 7994815658538220448, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_SortingLayer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7994815658538220448, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1970245219
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536141154525629375, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 8769767442676239108, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
       propertyPath: m_Name
       value: Left Camera 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8769767442676239108, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6822,7 +6922,7 @@ Transform:
   m_GameObject: {fileID: 672105919}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.889907, y: 11.61177, z: -10}
+  m_LocalPosition: {x: -9.920217, y: 11.61189, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7143,6 +7243,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1507269082}
     m_Modifications:
+    - target: {fileID: 2735134415012336794, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 6570399153545102653, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.03
@@ -7183,9 +7287,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 7994815658538220448, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_SortingLayer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7994815658538220448, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1970245219
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536141154525629375, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 8769767442676239108, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
       propertyPath: m_Name
       value: Left Camera 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8769767442676239108, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7467,7 +7587,7 @@ MonoBehaviour:
   m_Intensity: 10
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b
+  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b638e6f75
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -7792,15 +7912,15 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[0]'
+      propertyPath: zAngles.Array.data[0]
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[1]'
+      propertyPath: zAngles.Array.data[1]
       value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[2]'
+      propertyPath: zAngles.Array.data[2]
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6631156116620281124, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -8064,9 +8184,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1507269082}
     m_Modifications:
+    - target: {fileID: 2735134415012336794, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 6570399153545102653, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.67
+      value: -4.55
       objectReference: {fileID: 0}
     - target: {fileID: 6570399153545102653, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8104,9 +8228,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 7994815658538220448, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_SortingLayer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7994815658538220448, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1970245219
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536141154525629375, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 8769767442676239108, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
       propertyPath: m_Name
       value: Left Camera 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8769767442676239108, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8994,15 +9134,15 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[0]'
+      propertyPath: zAngles.Array.data[0]
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[1]'
+      propertyPath: zAngles.Array.data[1]
       value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[2]'
+      propertyPath: zAngles.Array.data[2]
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6631156116620281124, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -9330,9 +9470,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1507269082}
     m_Modifications:
+    - target: {fileID: 411445229152350173, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_SortingLayer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 411445229152350173, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1970245219
+      objectReference: {fileID: 0}
     - target: {fileID: 1365307828457299833, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
       propertyPath: m_Name
       value: Top Camera 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1365307828457299833, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103324089058254786, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3488119334722883904, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9373,6 +9529,10 @@ PrefabInstance:
     - target: {fileID: 3488119334722883904, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 5671108870018203879, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10270,9 +10430,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1507269082}
     m_Modifications:
+    - target: {fileID: 411445229152350173, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_SortingLayer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 411445229152350173, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1970245219
+      objectReference: {fileID: 0}
     - target: {fileID: 1365307828457299833, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
       propertyPath: m_Name
       value: Top Camera 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1365307828457299833, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103324089058254786, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3488119334722883904, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10313,6 +10489,10 @@ PrefabInstance:
     - target: {fileID: 3488119334722883904, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 5671108870018203879, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10914,7 +11094,7 @@ MonoBehaviour:
   m_Intensity: 10
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b
+  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b638e6f75
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -11115,15 +11295,15 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[0]'
+      propertyPath: zAngles.Array.data[0]
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[1]'
+      propertyPath: zAngles.Array.data[1]
       value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[2]'
+      propertyPath: zAngles.Array.data[2]
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6631156116620281124, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -11487,7 +11667,7 @@ MonoBehaviour:
   m_Intensity: 10
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b
+  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b638e6f75
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -12309,15 +12489,15 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[0]'
+      propertyPath: zAngles.Array.data[0]
       value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[1]'
+      propertyPath: zAngles.Array.data[1]
       value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[2]'
+      propertyPath: zAngles.Array.data[2]
       value: -160
       objectReference: {fileID: 0}
     - target: {fileID: 6631156116620281124, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -13251,9 +13431,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 3145526589682475978, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3145526589682475978, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1970245219
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684536687400096725, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 4386528823839527790, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
       propertyPath: m_Name
       value: Right Camera 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386528823839527790, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6962930050932329712, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13861,6 +14061,18 @@ PrefabInstance:
     - target: {fileID: 7109995662857814352, guid: b844ff868df4046ae8c80d7e57495496, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051673673092947064, guid: b844ff868df4046ae8c80d7e57495496, type: 3}
+      propertyPath: m_LightOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051673673092947064, guid: b844ff868df4046ae8c80d7e57495496, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051673673092947064, guid: b844ff868df4046ae8c80d7e57495496, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[6]
+      value: 1970245219
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1939968575081473386, guid: b844ff868df4046ae8c80d7e57495496, type: 3}
@@ -15025,9 +15237,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1507269082}
     m_Modifications:
+    - target: {fileID: 2735134415012336794, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 6570399153545102653, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.377663
+      value: -20.24
       objectReference: {fileID: 0}
     - target: {fileID: 6570399153545102653, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15065,9 +15281,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 7994815658538220448, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_SortingLayer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7994815658538220448, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1970245219
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536141154525629375, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 8769767442676239108, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
       propertyPath: m_Name
       value: Left Camera 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8769767442676239108, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15089,7 +15321,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2196299253375180119, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.9523377
+      value: 3.04
       objectReference: {fileID: 0}
     - target: {fileID: 2196299253375180119, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15127,9 +15359,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 3145526589682475978, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3145526589682475978, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1970245219
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684536687400096725, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 4386528823839527790, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
       propertyPath: m_Name
       value: Right Camera 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386528823839527790, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6962930050932329712, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15328,7 +15580,7 @@ MonoBehaviour:
   m_Intensity: 10
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b
+  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b638e6f75
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -15919,7 +16171,7 @@ MonoBehaviour:
   m_Intensity: 10
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b
+  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b638e6f75
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -16294,7 +16546,7 @@ MonoBehaviour:
   m_Intensity: 10
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b
+  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b638e6f75
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -16584,15 +16836,15 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[0]'
+      propertyPath: zAngles.Array.data[0]
       value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[1]'
+      propertyPath: zAngles.Array.data[1]
       value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[2]'
+      propertyPath: zAngles.Array.data[2]
       value: -160
       objectReference: {fileID: 0}
     - target: {fileID: 6631156116620281124, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -16785,7 +17037,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1507269082}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Cameras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17711,15 +17963,15 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[0]'
+      propertyPath: zAngles.Array.data[0]
       value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[1]'
+      propertyPath: zAngles.Array.data[1]
       value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[2]'
+      propertyPath: zAngles.Array.data[2]
       value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 6631156116620281124, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -18132,15 +18384,15 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[0]'
+      propertyPath: zAngles.Array.data[0]
       value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[1]'
+      propertyPath: zAngles.Array.data[1]
       value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[2]'
+      propertyPath: zAngles.Array.data[2]
       value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 6631156116620281124, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -18283,7 +18535,7 @@ MonoBehaviour:
   m_Intensity: 10
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b
+  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b638e6f75
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -18473,7 +18725,7 @@ MonoBehaviour:
   m_Intensity: 10
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b
+  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b638e6f75
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -19613,7 +19865,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2196299253375180119, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21.28
+      value: 21.26
       objectReference: {fileID: 0}
     - target: {fileID: 2196299253375180119, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -19651,9 +19903,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 3145526589682475978, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3145526589682475978, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1970245219
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684536687400096725, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 4386528823839527790, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
       propertyPath: m_Name
       value: Right Camera 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386528823839527790, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6962930050932329712, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19826,7 +20098,7 @@ MonoBehaviour:
   m_Intensity: 10
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b
+  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b638e6f75
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -20555,15 +20827,15 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[0]'
+      propertyPath: zAngles.Array.data[0]
       value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[1]'
+      propertyPath: zAngles.Array.data[1]
       value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[2]'
+      propertyPath: zAngles.Array.data[2]
       value: -160
       objectReference: {fileID: 0}
     - target: {fileID: 6631156116620281124, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -20916,15 +21188,15 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[0]'
+      propertyPath: zAngles.Array.data[0]
       value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[1]'
+      propertyPath: zAngles.Array.data[1]
       value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[2]'
+      propertyPath: zAngles.Array.data[2]
       value: -160
       objectReference: {fileID: 0}
     - target: {fileID: 6631156116620281124, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -21226,7 +21498,7 @@ MonoBehaviour:
   m_Intensity: 10
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b
+  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b638e6f75
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -21472,7 +21744,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2196299253375180119, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21.28
+      value: 21.21
       objectReference: {fileID: 0}
     - target: {fileID: 2196299253375180119, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -21510,9 +21782,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 3145526589682475978, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3145526589682475978, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1970245219
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684536687400096725, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 4386528823839527790, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
       propertyPath: m_Name
       value: Right Camera 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386528823839527790, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6962930050932329712, guid: f270aeb62850c0846b022138de5fc8d2, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21543,9 +21835,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1507269082}
     m_Modifications:
+    - target: {fileID: 411445229152350173, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_SortingLayer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 411445229152350173, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1970245219
+      objectReference: {fileID: 0}
     - target: {fileID: 1365307828457299833, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
       propertyPath: m_Name
       value: Top Camera 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1365307828457299833, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103324089058254786, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3488119334722883904, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21586,6 +21894,10 @@ PrefabInstance:
     - target: {fileID: 3488119334722883904, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 5671108870018203879, guid: 9d3536ccfe8a9a042b8ebf27ba5f0e32, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21943,7 +22255,7 @@ MonoBehaviour:
   m_Intensity: 10
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b
+  m_ApplyToSortingLayers: 000000006b662bacc72e04eeb90e7d2f8dea9ef66bc46648cfd4341b638e6f75
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -23608,6 +23920,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1507269082}
     m_Modifications:
+    - target: {fileID: 2735134415012336794, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 6570399153545102653, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.177662
@@ -23648,9 +23964,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 7994815658538220448, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_SortingLayer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7994815658538220448, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1970245219
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536141154525629375, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 8769767442676239108, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
       propertyPath: m_Name
       value: Left Camera 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8769767442676239108, guid: 3177a966b50848345b8dbf838fe3d144, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
