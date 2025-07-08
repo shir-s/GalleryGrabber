@@ -28,7 +28,7 @@ namespace Guards
                 {
                     StartCoroutine(HandleCaughtWithPause());
                 }
-                else
+                if(CompareTag("Camera"))
                 {
                     HandleCaughtImmediate();
                 }
@@ -57,14 +57,18 @@ namespace Guards
             {
                 if (Time.time >= lastDetectionTime + detectionCooldown)
                 {
-                    GameEvents.PlayerLostLife?.Invoke();
-                    SoundManager.Instance.PlaySound("Camera3", transform);
-                    TriggerFlashEffect();
+                    if (CompareTag("Guard"))
+                    {
+                        StartCoroutine(HandleCaughtWithPause());
+                    }
+                    if(CompareTag("Camera"))
+                    {
+                        HandleCaughtImmediate();
+                    }
                     lastDetectionTime = Time.time;
                 }
             }
         }
-
 
         private void TriggerFlashEffect()
         {
