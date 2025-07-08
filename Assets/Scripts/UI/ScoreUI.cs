@@ -6,7 +6,7 @@ using Utils;
 
 namespace Managers
 {
-    public class PointManager : MonoBehaviour
+    public class ScoreUI : MonoBehaviour
     {
         private int _points;
         [SerializeField] private int pointsToWin = 60; // Toggle to enable or disable points display
@@ -37,7 +37,7 @@ namespace Managers
             _points += pointsToAdd;
             if (_points >= pointsToWin)
             {
-                GameManager.LastGameOverReason = GameOverReason.PlayerWon;
+                GameStates.LastGameOverReason = GameOverReason.PlayerWon;
                 GameEvents.GameOver?.Invoke(GameOverReason.PlayerWon);
             }
             if (pointsText != null)

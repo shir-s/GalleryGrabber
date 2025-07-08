@@ -1,7 +1,9 @@
 using Managers;
 using Stealable;
 using UnityEngine;
-namespace Player
+using Utils;
+
+namespace SceneControllers
 {
     public class PlayerSteal : MonoBehaviour
     {
@@ -10,7 +12,7 @@ namespace Player
 
         void Update()
         {
-            if (itemNearby != null && itemNearby.CanBeStolen() && !GameManager.isPlayerCaught)
+            if (itemNearby != null && itemNearby.CanBeStolen() && !GameStates.isPlayerCaught)
             {
                 if (Input.GetKey(KeyCode.Space))
                 {

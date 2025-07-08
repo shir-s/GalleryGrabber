@@ -1,10 +1,6 @@
-
-using Utils;
-
-
-namespace Managers
+namespace Utils
 {
-    public static class GameManager
+    public static class GameStates
     {
         public static GameOverReason LastGameOverReason { get; set; } 
         public static int MaxDirt { get; set; } = 20;

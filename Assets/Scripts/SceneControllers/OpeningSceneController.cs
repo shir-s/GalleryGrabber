@@ -1,9 +1,8 @@
-using System;
 using Sound;
 using UnityEngine;
 using Utils;
 
-namespace Managers
+namespace SceneControllers
 {
     public class OpeningSceneController : MonoBehaviour
     {

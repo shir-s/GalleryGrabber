@@ -64,9 +64,9 @@ namespace Managers
 
         private IEnumerator DelayedGameOver(GameOverReason reason)
         {
-            GameManager.LastGameOverReason = reason;
+            GameStates.LastGameOverReason = reason;
             yield return new WaitForSeconds(0.1f); 
-            GameManager.isPlayerCaught = false; // Reset the player caught state
+            GameStates.isPlayerCaught = false; // Reset the player caught state
             SceneManager.LoadScene(EndingSceneName);
         }
         

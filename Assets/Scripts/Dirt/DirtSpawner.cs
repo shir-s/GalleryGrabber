@@ -14,16 +14,10 @@ namespace Dirt
         [SerializeField] private float spawnRadius = 0.3f;
         [SerializeField] private float dirtSpawnInterval = 10f;
         [SerializeField] private Sprite [] dirtSprites;
-        //private DirtPool _dirtPool;
         [SerializeField] internal Collider2D roomCollider;
         private Coroutine _spawnRoutine;
         private int _initiallDirtToSpawn;
 
-        /*public void SetUp(DirtPool dirtPool, Collider2D roomCollider)
-        {
-            _dirtPool = dirtPool;
-            _roomCollider = roomCollider;
-        }*/
         private void OnEnable()
         {
             GameEvents.StartLevel += StartSpawning;
@@ -40,9 +34,7 @@ namespace Dirt
 
         private void Start()
         {
-            _initiallDirtToSpawn = GameManager.MaxDirt /5;
-            //_dirtPool = GameManager.Instance.DirtPool;
-            //GameManager.Instance.SetDirtSpawner(this);
+            _initiallDirtToSpawn = GameStates.MaxDirt /5;
         }
         
         private void StartSpawning()
@@ -68,8 +60,6 @@ namespace Dirt
 
         public void InitialSpawn()
         {
-            //this._roomCollider = GameManager.Instance.roomCollider;
-
             for (int i = 0; i < _initiallDirtToSpawn; i++)
             {
                 SpawnSingleDirt();
@@ -82,9 +72,7 @@ namespace Dirt
 
             if (spawnPosition != Vector2.zero)
             {
-                //var dirt = _dirtPool.Get();
                 var dirt = DirtPool.Instance.Get();
-                //change dirt sprite
                 int randomIndex = Random.Range(0, dirtSprites.Length);
                 dirt.GetComponent<SpriteRenderer>().sprite = dirtSprites[randomIndex];
                 if (dirt != null)
