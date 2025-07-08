@@ -1,3 +1,4 @@
+using Managers;
 using Stealable;
 using UnityEngine;
 namespace Player
@@ -9,7 +10,7 @@ namespace Player
 
         void Update()
         {
-            if (itemNearby != null && itemNearby.CanBeStolen())
+            if (itemNearby != null && itemNearby.CanBeStolen() && !GameManager.isPlayerCaught)
             {
                 if (Input.GetKey(KeyCode.Space))
                 {
