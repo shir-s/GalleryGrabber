@@ -42,8 +42,19 @@ namespace Managers
             }
             if (pointsText != null)
             {
-                pointsText.text = $"{_points:N0} / {pointsToWin:N0}";
+                //pointsText.text = $"{_points:N0} / {pointsToWin:N0}";
+                pointsText.text = $"{FormatNumber(_points)} / {FormatNumber(pointsToWin)}";
             }
+        }
+        
+        
+        private string FormatNumber(int number)
+        {
+            if (number >= 1_000_000)
+                return (number / 1_000_000f).ToString("0.#") + "M";
+            if (number >= 1_000)
+                return (number / 1_000f).ToString("0.#") + "K";
+            return number.ToString();
         }
 
     }

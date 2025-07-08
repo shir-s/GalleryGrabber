@@ -33,12 +33,23 @@ namespace Stealable
                 priceCanvas.gameObject.SetActive(false);
                 if (priceText != null)
                 {
-                    priceText.text = itemValue.ToString("N0");
+                    //priceText.text = itemValue.ToString("N0");
+                    priceText.text = FormatNumber(itemValue);
                 }
             }
             _light = GetComponentInChildren<Light2D>();
             _allColliders = GetComponentsInChildren<Collider2D>();
         }
+        
+        private string FormatNumber(int number)
+        {
+            if (number >= 1_000_000)
+                return (number / 1_000_000f).ToString("0.#") + "M";
+            if (number >= 1_000)
+                return (number / 1_000f).ToString("0.#") + "K";
+            return number.ToString();
+        }
+
 
         public void TrySteal(float deltaTime)
         {
