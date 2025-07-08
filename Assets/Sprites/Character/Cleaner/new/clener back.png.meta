@@ -1,40 +1,46 @@
 fileFormatVersion: 2
-guid: 0c61c63c189a943df9ec3c31a3e8cbd8
+guid: 5eed0bf5933044fac85c939972021914
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1647896946015416983
-    second: clener front_0
+      213: -6041693976209224093
+    second: clener back_0
   - first:
-      213: 5456018655379268753
-    second: clener front_1
+      213: -6745842940025554647
+    second: clener back_1
   - first:
-      213: -7398964513688083836
-    second: clener front_2
+      213: 1937016898516849935
+    second: clener back_2
   - first:
-      213: -3910605404352184332
-    second: clener front_3
+      213: 1979677348154260325
+    second: clener back_3
   - first:
-      213: -2277177361467686716
-    second: clener front_4
+      213: -7082404126243300180
+    second: clener back_4
   - first:
-      213: -7049090084765051545
-    second: clener front_5
+      213: -870562922918788168
+    second: clener back_5
   - first:
-      213: 6068501777925357661
-    second: clener front_6
+      213: 4378026183174908993
+    second: clener back_6
   - first:
-      213: 1999016583025648138
-    second: clener front_7
+      213: -4292980664268119530
+    second: clener back_7
   - first:
-      213: -852205320717678262
-    second: clener front_8
+      213: -5218438803216105191
+    second: clener back_8
   - first:
-      213: -2110920608477715545
-    second: clener front_9
+      213: -1702912657129755221
+    second: clener back_9
   - first:
-      213: -158991374558169024
-    second: clener front_10
+      213: 7835069524570425815
+    second: clener back_10
+  - first:
+      213: -1087271742884252258
+    second: clener back_11
+  - first:
+      213: -9033206661862207259
+    second: clener back_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
