@@ -35,7 +35,7 @@ MonoBehaviour:
     loop: 0
   - name: Camera3
     clip: {fileID: 8300000, guid: d260c762ee3be4b9c96f7c5d080e1271, type: 3}
-    volume: 0.2
+    volume: 0.3
     loop: 0
   - name: Guard
     clip: {fileID: 8300000, guid: ef6ce3f8180914dda888b75f88be4dd6, type: 3}
