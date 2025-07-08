@@ -1,0 +1,37 @@
+clener back.png
+size:512,512
+format:Alpha
+filter:Linear,Linear
+pma:true
+belt
+bounds:2,37,108,31
+offsets:1,1,110,33
+bun
+bounds:246,60,134,115
+offsets:1,2,137,118
+foot
+bounds:112,25,43,81
+offsets:1,1,45,83
+rotate:90
+hands
+bounds:2,70,216,45
+offsets:2,1,220,47
+headd
+bounds:246,316,210,188
+offsets:1,1,212,190
+machine
+bounds:2,117,242,387
+offsets:1,1,244,389
+other foot
+bounds:424,230,47,84
+offsets:2,1,50,86
+shirt
+bounds:382,50,102,125
+offsets:2,8,105,135
+skirt
+bounds:246,177,176,137
+offsets:1,1,178,139
+torso
+bounds:458,366,138,46
+offsets:2,1,141,48
+rotate:90
