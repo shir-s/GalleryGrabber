@@ -196,7 +196,7 @@ public class PatrolGuard : MonoBehaviour
             // alertRoutine = StartCoroutine(AlarmThenResumeRoutine());
             alertRoutine = StartCoroutine(AlarmThenRunRoutine());
         }
-        SoundManager.Instance.PlaySound("GuardCatches", transform);
+        SoundManager.Instance.PlaySound("GuardGasp", transform);
         var dialog = Instantiate(alarmDialog, transform.position + Vector3.up *2.85f, Quaternion.identity);
         Destroy(dialog, 2f); // Destroy after 1 second
     }
@@ -221,7 +221,6 @@ public class PatrolGuard : MonoBehaviour
     {
         isInAlert = true;
         agent.isStopped = true;
-        SoundManager.Instance.PlaySound("GuardGasp", transform);
         string direction = GetCurrentDirectionName();
 
         SetAnimationForDirection("alarmed", direction);

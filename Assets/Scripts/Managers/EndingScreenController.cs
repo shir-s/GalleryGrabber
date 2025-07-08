@@ -21,14 +21,16 @@ namespace Managers
                 case GameOverReason.TooMuchDirt:
                     tooMuchDirtPanel.SetActive(true);
                     SoundManager.Instance.PlaySound("Fired1", transform);
+                    SoundManager.Instance.PlaySound("Losing", transform);
                     break;
                 case GameOverReason.OutOfLives:
                     outOfLivesPanel.SetActive(true);
                     SoundManager.Instance.PlaySound("Jail1", transform);
+                    SoundManager.Instance.PlaySound("Losing", transform);
                     break;
                 case GameOverReason.PlayerWon:
                     playerWonPanel.SetActive(true);
-                    SoundManager.Instance.PlaySound("WinningScreen", transform);
+                    SoundManager.Instance.PlaySound("WinScreen", transform);
                     break;
             }
         }
