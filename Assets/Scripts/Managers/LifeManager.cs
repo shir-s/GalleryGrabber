@@ -35,7 +35,7 @@ namespace Managers
 
         private void LoseLife()
         {
-            if (GameManager.isPlayerCaught || currentPlayerLives <= 0)
+            if (GameStates.isPlayerCaught || currentPlayerLives <= 0)
                 return;
 
             StartCoroutine(LoseLifeWithCooldown());
@@ -43,7 +43,7 @@ namespace Managers
 
         private IEnumerator LoseLifeWithCooldown()
         {
-            GameManager.isPlayerCaught = true;
+            GameStates.isPlayerCaught = true;
             currentPlayerLives--;
 
             switch (currentPlayerLives)
@@ -65,7 +65,7 @@ namespace Managers
             }
 
             yield return new WaitForSeconds(3f);
-            GameManager.isPlayerCaught = false;
+            GameStates.isPlayerCaught = false;
         }
     }
 }

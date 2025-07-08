@@ -1,4 +1,3 @@
-using Managers;
 using Sound;
 using UnityEngine;
 using Utilities;
@@ -14,7 +13,6 @@ namespace Dirt
             if (collision.CompareTag("Player"))
             {
                 GameEvents.OnDirtCollected?.Invoke(1);
-               // GameManager.Instance.DirtPool.Return(this);
                SoundManager.Instance.PlaySound("Dirt", transform);
                var bubble = Instantiate(bubbleParticle, transform.position, Quaternion.identity);
                 Destroy(bubble, 1f);

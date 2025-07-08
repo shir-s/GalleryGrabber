@@ -1,11 +1,10 @@
-using Player;
+using SceneControllers;
 using Sound;
-using Stealable;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using Utils;
 
-namespace Enemies.Guards
+namespace Guards
 {
     public class DetectionObject : MonoBehaviour
     {
@@ -63,13 +62,6 @@ namespace Enemies.Guards
             if (detectionLight != null)
                 StartCoroutine(FlashRed());
         }
-
-        // private System.Collections.IEnumerator FlashRed()
-        // {
-        //     detectionLight.color = Color.red;
-        //     yield return new WaitForSeconds(0.3f);
-        //     detectionLight.color = originalColor;
-        // }
         
         private System.Collections.IEnumerator FlashRed()
         {

@@ -1,6 +1,6 @@
 using Sound;
 
-namespace Managers
+namespace SceneControllers
 {
     using UnityEngine;
     using Utils;
@@ -12,7 +12,7 @@ namespace Managers
 
         private void Start()
         {
-            GameOverReason reason = GameManager.LastGameOverReason;
+            GameOverReason reason = GameStates.LastGameOverReason;
             tooMuchDirtPanel.SetActive(false);
             outOfLivesPanel.SetActive(false);
             playerWonPanel.SetActive(false);
