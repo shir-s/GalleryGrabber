@@ -1,0 +1,46 @@
+donna.png
+size:1024,1024
+format:Alpha
+filter:Linear,Linear
+pma:true
+apron
+bounds:230,502,141,112
+offsets:1,2,143,115
+rotate:90
+back arm
+bounds:349,696,158,47
+offsets:0,2,210,69
+back leg
+bounds:836,820,67,83
+offsets:0,0,75,83
+bun
+bounds:522,794,132,109
+offsets:1,1,134,111
+eyes
+bounds:109,258,115,53
+offsets:2,2,118,57
+rotate:90
+front arm
+bounds:2,110,144,43
+offsets:0,1,144,58
+rotate:90
+front leg
+bounds:768,816,66,87
+head
+bounds:2,447,226,196
+offsets:2,2,229,200
+machine
+bounds:2,645,345,258
+offsets:1,1,348,260
+machine bottom
+bounds:2,375,216,70
+offsets:1,2,219,73
+skirt
+bounds:349,745,171,158
+offsets:10,18,181,176
+torso
+bounds:656,798,110,105
+offsets:7,6,118,112
+wheel
+bounds:2,256,105,117
+offsets:1,2,107,120
