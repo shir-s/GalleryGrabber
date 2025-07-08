@@ -374,15 +374,15 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[0]'
+      propertyPath: zAngles.Array.data[0]
       value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[1]'
+      propertyPath: zAngles.Array.data[1]
       value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[2]'
+      propertyPath: zAngles.Array.data[2]
       value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 6631156116620281124, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -1696,15 +1696,15 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[0]'
+      propertyPath: zAngles.Array.data[0]
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[1]'
+      propertyPath: zAngles.Array.data[1]
       value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[2]'
+      propertyPath: zAngles.Array.data[2]
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6631156116620281124, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -3228,15 +3228,15 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[0]'
+      propertyPath: zAngles.Array.data[0]
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[1]'
+      propertyPath: zAngles.Array.data[1]
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[2]'
+      propertyPath: zAngles.Array.data[2]
       value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 6631156116620281124, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -6634,6 +6634,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7163603386173772822, guid: 97a6f7f8937a9400791262accf8afe4b, type: 3}
   m_PrefabInstance: {fileID: 7720648637140464844}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &685629338
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1057485772422643437, guid: 3c43e181ec90d3c419526ae47df8b616, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.5217705
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057485772422643437, guid: 3c43e181ec90d3c419526ae47df8b616, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.8724265
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057485772422643437, guid: 3c43e181ec90d3c419526ae47df8b616, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.18122122
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057485772422643437, guid: 3c43e181ec90d3c419526ae47df8b616, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057485772422643437, guid: 3c43e181ec90d3c419526ae47df8b616, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057485772422643437, guid: 3c43e181ec90d3c419526ae47df8b616, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057485772422643437, guid: 3c43e181ec90d3c419526ae47df8b616, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057485772422643437, guid: 3c43e181ec90d3c419526ae47df8b616, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057485772422643437, guid: 3c43e181ec90d3c419526ae47df8b616, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057485772422643437, guid: 3c43e181ec90d3c419526ae47df8b616, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7008016998235793942, guid: 3c43e181ec90d3c419526ae47df8b616, type: 3}
+      propertyPath: m_Name
+      value: SoundManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3c43e181ec90d3c419526ae47df8b616, type: 3}
 --- !u!1 &693488553
 GameObject:
   m_ObjectHideFlags: 0
@@ -7397,15 +7454,15 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[0]'
+      propertyPath: zAngles.Array.data[0]
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[1]'
+      propertyPath: zAngles.Array.data[1]
       value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[2]'
+      propertyPath: zAngles.Array.data[2]
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6631156116620281124, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -8537,15 +8594,15 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[0]'
+      propertyPath: zAngles.Array.data[0]
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[1]'
+      propertyPath: zAngles.Array.data[1]
       value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[2]'
+      propertyPath: zAngles.Array.data[2]
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6631156116620281124, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -10658,15 +10715,15 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[0]'
+      propertyPath: zAngles.Array.data[0]
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[1]'
+      propertyPath: zAngles.Array.data[1]
       value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[2]'
+      propertyPath: zAngles.Array.data[2]
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6631156116620281124, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -11816,15 +11873,15 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[0]'
+      propertyPath: zAngles.Array.data[0]
       value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[1]'
+      propertyPath: zAngles.Array.data[1]
       value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[2]'
+      propertyPath: zAngles.Array.data[2]
       value: -160
       objectReference: {fileID: 0}
     - target: {fileID: 6631156116620281124, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -15937,15 +15994,15 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[0]'
+      propertyPath: zAngles.Array.data[0]
       value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[1]'
+      propertyPath: zAngles.Array.data[1]
       value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[2]'
+      propertyPath: zAngles.Array.data[2]
       value: -160
       objectReference: {fileID: 0}
     - target: {fileID: 6631156116620281124, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -16872,7 +16929,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1607619675}
-  - component: {fileID: 1607619674}
   - component: {fileID: 1607619676}
   - component: {fileID: 1607619677}
   - component: {fileID: 1607619678}
@@ -16884,20 +16940,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1607619674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1607619673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50896ea24e27450ca1bd65e95310a993, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lastGameOverReason: 0
-  maxDirt: 50
 --- !u!4 &1607619675
 Transform:
   m_ObjectHideFlags: 0
@@ -17069,15 +17111,15 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[0]'
+      propertyPath: zAngles.Array.data[0]
       value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[1]'
+      propertyPath: zAngles.Array.data[1]
       value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[2]'
+      propertyPath: zAngles.Array.data[2]
       value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 6631156116620281124, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -17490,15 +17532,15 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[0]'
+      propertyPath: zAngles.Array.data[0]
       value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[1]'
+      propertyPath: zAngles.Array.data[1]
       value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[2]'
+      propertyPath: zAngles.Array.data[2]
       value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 6631156116620281124, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -19823,15 +19865,15 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[0]'
+      propertyPath: zAngles.Array.data[0]
       value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[1]'
+      propertyPath: zAngles.Array.data[1]
       value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[2]'
+      propertyPath: zAngles.Array.data[2]
       value: -160
       objectReference: {fileID: 0}
     - target: {fileID: 6631156116620281124, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -20184,15 +20226,15 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[0]'
+      propertyPath: zAngles.Array.data[0]
       value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[1]'
+      propertyPath: zAngles.Array.data[1]
       value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 6596900937570926211, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
-      propertyPath: 'zAngles.Array.data[2]'
+      propertyPath: zAngles.Array.data[2]
       value: -160
       objectReference: {fileID: 0}
     - target: {fileID: 6631156116620281124, guid: 8460afad195363e4293395ef7ee7c8ff, type: 3}
@@ -24014,3 +24056,4 @@ SceneRoots:
   - {fileID: 7375172135285051583}
   - {fileID: 1090246218}
   - {fileID: 1835235070}
+  - {fileID: 685629338}

@@ -4,17 +4,18 @@ namespace Managers
 {
     using UnityEngine;
     using Utils;
-    public class LosingScreenController : MonoBehaviour
+    public class EndingScreenController : MonoBehaviour
     {
         [SerializeField] private GameObject tooMuchDirtPanel;
         [SerializeField] private GameObject outOfLivesPanel;
+        [SerializeField] private GameObject playerWonPanel;
 
         private void Start()
         {
-            GameOverReason reason = GameManager.Instance.lastGameOverReason;
+            GameOverReason reason = GameManager.LastGameOverReason;
             tooMuchDirtPanel.SetActive(false);
             outOfLivesPanel.SetActive(false);
-
+            playerWonPanel.SetActive(false);
             switch (reason)
             {
                 case GameOverReason.TooMuchDirt:
@@ -25,7 +26,10 @@ namespace Managers
                     outOfLivesPanel.SetActive(true);
                     SoundManager.Instance.PlaySound("Jail1", transform);
                     break;
-                
+                case GameOverReason.PlayerWon:
+                    playerWonPanel.SetActive(true);
+                    SoundManager.Instance.PlaySound("WinningScreen", transform);
+                    break;
             }
         }
         public void Update()

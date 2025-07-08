@@ -1,4 +1,5 @@
 using System;
+using Sound;
 using UnityEngine;
 using Utils;
 
@@ -16,6 +17,7 @@ namespace Managers
             {
                 instructionsPanel.SetActive(false); 
             }
+            SoundManager.Instance.PlaySound("Opening", transform);
         }
 
         private void Update()

@@ -40,7 +40,7 @@ namespace Dirt
 
         private void Start()
         {
-            _initiallDirtToSpawn = GameManager.Instance.maxDirt /2;
+            _initiallDirtToSpawn = GameManager.MaxDirt /5;
             //_dirtPool = GameManager.Instance.DirtPool;
             //GameManager.Instance.SetDirtSpawner(this);
         }

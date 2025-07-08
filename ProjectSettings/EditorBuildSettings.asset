@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/GamePlay.unity
     guid: 79a4820207687444dad010b1e5af2d8b
   - enabled: 1
-    path: Assets/Scenes/Losing Scene.unity
+    path: Assets/Scenes/Ending Scene.unity
     guid: d186a7662d039b64c88a566922e0f7ed
   - enabled: 1
     path: Assets/Scenes/Winning Scene.unity
