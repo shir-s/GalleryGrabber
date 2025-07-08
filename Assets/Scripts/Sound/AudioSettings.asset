@@ -83,7 +83,7 @@ MonoBehaviour:
     loop: 0
   - name: GuardGasp
     clip: {fileID: 8300000, guid: 2726cd83ac2c8264bb6533cfb74abb5b, type: 3}
-    volume: 0.3
+    volume: 0.12
     loop: 0
   - name: WinScreen
     clip: {fileID: 8300000, guid: 1dfc7b04294faf24fb5de098ec3d1a14, type: 3}
