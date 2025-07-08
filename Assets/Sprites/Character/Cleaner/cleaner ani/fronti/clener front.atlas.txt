@@ -1,0 +1,34 @@
+clener front.png
+size:512,512
+format:Alpha
+filter:Linear,Linear
+pma:true
+drone
+bounds:464,291,211,38
+offsets:2,1,214,75
+rotate:90
+hair
+bounds:350,171,90,94
+hands
+bounds:246,267,216,45
+offsets:2,1,220,47
+head
+bounds:246,314,216,188
+offsets:1,1,218,190
+machine
+bounds:2,115,242,387
+offsets:1,1,244,389
+shirt
+bounds:246,140,102,125
+offsets:2,8,105,135
+vish
+bounds:2,43,234,70
+offsets:1,1,237,73
+wheel one
+bounds:2,9,32,108
+offsets:1,1,34,111
+rotate:90
+wheel two
+bounds:112,9,32,108
+offsets:1,1,34,111
+rotate:90
