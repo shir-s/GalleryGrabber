@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using Sound;
+using TMPro;
 using Utils;
 
 namespace Stealable
@@ -12,6 +13,8 @@ namespace Stealable
         [SerializeField] private int itemValue = 10;
         [SerializeField] private Canvas progressCanvas;
         [SerializeField] private Image progressCircle;
+        [SerializeField] private Canvas priceCanvas;
+        [SerializeField] private TextMeshProUGUI priceText;
 
         private float _stealProgress = 0f;
         private bool _isPlayerNearby = false;
@@ -23,6 +26,15 @@ namespace Stealable
         {
             if (progressCanvas != null)
                 progressCanvas.gameObject.SetActive(false);
+            if (priceCanvas != null)
+            {
+                priceCanvas.gameObject.SetActive(false);
+                if (priceText != null)
+                {
+                    priceText.text = itemValue.ToString("N0");
+                }
+            }
+               
 
             _allColliders = GetComponentsInChildren<Collider2D>();
         }
@@ -96,6 +108,8 @@ namespace Stealable
             {
                 _isPlayerNearby = true;
                 _playerTransform = other.transform;
+                if(priceCanvas!=null)
+                    priceCanvas.gameObject.SetActive(true);
             }
         }
 
@@ -105,6 +119,8 @@ namespace Stealable
             {
                 _isPlayerNearby = false;
                 StopSteal();
+                if(priceCanvas!=null)
+                    priceCanvas.gameObject.SetActive(false);
             }
         }
 

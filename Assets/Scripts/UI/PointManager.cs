@@ -42,7 +42,7 @@ namespace Managers
             }
             if (pointsText != null)
             {
-                pointsText.text = $"{_points} / {pointsToWin}";
+                pointsText.text = $"{_points:N0} / {pointsToWin:N0}";
             }
         }
 
