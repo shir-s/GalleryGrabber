@@ -1,55 +1,40 @@
 fileFormatVersion: 2
-guid: 572e178400228408d8c1a2148d86f2fc
+guid: 0c61c63c189a943df9ec3c31a3e8cbd8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1613388893328532059
-    second: donna_0
+      213: -1647896946015416983
+    second: clener front_0
   - first:
-      213: -297120653995279688
-    second: donna_1
+      213: 5456018655379268753
+    second: clener front_1
   - first:
-      213: -1185667353642508099
-    second: donna_2
+      213: -7398964513688083836
+    second: clener front_2
   - first:
-      213: 1083472630174980681
-    second: donna_3
+      213: -3910605404352184332
+    second: clener front_3
   - first:
-      213: 2721538140472464082
-    second: donna_4
+      213: -2277177361467686716
+    second: clener front_4
   - first:
-      213: 8791550606152404241
-    second: donna_5
+      213: -7049090084765051545
+    second: clener front_5
   - first:
-      213: 7979750861201766605
-    second: donna_6
+      213: 6068501777925357661
+    second: clener front_6
   - first:
-      213: -3530153624452772217
-    second: donna_7
+      213: 1999016583025648138
+    second: clener front_7
   - first:
-      213: 6710449168939168661
-    second: donna_8
+      213: -852205320717678262
+    second: clener front_8
   - first:
-      213: -8095710944538786048
-    second: donna_9
+      213: -2110920608477715545
+    second: clener front_9
   - first:
-      213: 3830297365958727874
-    second: donna_10
-  - first:
-      213: -5074331932710963987
-    second: donna_11
-  - first:
-      213: 6788272029273889378
-    second: donna_12
-  - first:
-      213: 1062252679962602534
-    second: donna_13
-  - first:
-      213: 3311584894569564298
-    second: donna_14
-  - first:
-      213: -490054588907065038
-    second: donna_15
+      213: -158991374558169024
+    second: clener front_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:

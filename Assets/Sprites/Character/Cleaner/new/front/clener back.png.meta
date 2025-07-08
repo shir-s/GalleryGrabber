@@ -1,55 +1,46 @@
 fileFormatVersion: 2
-guid: 572e178400228408d8c1a2148d86f2fc
+guid: 5cd73ad5c959c40a195b9ff86df70782
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1613388893328532059
-    second: donna_0
+      213: -6041693976209224093
+    second: clener back_0
   - first:
-      213: -297120653995279688
-    second: donna_1
+      213: -6745842940025554647
+    second: clener back_1
   - first:
-      213: -1185667353642508099
-    second: donna_2
+      213: 1937016898516849935
+    second: clener back_2
   - first:
-      213: 1083472630174980681
-    second: donna_3
+      213: 1979677348154260325
+    second: clener back_3
   - first:
-      213: 2721538140472464082
-    second: donna_4
+      213: -7082404126243300180
+    second: clener back_4
   - first:
-      213: 8791550606152404241
-    second: donna_5
+      213: -870562922918788168
+    second: clener back_5
   - first:
-      213: 7979750861201766605
-    second: donna_6
+      213: 4378026183174908993
+    second: clener back_6
   - first:
-      213: -3530153624452772217
-    second: donna_7
+      213: -4292980664268119530
+    second: clener back_7
   - first:
-      213: 6710449168939168661
-    second: donna_8
+      213: -5218438803216105191
+    second: clener back_8
   - first:
-      213: -8095710944538786048
-    second: donna_9
+      213: -1702912657129755221
+    second: clener back_9
   - first:
-      213: 3830297365958727874
-    second: donna_10
+      213: 7835069524570425815
+    second: clener back_10
   - first:
-      213: -5074331932710963987
-    second: donna_11
+      213: -1087271742884252258
+    second: clener back_11
   - first:
-      213: 6788272029273889378
-    second: donna_12
-  - first:
-      213: 1062252679962602534
-    second: donna_13
-  - first:
-      213: 3311584894569564298
-    second: donna_14
-  - first:
-      213: -490054588907065038
-    second: donna_15
+      213: -9033206661862207259
+    second: clener back_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
