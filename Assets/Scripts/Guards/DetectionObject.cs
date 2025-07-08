@@ -1,11 +1,11 @@
-using Player;
+using System.Collections;
+using SceneControllers;
 using Sound;
-using Stealable;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using Utils;
 
-namespace Enemies.Guards
+namespace Guards
 {
     public class DetectionObject : MonoBehaviour
     {
@@ -26,14 +26,30 @@ namespace Enemies.Guards
             {
                 if (CompareTag("Guard"))
                 {
-                    GameEvents.GameOver?.Invoke(GameOverReason.OutOfLives);
+                    StartCoroutine(HandleCaughtWithPause());
                 }
-                Debug.Log("Player or stealable object detected during theft (enter)!");
-                GameEvents.PlayerLostLife?.Invoke();
-                SoundManager.Instance.PlaySound("Camera3", transform);
-                TriggerFlashEffect();
+                if(CompareTag("Camera"))
+                {
+                    HandleCaughtImmediate();
+                }
             }
         }
+
+        private IEnumerator HandleCaughtWithPause()
+        {
+            SoundManager.Instance.PlaySound("GuardCatches", transform);
+            TriggerFlashEffect();
+            yield return new WaitForSeconds(1.5f);
+            GameEvents.GameOver?.Invoke(GameOverReason.OutOfLives);
+        }
+
+        private void HandleCaughtImmediate()
+        {
+            GameEvents.PlayerLostLife?.Invoke();
+            SoundManager.Instance.PlaySound("Camera3", transform);
+            TriggerFlashEffect();
+        }
+
         
         private void OnTriggerStay2D(Collider2D other)
         {
@@ -41,27 +57,24 @@ namespace Enemies.Guards
             {
                 if (Time.time >= lastDetectionTime + detectionCooldown)
                 {
-                    GameEvents.PlayerLostLife?.Invoke();
-                    SoundManager.Instance.PlaySound("Camera3", transform);
-                    TriggerFlashEffect();
+                    if (CompareTag("Guard"))
+                    {
+                        StartCoroutine(HandleCaughtWithPause());
+                    }
+                    if(CompareTag("Camera"))
+                    {
+                        HandleCaughtImmediate();
+                    }
                     lastDetectionTime = Time.time;
                 }
             }
         }
-
 
         private void TriggerFlashEffect()
         {
             if (detectionLight != null)
                 StartCoroutine(FlashRed());
         }
-
-        // private System.Collections.IEnumerator FlashRed()
-        // {
-        //     detectionLight.color = Color.red;
-        //     yield return new WaitForSeconds(0.3f);
-        //     detectionLight.color = originalColor;
-        // }
         
         private System.Collections.IEnumerator FlashRed()
         {

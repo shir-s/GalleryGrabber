@@ -21,7 +21,7 @@ namespace Managers
         
         private void Start()
         {
-            _dirtPercent = 1f / GameManager.MaxDirt; // Assuming maxDirt is the total dirt that can be spawned
+            _dirtPercent = 1f / GameStates.MaxDirt; // Assuming maxDirt is the total dirt that can be spawned
         }
 
         private void HandleDirtCollected(int dummy)

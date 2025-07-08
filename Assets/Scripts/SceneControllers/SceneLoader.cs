@@ -12,7 +12,7 @@ namespace Managers
     {
         private const string GamePlaySceneName = "GamePlay";
         private const string OpeningSceneName = "Opening Scene";
-        private const string LosingSceneName = "Ending Scene";
+        private const string EndingSceneName = "Ending Scene";
 
         private void Update()
         {
@@ -64,9 +64,10 @@ namespace Managers
 
         private IEnumerator DelayedGameOver(GameOverReason reason)
         {
-            GameManager.LastGameOverReason = reason;
+            GameStates.LastGameOverReason = reason;
             yield return new WaitForSeconds(0.1f); 
-            SceneManager.LoadScene(LosingSceneName);
+            GameStates.isPlayerCaught = false; // Reset the player caught state
+            SceneManager.LoadScene(EndingSceneName);
         }
         
         private void OnExit()

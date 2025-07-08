@@ -22,7 +22,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5241640951935549753, guid: f21dfdb2b254a4c2791014fc21897824, type: 3}
       propertyPath: m_Name
-      value: Camera new prefab (2) Variant
+      value: Left Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 6915628871029371293, guid: f21dfdb2b254a4c2791014fc21897824, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6915628871029371293, guid: f21dfdb2b254a4c2791014fc21897824, type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7648460842846375680, guid: f21dfdb2b254a4c2791014fc21897824, type: 3}
       propertyPath: m_LocalPosition.x
