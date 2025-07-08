@@ -711,7 +711,6 @@ GameObject:
   - component: {fileID: 6593075991459587964}
   - component: {fileID: 3042905207244171961}
   - component: {fileID: 6618752650494915959}
-  - component: {fileID: 3619166877254813061}
   m_Layer: 5
   m_Name: Points
   m_TagString: Untagged
@@ -735,8 +734,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -26.2, y: -0.9}
-  m_SizeDelta: {x: 20, y: 8}
+  m_AnchoredPosition: {x: -31, y: -0.5}
+  m_SizeDelta: {x: 30, y: 8}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &3042905207244171961
 CanvasRenderer:
@@ -837,17 +836,3 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &3619166877254813061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7435917361093342825}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5016ebd2560d4a3ba009e5396eccf917, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pointsToWin: 60
-  pointsText: {fileID: 6618752650494915959}

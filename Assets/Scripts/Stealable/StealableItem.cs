@@ -31,7 +31,7 @@ namespace Stealable
                 priceCanvas.gameObject.SetActive(false);
                 if (priceText != null)
                 {
-                    priceText.text = itemValue.ToString();
+                    priceText.text = itemValue.ToString("N0");
                 }
             }
                
