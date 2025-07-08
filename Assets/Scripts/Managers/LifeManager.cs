@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections;
 using Sound;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,22 +13,21 @@ namespace Managers
         [SerializeField] private Image life2;
         [SerializeField] private Image life3;
         [SerializeField] private Sprite redEye;
-        
         private int currentPlayerLives;
+        private bool isOnCooldown = false;
 
         private void Start()
         {
             currentPlayerLives = initialPlayerlives;
             GameEvents.StartLevel?.Invoke();
             SoundManager.Instance.PlaySound("Background", transform);
-
         }
 
         private void OnEnable()
         {
             GameEvents.PlayerLostLife += LoseLife;
         }
-        
+
         private void OnDisable()
         {
             GameEvents.PlayerLostLife -= LoseLife;
@@ -36,7 +35,17 @@ namespace Managers
 
         private void LoseLife()
         {
+            if (GameManager.isPlayerCaught || currentPlayerLives <= 0)
+                return;
+
+            StartCoroutine(LoseLifeWithCooldown());
+        }
+
+        private IEnumerator LoseLifeWithCooldown()
+        {
+            GameManager.isPlayerCaught = true;
             currentPlayerLives--;
+
             switch (currentPlayerLives)
             {
                 case 2:
@@ -54,7 +63,9 @@ namespace Managers
             {
                 GameEvents.GameOver?.Invoke(GameOverReason.OutOfLives);
             }
+
+            yield return new WaitForSeconds(3f);
+            GameManager.isPlayerCaught = false;
         }
-        
     }
 }

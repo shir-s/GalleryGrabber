@@ -30,7 +30,15 @@ namespace Enemies.Guards
                 }
                 Debug.Log("Player or stealable object detected during theft (enter)!");
                 GameEvents.PlayerLostLife?.Invoke();
-                SoundManager.Instance.PlaySound("Camera3", transform);
+                switch (tag)
+                {
+                    case "Guard":
+                        SoundManager.Instance.PlaySound("GuardCatches", transform);
+                        break;
+                    case "Camera":
+                        SoundManager.Instance.PlaySound("Camera3", transform);
+                        break;
+                }
                 TriggerFlashEffect();
             }
         }
