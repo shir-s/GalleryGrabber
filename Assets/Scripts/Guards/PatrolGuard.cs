@@ -87,7 +87,7 @@ namespace Guards
                 {
                     float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
                     float volume = Mathf.Clamp01(1f - (distanceToPlayer / maxStepVolumeDistance))* maxStepVolume;
-                    SoundManager.Instance.PlaySound("Guard2", transform, volume);
+                    //SoundManager.Instance.PlaySound("Guard2", transform, volume);
                     stepTimer = stepInterval / agent.speed;
                 }
             }
