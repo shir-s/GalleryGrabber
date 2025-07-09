@@ -1,0 +1,329 @@
+fileFormatVersion: 2
+guid: 07659bd5b440f4d24ac00e6b49c7e3c6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4512149737236049172
+    second: bubbles sprite sheet_0
+  - first:
+      213: -2262058316769425637
+    second: bubbles sprite sheet_1
+  - first:
+      213: 3337877020340034082
+    second: bubbles sprite sheet_2
+  - first:
+      213: 917436770809185246
+    second: bubbles sprite sheet_3
+  - first:
+      213: 155947376806059411
+    second: bubbles sprite sheet_4
+  - first:
+      213: -1208436556823740920
+    second: bubbles sprite sheet_5
+  - first:
+      213: -2580827789920868376
+    second: bubbles sprite sheet_6
+  - first:
+      213: -6478295368444519548
+    second: bubbles sprite sheet_7
+  - first:
+      213: 6096937396450019844
+    second: bubbles sprite sheet_8
+  - first:
+      213: 3060686591216465737
+    second: bubbles sprite sheet_9
+  - first:
+      213: 5414811941317472733
+    second: bubbles sprite sheet_10
+  - first:
+      213: -49702869655617399
+    second: bubbles sprite sheet_11
+  - first:
+      213: 5032088272337506341
+    second: bubbles sprite sheet_12
+  - first:
+      213: -263598821063501528
+    second: bubbles sprite sheet_13
+  - first:
+      213: -2019609896927890122
+    second: bubbles sprite sheet_14
+  - first:
+      213: -1454812828010955047
+    second: bubbles sprite sheet_15
+  - first:
+      213: 3794085878058654188
+    second: bubbles sprite sheet_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bubbles sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 167
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41da35597406e9e30800000000000000
+      internalID: 4512149737236049172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bubbles sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 336
+        width: 167
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b178dbf12fd8b90e0800000000000000
+      internalID: -2262058316769425637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bubbles sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 336
+        width: 167
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22a9e451775825e20800000000000000
+      internalID: 3337877020340034082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bubbles sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 168
+        width: 167
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed386fbd1e36bbc00800000000000000
+      internalID: 917436770809185246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bubbles sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 168
+        width: 167
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39ddd2e10590a2200800000000000000
+      internalID: 155947376806059411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bubbles sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 168
+        width: 167
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80ebce8aa55ca3fe0800000000000000
+      internalID: -1208436556823740920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bubbles sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 167
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e76f438cce0f2cd0800000000000000
+      internalID: -2580827789920868376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4a0b0602961a54cfeb7b80305d63b805
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bubbles sprite sheet_0: 4512149737236049172
+      bubbles sprite sheet_1: -2262058316769425637
+      bubbles sprite sheet_2: 3337877020340034082
+      bubbles sprite sheet_3: 917436770809185246
+      bubbles sprite sheet_4: 155947376806059411
+      bubbles sprite sheet_5: -1208436556823740920
+      bubbles sprite sheet_6: -2580827789920868376
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

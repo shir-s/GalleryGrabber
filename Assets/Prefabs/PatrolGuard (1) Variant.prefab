@@ -136,6 +136,14 @@ PrefabInstance:
       propertyPath: m_ShadowsEnabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5552808327008345766, guid: 37826c5fbac515246b8e1d0a7d7b039c, type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5552808327008345766, guid: 37826c5fbac515246b8e1d0a7d7b039c, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 0ca294e0687b347a38ea5d090d938d17, type: 2}
     - target: {fileID: 5603594757338199882, guid: 37826c5fbac515246b8e1d0a7d7b039c, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -283,6 +291,7 @@ MonoBehaviour:
   frontModel: {fileID: 4636590412279796130}
   backModel: {fileID: 7359425287696747434}
   sideModel: {fileID: 8334249765870049875}
+  alarmDialog: {fileID: 0}
   pauseDuration: 2
 --- !u!1 &4636590412279796130 stripped
 GameObject:

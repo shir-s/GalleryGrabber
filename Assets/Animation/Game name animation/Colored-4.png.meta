@@ -1,0 +1,923 @@
+fileFormatVersion: 2
+guid: 4fd76ce96801f45dc959dfbcdf936fe6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -744231234843348993
+    second: Colored-4_0
+  - first:
+      213: 5891500749690590103
+    second: Colored-4_1
+  - first:
+      213: 7655965589140981595
+    second: Colored-4_2
+  - first:
+      213: -6270029807480204028
+    second: Colored-4_3
+  - first:
+      213: 8910974770738075276
+    second: Colored-4_4
+  - first:
+      213: 4367728183084811022
+    second: Colored-4_5
+  - first:
+      213: 423919264765789571
+    second: Colored-4_6
+  - first:
+      213: -7594455745844626151
+    second: Colored-4_7
+  - first:
+      213: 3589620379785347066
+    second: Colored-4_8
+  - first:
+      213: -6645115338668336431
+    second: Colored-4_9
+  - first:
+      213: -4936068316168675545
+    second: Colored-4_10
+  - first:
+      213: -3984878962967829848
+    second: Colored-4_11
+  - first:
+      213: -5489134430407879288
+    second: Colored-4_12
+  - first:
+      213: 9097570230103701562
+    second: Colored-4_13
+  - first:
+      213: 2000631961137824952
+    second: Colored-4_14
+  - first:
+      213: -760317630742824998
+    second: Colored-4_15
+  - first:
+      213: -8319031032660962345
+    second: Colored-4_16
+  - first:
+      213: -4688088541678709960
+    second: Colored-4_17
+  - first:
+      213: 2445953573043869857
+    second: Colored-4_18
+  - first:
+      213: 4372007006939365218
+    second: Colored-4_19
+  - first:
+      213: -6125925293242911098
+    second: Colored-4_20
+  - first:
+      213: -3995003916574590376
+    second: Colored-4_21
+  - first:
+      213: 2335343184822978354
+    second: Colored-4_22
+  - first:
+      213: -5694902018621371926
+    second: Colored-4_23
+  - first:
+      213: -7531272832066462903
+    second: Colored-4_24
+  - first:
+      213: -8314302926878607290
+    second: Colored-4_25
+  - first:
+      213: 9204266914699231584
+    second: Colored-4_26
+  - first:
+      213: -988511145979356059
+    second: Colored-4_27
+  - first:
+      213: -7728345990925414899
+    second: Colored-4_28
+  - first:
+      213: 5676992993776451860
+    second: Colored-4_29
+  - first:
+      213: -3071759098822420132
+    second: Colored-4_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Colored-4_0
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 869
+        width: 124
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fff696092a5fba5f0800000000000000
+      internalID: -744231234843348993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_1
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 937
+        width: 62
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7935143a7b0d2c150800000000000000
+      internalID: 5891500749690590103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_2
+      rect:
+        serializedVersion: 2
+        x: 1678
+        y: 951
+        width: 63
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b57cc59e3247f3a60800000000000000
+      internalID: 7655965589140981595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_3
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 962
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40518023c116cf8a0800000000000000
+      internalID: -6270029807480204028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_4
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 974
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c869f4477542aab70800000000000000
+      internalID: 8910974770738075276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_5
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 775
+        width: 129
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e038b3c24a94d9c30800000000000000
+      internalID: 4367728183084811022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_6
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 821
+        width: 45
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3854fc5435012e500800000000000000
+      internalID: 423919264765789571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_7
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 818
+        width: 47
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91db18e7cb21b9690800000000000000
+      internalID: -7594455745844626151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_8
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 906
+        width: 41
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: affbb9f77b4e0d130800000000000000
+      internalID: 3589620379785347066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_9
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 926
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1da9c2b8ecec7c3a0800000000000000
+      internalID: -6645115338668336431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_10
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 830
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72f94b3d4009f7bb0800000000000000
+      internalID: -4936068316168675545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_11
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 850
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a2206b22bdd2b8c0800000000000000
+      internalID: -3984878962967829848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_12
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 823
+        width: 58
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8851c27715da2d3b0800000000000000
+      internalID: -5489134430407879288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_13
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 851
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a38ff7c5cef014e70800000000000000
+      internalID: 9097570230103701562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_14
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 817
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b4c9e93b2ca3cb10800000000000000
+      internalID: 2000631961137824952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_15
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 828
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad77b17a42fc275f0800000000000000
+      internalID: -760317630742824998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_16
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 840
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d3dac61a5ddc8c80800000000000000
+      internalID: -8319031032660962345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_17
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 849
+        width: 49
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83359a55f4090feb0800000000000000
+      internalID: -4688088541678709960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_18
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 862
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a89062c0d5c1f120800000000000000
+      internalID: 2445953573043869857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_19
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 805
+        width: 54
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26fb32c753d7cac30800000000000000
+      internalID: 4372007006939365218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_20
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 766
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 686fcaff6675cfaa0800000000000000
+      internalID: -6125925293242911098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_21
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 790
+        width: 47
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85af644ba15ee88c0800000000000000
+      internalID: -3995003916574590376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_22
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 810
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 237c000e04ec86020800000000000000
+      internalID: 2335343184822978354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_23
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 828
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae90b6579c4a7f0b0800000000000000
+      internalID: -5694902018621371926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_24
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 747
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94bd02af24b8b7790800000000000000
+      internalID: -7531272832066462903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_25
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 758
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648f8600a89ad9c80800000000000000
+      internalID: -8314302926878607290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_26
+      rect:
+        serializedVersion: 2
+        x: 1493
+        y: 785
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 061478c1eff1cbf70800000000000000
+      internalID: 9204266914699231584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_27
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 634
+        width: 137
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56cd26f995a1842f0800000000000000
+      internalID: -988511145979356059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_28
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 695
+        width: 45
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0e839d84466fb490800000000000000
+      internalID: -7728345990925414899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_29
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 761
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4114d62cc0bb8ce40800000000000000
+      internalID: 5676992993776451860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Colored-4_30
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 670
+        width: 56
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c599d1fdf5bee55d0800000000000000
+      internalID: -3071759098822420132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Colored-4_0: -744231234843348993
+      Colored-4_1: 5891500749690590103
+      Colored-4_10: -4936068316168675545
+      Colored-4_11: -3984878962967829848
+      Colored-4_12: -5489134430407879288
+      Colored-4_13: 9097570230103701562
+      Colored-4_14: 2000631961137824952
+      Colored-4_15: -760317630742824998
+      Colored-4_16: -8319031032660962345
+      Colored-4_17: -4688088541678709960
+      Colored-4_18: 2445953573043869857
+      Colored-4_19: 4372007006939365218
+      Colored-4_2: 7655965589140981595
+      Colored-4_20: -6125925293242911098
+      Colored-4_21: -3995003916574590376
+      Colored-4_22: 2335343184822978354
+      Colored-4_23: -5694902018621371926
+      Colored-4_24: -7531272832066462903
+      Colored-4_25: -8314302926878607290
+      Colored-4_26: 9204266914699231584
+      Colored-4_27: -988511145979356059
+      Colored-4_28: -7728345990925414899
+      Colored-4_29: 5676992993776451860
+      Colored-4_3: -6270029807480204028
+      Colored-4_30: -3071759098822420132
+      Colored-4_4: 8910974770738075276
+      Colored-4_5: 4367728183084811022
+      Colored-4_6: 423919264765789571
+      Colored-4_7: -7594455745844626151
+      Colored-4_8: 3589620379785347066
+      Colored-4_9: -6645115338668336431
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
