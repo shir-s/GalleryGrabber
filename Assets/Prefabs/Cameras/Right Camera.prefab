@@ -10,7 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5241640951935549753, guid: f21dfdb2b254a4c2791014fc21897824, type: 3}
       propertyPath: m_Name
-      value: Camera new prefab (4) Variant
+      value: Right Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 6915628871029371293, guid: f21dfdb2b254a4c2791014fc21897824, type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7648460842846375680, guid: f21dfdb2b254a4c2791014fc21897824, type: 3}
       propertyPath: m_LocalPosition.x
