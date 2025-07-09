@@ -9357,7 +9357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7008016998235793942, guid: 3c43e181ec90d3c419526ae47df8b616, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10954,8 +10954,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.5203831, y: 1.4033095}
-  m_Size: {x: 1.1386912, y: 5.2240868}
+  m_Offset: {x: 0.5203831, y: 1.5298276}
+  m_Size: {x: 1.1386912, y: 4.9710445}
   m_Direction: 0
 --- !u!1 &830996536
 GameObject:
