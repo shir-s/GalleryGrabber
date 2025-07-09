@@ -9,7 +9,7 @@ namespace Managers
     public class ScoreUI : MonoBehaviour
     {
         private int _points;
-        [SerializeField] private int pointsToWin = 60; // Toggle to enable or disable points display
+        [SerializeField] private int pointsToWin = 60; 
         [SerializeField] private TextMeshProUGUI pointsText;
 
         private void OnEnable()
@@ -42,7 +42,6 @@ namespace Managers
             }
             if (pointsText != null)
             {
-                //pointsText.text = $"{_points:N0} / {pointsToWin:N0}";
                 pointsText.text = $"{FormatNumber(_points)} / {FormatNumber(pointsToWin)}";
             }
         }

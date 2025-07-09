@@ -57,8 +57,7 @@ public class PlayerController : MonoBehaviour
         if (Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
         {
             ShowOnlyModel(sideModel);
-            // sideModel.transform.localScale = new Vector3(dir.x > 0 ? 1 : -1, 1, 1);
-            // sideModel.transform.localScale = new Vector3(moveDirection.x < 0 ? 1 : -1, 1, 1);
+
             sideModel.transform.localScale = new Vector3(dir.x < 0 ? 1 : -1, 1, 1);
             SetAnimation(sideAnim, isMoving ? "walki" : "idle");
         }

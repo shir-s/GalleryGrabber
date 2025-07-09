@@ -1,22 +1,25 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using Managers;
 using UnityEngine;
 using Utils;
-using Random = UnityEngine.Random;
 
 namespace Dirt
 {
     public class DirtSpawner : MonoBehaviour
     {
-        [SerializeField] private LayerMask forbiddenLayer; 
+        [Header("Spawn Settings")]
         [SerializeField] private float spawnRadius = 0.3f;
         [SerializeField] private float dirtSpawnInterval = 10f;
-        [SerializeField] private Sprite [] dirtSprites;
+        [SerializeField] private int divideFactorMaxDirt = 5;
+
+        [SerializeField] private Sprite[] dirtSprites;
+        [SerializeField] private LayerMask forbiddenLayer;
+
+        [Header("Room Reference")]
         [SerializeField] internal Collider2D roomCollider;
+
         private Coroutine _spawnRoutine;
-        private int _initiallDirtToSpawn;
+        private int _initialDirtToSpawn;
 
         private void OnEnable()
         {
@@ -28,25 +31,28 @@ namespace Dirt
             if (_spawnRoutine != null)
             {
                 StopCoroutine(_spawnRoutine);
+                _spawnRoutine = null;
             }
+
             GameEvents.StartLevel -= StartSpawning;
         }
 
         private void Start()
         {
-            _initiallDirtToSpawn = GameStates.MaxDirt /5;
+            _initialDirtToSpawn = GameStates.MaxDirt / divideFactorMaxDirt;
         }
-        
+
         private void StartSpawning()
         {
             if (_spawnRoutine != null)
             {
                 StopCoroutine(_spawnRoutine);
             }
-            InitialSpawn();
+
+            SpawnInitialDirt();
             _spawnRoutine = StartCoroutine(SpawnDirtOverTime());
         }
-        
+
         private IEnumerator SpawnDirtOverTime()
         {
             yield return new WaitForSeconds(dirtSpawnInterval);
@@ -58,9 +64,9 @@ namespace Dirt
             }
         }
 
-        public void InitialSpawn()
+        private void SpawnInitialDirt()
         {
-            for (int i = 0; i < _initiallDirtToSpawn; i++)
+            for (var i = 0; i < _initialDirtToSpawn; i++)
             {
                 SpawnSingleDirt();
             }
@@ -68,38 +74,33 @@ namespace Dirt
 
         private void SpawnSingleDirt()
         {
-            Vector2 spawnPosition = FindValidPositionInRoom(roomCollider);
+            var spawnPosition = FindValidPositionInRoom();
 
-            if (spawnPosition != Vector2.zero)
+            if (spawnPosition == Vector2.zero) return;
+
+            var dirt = DirtPool.Instance.Get();
+            if (dirt == null) return;
+
+            var spriteRenderer = dirt.GetComponent<SpriteRenderer>();
+            if (spriteRenderer != null && dirtSprites.Length > 0)
             {
-                var dirt = DirtPool.Instance.Get();
-                int randomIndex = Random.Range(0, dirtSprites.Length);
-                dirt.GetComponent<SpriteRenderer>().sprite = dirtSprites[randomIndex];
-                if (dirt != null)
-                {
-                    dirt.transform.position = spawnPosition;
-                }
+                var randomIndex = Random.Range(0, dirtSprites.Length);
+                spriteRenderer.sprite = dirtSprites[randomIndex];
             }
-            else
-            {
-                Debug.LogWarning("No valid position found for dirt.");
-            }
+
+            dirt.transform.position = spawnPosition;
+
             GameEvents.OnDirtSpawned?.Invoke();
         }
 
-        private Vector2 FindValidPositionInRoom(Collider2D roomCollider)
+        private Vector2 FindValidPositionInRoom()
         {
-            if (roomCollider == null)
-            {
-                Debug.LogWarning("Room has no collider!");
-                return Vector2.zero;
-            }
+            if (roomCollider == null) return Vector2.zero;
+            var bounds = roomCollider.bounds;
 
-            Bounds bounds = roomCollider.bounds;
-
-            for (int i = 0; i < 10; i++)
+            for (var i = 0; i < 10; i++)
             {
-                Vector2 randomPos = new Vector2(
+                var randomPos = new Vector2(
                     Random.Range(bounds.min.x, bounds.max.x),
                     Random.Range(bounds.min.y, bounds.max.y)
                 );
@@ -110,7 +111,7 @@ namespace Dirt
                 }
             }
 
-            return Vector2.zero; 
+            return Vector2.zero;
         }
     }
 }

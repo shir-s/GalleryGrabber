@@ -147,7 +147,6 @@ namespace Stealable
             ghost.transform.position = transform.position;
             ghost.transform.localScale = transform.localScale;
 
-            // Add Rigidbody2D to enable trigger-trigger interaction
             Rigidbody2D rb = ghost.AddComponent<Rigidbody2D>();
             rb.bodyType = RigidbodyType2D.Kinematic;
             rb.simulated = true;
@@ -160,15 +159,13 @@ namespace Stealable
             if (original != null)
                 box.size = original.size;
             else
-                box.size = Vector2.one; // fallback
+                box.size = Vector2.one; 
 
             ghost.tag = "StolenGhost";
 
             SpriteRenderer renderer = ghost.AddComponent<SpriteRenderer>();
             renderer.color = new Color(1f, 1f, 1f, 0f);
 
-            // Destroy after some time (optional)
-            // Destroy(ghost, 30f);
         }
 
     }

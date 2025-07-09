@@ -2,26 +2,29 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class RoomManager : MonoBehaviour
+namespace Managers
 {
-    public static RoomManager instance;
-
-    public List<Room> allRooms = new List<Room>();
-
-    private void Awake()
+    public class RoomManager : MonoBehaviour
     {
-        instance = this;
-        allRooms = FindObjectsOfType<Room>().ToList();
-    }
+        public static RoomManager instance;
 
-    public Room GetRandomRoom()
-    {
-        return allRooms[Random.Range(0, allRooms.Count)];
-    }
+        public List<Room> allRooms = new List<Room>();
+
+        private void Awake()
+        {
+            instance = this;
+            allRooms = FindObjectsOfType<Room>().ToList();
+        }
+
+        public Room GetRandomRoom()
+        {
+            return allRooms[Random.Range(0, allRooms.Count)];
+        }
     
-    public Room GetRoomByName(string name)
-    {
-        return allRooms.FirstOrDefault(r => r.roomName == name);
-    }
+        public Room GetRoomByName(string name)
+        {
+            return allRooms.FirstOrDefault(r => r.roomName == name);
+        }
 
+    }
 }

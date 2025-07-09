@@ -9,30 +9,52 @@ namespace Guards
 {
     public class DetectionObject : MonoBehaviour
     {
-        [SerializeField] private float detectionCooldown = 3f; // Cooldown in seconds
+        [Header("Detection Settings")]
+        [SerializeField] private float detectionCooldown = 3f; // Cooldown between triggers
         [SerializeField] private Light2D detectionLight;
-        private float lastDetectionTime = -Mathf.Infinity;
-        private Color originalColor;
-        
+
+        private float _lastDetectionTime = -Mathf.Infinity;
+        private Color _originalLightColor;
+
         private void Awake()
         {
             if (detectionLight != null)
-                originalColor = detectionLight.color;
+            {
+                _originalLightColor = detectionLight.color;
+            }
         }
-        
+
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.CompareTag("Player") && PlayerSteal.isStealing)
+            TryHandleDetection(other);
+        }
+
+        private void OnTriggerStay2D(Collider2D other)
+        {
+            if (Time.time >= _lastDetectionTime + detectionCooldown)
             {
-                if (CompareTag("Guard"))
+                if (TryHandleDetection(other))
                 {
-                    StartCoroutine(HandleCaughtWithPause());
-                }
-                if(CompareTag("Camera"))
-                {
-                    HandleCaughtImmediate();
+                    _lastDetectionTime = Time.time;
                 }
             }
+        }
+
+        private bool TryHandleDetection(Collider2D other)
+        {
+            if (!other.CompareTag("Player") || !PlayerSteal.isStealing)
+                return false;
+
+            if (CompareTag("Guard"))
+            {
+                StartCoroutine(HandleCaughtWithPause());
+            }
+            else if (CompareTag("Camera"))
+            {
+                HandleCaughtImmediate();
+            }
+
+            return true;
         }
 
         private IEnumerator HandleCaughtWithPause()
@@ -50,36 +72,18 @@ namespace Guards
             TriggerFlashEffect();
         }
 
-        
-        private void OnTriggerStay2D(Collider2D other)
-        {
-            if (other.CompareTag("Player") && PlayerSteal.isStealing)
-            {
-                if (Time.time >= lastDetectionTime + detectionCooldown)
-                {
-                    if (CompareTag("Guard"))
-                    {
-                        StartCoroutine(HandleCaughtWithPause());
-                    }
-                    if(CompareTag("Camera"))
-                    {
-                        HandleCaughtImmediate();
-                    }
-                    lastDetectionTime = Time.time;
-                }
-            }
-        }
-
         private void TriggerFlashEffect()
         {
             if (detectionLight != null)
+            {
                 StartCoroutine(FlashRed());
+            }
         }
-        
-        private System.Collections.IEnumerator FlashRed()
+
+        private IEnumerator FlashRed()
         {
-            float duration = 5f;
-            float blinkInterval = 0.25f;
+            const float duration = 5f;
+            const float blinkInterval = 0.25f;
             float timer = 0f;
 
             while (timer < duration)
@@ -87,14 +91,13 @@ namespace Guards
                 detectionLight.color = Color.red;
                 yield return new WaitForSeconds(blinkInterval);
 
-                // detectionLight.color = originalColor; // just to ensure it returns to original color
                 detectionLight.color = Color.clear;
                 yield return new WaitForSeconds(blinkInterval);
 
                 timer += blinkInterval * 2;
             }
 
-            detectionLight.color = originalColor;
+            detectionLight.color = _originalLightColor;
         }
     }
 }
