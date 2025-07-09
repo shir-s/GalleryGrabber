@@ -12,7 +12,7 @@ namespace Dirt
         {
             if (collision.CompareTag("Player"))
             {
-                GameEvents.OnDirtCollected?.Invoke(1);
+                GameEvents.OnDirtCollected?.Invoke(100);
                SoundManager.Instance.PlaySound("Dirt", transform);
                var bubble = Instantiate(bubbleParticle, transform.position, Quaternion.identity);
                 Destroy(bubble, 1f);

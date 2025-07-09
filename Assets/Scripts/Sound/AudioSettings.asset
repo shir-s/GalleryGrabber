@@ -76,7 +76,7 @@ MonoBehaviour:
   - name: Opening
     clip: {fileID: 8300000, guid: 2d514709b21a61f4f91a83e41c8e9bef, type: 3}
     volume: 0.3
-    loop: 0
+    loop: 1
   - name: GuardCatches
     clip: {fileID: 8300000, guid: 02060eccfb3529841bc3aff7aefe68c7, type: 3}
     volume: 0.3

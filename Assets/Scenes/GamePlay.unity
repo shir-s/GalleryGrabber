@@ -237,7 +237,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 33472
   spawnRadius: 0.3
-  dirtSpawnInterval: 4
+  dirtSpawnInterval: 3
   dirtSprites:
   - {fileID: -3290852245922610851, guid: ae85be37c6ae7496f9eee250741b59a5, type: 3}
   - {fileID: 3012676040849792702, guid: ae85be37c6ae7496f9eee250741b59a5, type: 3}
@@ -14505,7 +14505,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1064582287
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20708,7 +20708,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1573850505
 RectTransform:
   m_ObjectHideFlags: 0
