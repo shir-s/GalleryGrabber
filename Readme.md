@@ -5,6 +5,7 @@
 ---
 
 ## Meet Rose
+![Rose GIF](rose.gif)
 
 Rose is a tired museum janitor with a dream:  
 **Sun, sea, and absolutely no night shifts.**  
