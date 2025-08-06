@@ -62,5 +62,5 @@ at **Bezalel Academy of Arts and Design, 2025**.
 
 ---
 
-## Click here to play-
+## Click here to play
 https://ksenia-spirina.itch.io/museum-game
